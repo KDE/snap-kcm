@@ -1,6 +1,6 @@
 # SPDX-FileCopyrightText: 2024 Soumyadeep Ghosh <soumyadghosh@ubuntu.com>
 #
-# SPDX-License-Identifier: BSD-2-Clause
+# SPDX-License-Identifier: GPL-2.0-or-later
 
 kcmutils_add_qml_kcm(kcm_snap)
 target_sources(kcm_snap PRIVATE

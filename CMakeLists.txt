@@ -1,6 +1,6 @@
 # SPDX-FileCopyrightText: 2024 Soumyadeep Ghosh <soumyadghosh@ubuntu.com>
 #
-# SPDX-License-Identifier: BSD-2-Clause
+# SPDX-License-Identifier: GPL-2.0-or-later
 
 cmake_minimum_required(VERSION 3.16)
 
