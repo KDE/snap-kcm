@@ -1,0 +1,137 @@
+name: snap-kcm
+base: core22
+version: '0.1'
+summary: KDE Configuration Module to manage permissions of snap packages
+description: |
+  KDE Configuration Module to manage permissions of snap packages build on the snapd-glib api. Snapped to be used as a standalone app, but KCMs are not meant to be used that way, please use with caution
+license: GPL-2.0-OR-LATER
+source-code: https://invent.kde.org/soumyadghosh/snap-kcm
+issues: https://invent.kde.org/soumyadghosh/snap-kcm/issues
+contact: soumyadghosh+snap-kcm@ubuntu.com
+donation: https://github.com/sponsors/soumyaDghosh
+grade: stable
+confinement: strict
+
+package-repositories:
+  - type: apt
+    components:
+      - main
+    suites:
+      - jammy
+    key-id: 444DABCF3667D0283F894EDDE6D4736255751E5D
+    url: http://origin.archive.neon.kde.org/user
+    key-server: keyserver.ubuntu.com
+
+parts:
+  kcmutils:
+    plugin: cmake
+    source: https://invent.kde.org/frameworks/kcmutils.git
+    source-tag: 'v6.5.0'
+    source-depth: 1
+    cmake-parameters:
+      - -DCMAKE_INSTALL_PREFIX=/usr
+      - -DBUILD_TESTING=OFF
+    prime:
+      - -usr/include/*
+      - -usr/lib/*/cmake
+
+  # snapd-glib-api:
+  #   source: https://github.com/canonical/snapd-glib.git
+  #   source-tag: '1.66'
+  #   source-depth: 1
+  #   plugin: meson
+  #   build-environment:
+  #     - PKG_CONFIG_PATH: /snap/kde-qt6-core22-sdk/current/usr/lib/x86_64-linux-gnu/pkgconfig:/snap/kf6-core22-sdk/current/usr/lib/${CRAFT_ARCH_TRIPLET_BUILD_FOR}/pkgconfig:/usr/lib/pkgconfig:/usr/lib/${CRAFT_ARCH_TRIPLET_BUILD_FOR}/pkgconfig
+  #   meson-parameters:
+  #     - --prefix=/usr
+  #     - -Dintrospection=false
+  #     - -Ddocs=false
+  #     - -Dvala-bindings=false
+  #     - -Dexamples=false
+  #     - -Dtests=false
+  #   build-packages:
+  #     - meson
+  #     - libglib2.0-dev
+  #     - libsoup-3.0-dev
+  #     - qtchooser
+  
+  snap-kcm:
+    source: https://invent.kde.org/soumyadghosh/snap-kcm.git
+    source-depth: 1
+    plugin: cmake
+    build-environment:
+      - PKG_CONFIG_PATH: ${CRAFT_STAGE}/usr/lib/$CRAFT_ARCH_TRIPLET_BUILD_FOR/pkgconfig
+    override-pull: |
+      craftctl default
+    cmake-parameters:
+      - -DCMAKE_INSTALL_PREFIX=/usr
+    override-build: |
+      craftctl default
+      sed -i '3d' ${CRAFT_PART_INSTALL}/usr/share/applications/kcm_snap.desktop
+    build-packages:
+      - libsnapd-glib-dev
+      - libsnapd-qt-dev
+  
+  deps:
+    plugin: nil
+    stage-packages:
+      - libsoup-3.0-0
+      - libjson-glib-1.0-0
+      - libsnapd-glib1
+      - libsnapd-qt1
+    prime:
+      - usr/lib/x86_64-linux-gnu/libsoup-3.0*
+      - usr/lib/x86_64-linux-gnu/libjson-glib-1.0*
+      - usr/lib/x86_64-linux-gnu/libsnapd-glib.so.1*
+      - usr/lib/x86_64-linux-gnu/libsnapd-qt.so.1*
+
+plugs:
+    gtk-3-themes:
+        interface: content
+        target: $SNAP/data-dir/themes
+        default-provider: gtk-common-themes
+    kde-gtk3-themes:
+        interface: content
+        target: $SNAP/data-dir/themes
+        default-provider: qt-common-themes
+    gtk-2-themes:
+        interface: content
+        target: $SNAP/data-dir/themes
+        default-provider: gtk-common-themes
+    kde-gtk2-themes:
+        interface: content
+        target: $SNAP/data-dir/themes
+        default-provider: qt-common-themes
+    qt-icon-themes:
+        interface: content
+        target: $SNAP/data-dir/icons
+        default-provider: qt-common-themes
+    icon-themes:
+        interface: content
+        target: $SNAP/data-dir/icons
+        default-provider: gtk-common-themes
+    qt-sound-themes:
+        interface: content
+        target: $SNAP/data-dir/sounds
+        default-provider: qt-common-themes
+    sound-themes:
+        interface: content
+        target: $SNAP/data-dir/sounds
+        default-provider: gtk-common-themes
+    qt-6-themes:
+        interface: content
+        target: $SNAP/kf6
+        default-provider: qt-common-themes
+    dot-config-kde-globals:
+        interface: personal-files
+        read:
+            - $HOME/.config/kdeglobals
+
+apps:
+  snap-kcm:
+    command: usr/bin/kcmshell6 kcm_snap
+    extensions: [kde-neon-6]
+    desktop: usr/share/applications/kcm_snap.desktop
+    plugs:
+      - desktop-launch
+      - snapd-control
