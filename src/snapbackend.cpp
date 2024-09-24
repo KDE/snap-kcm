@@ -6,6 +6,7 @@
 #include "snapbackend.h"
 #include <QDBusInterface>
 #include <QtQml>
+#include <qstringliteral.h>
 
 SnapBackend::SnapBackend()
 {
@@ -147,6 +148,7 @@ const QString SnapBackend::plugLabel(const QSnapdPlug *plug)
 {
     static const QMap<QString, QString> interfaceLabels = {
         {QStringLiteral("account-control"), QStringLiteral("Add user accounts and change passwords")},
+        {QStringLiteral("accounts-service"), QStringLiteral("Allows communication with the accounts service, such as GNOME Online Accounts")},
         {QStringLiteral("alsa"), QStringLiteral("Play and record sound")},
         {QStringLiteral("appstream-metadata"), QStringLiteral("Allows access to AppStream metadata")},
         {QStringLiteral("audio-playback"), QStringLiteral("Play audio")},
@@ -234,6 +236,7 @@ const QString SnapBackend::plugLabel(const QSnapdPlug *plug)
 const QString SnapBackend::plugIcon(const QString &plugName)
 {
     static const QMap<QString, QString> plugIcons = {{QStringLiteral("account-control"), QStringLiteral("user-identity")},
+                                                     {QStringLiteral("accounts-service"), QStringLiteral("user-identity")},
                                                      {QStringLiteral("alsa"), QStringLiteral("audio-card")},
                                                      {QStringLiteral("appstream-metadata"), QStringLiteral("package-x-generic")},
                                                      {QStringLiteral("avahi-control"), QStringLiteral("network-wired")},
