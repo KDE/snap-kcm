@@ -14,6 +14,8 @@ import org.kde.plasma.kcm.snappermissions 1.0
 
 KCMUtils.ScrollViewKCM {
     id: root
+    implicitWidth: Kirigami.Units.gridUnit * 20
+    implicitHeight: Kirigami.Units.gridUnit * 40
     SnapBackend {
         id: backendInstance
     }
@@ -22,7 +24,6 @@ KCMUtils.ScrollViewKCM {
     property string searchQuery: ""
 
     title: i18n("Snap Applications")
-    implicitWidth: Kirigami.Units.gridUnit * 15
     framedView: false
 
     header: Kirigami.SearchField {
