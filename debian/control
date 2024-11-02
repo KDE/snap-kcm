@@ -1,0 +1,12 @@
+Source: kde-config-snap
+Maintainer: Soumyadeep Ghosh <soumyadeepghosh2004+deb@zohomail.in>
+Section: misc
+Priority: optional
+Standards-Version: 4.7.0
+Build-Depends: debhelper-compat (= 13), debhelper, libkf6kcmutils-dev, cmake, libsnapd-qt-dev, extra-cmake-modules
+
+Package: kde-config-snap
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: KDE Configuration Module to manage permissions of snap packages
+ KDE Configuration Module to manage permissions of snap packages build on the snapd-glib api.mk
