@@ -37,7 +37,7 @@ KCMUtils.ScrollViewKCM {
     }
 
     Kirigami.PlaceholderMessage {
-        text: i18n("Install snaps to change the permissions.")
+        text: i18n("Install snaps to change the permissions")
         width: parent.width - (Kirigami.Units.largeSpacing * 4)
         anchors.centerIn: parent
         visible: perm === null
@@ -92,7 +92,7 @@ KCMUtils.ScrollViewKCM {
                 id: overlay
                 parent: view.QQC2.Overlay.overlay
                 width: view.width / 2
-                title: i18n("Permissions for %1").arg(snapTitle)
+                title: i18n("Permissions for %1", snapTitle)
 
                 ListView {
                     id: overlayView
@@ -109,7 +109,7 @@ KCMUtils.ScrollViewKCM {
                         property string plugLabel: root.perm.plugLabel(modelData)
                         contentItem: RowLayout {
                             Kirigami.Icon {
-                                source: i18n("%1").arg(root.perm.plugIcon(plugInterface))
+                                source: i18n("%1", root.perm.plugIcon(plugInterface))
                                 Layout.preferredWidth: Kirigami.Units.iconSizes.medium
                                 Layout.preferredHeight: Kirigami.Units.iconSizes.medium
                             }
@@ -159,7 +159,7 @@ KCMUtils.ScrollViewKCM {
         Kirigami.FormLayout {
             QQC2.Label {
                 Kirigami.FormData.label: ""
-                text: i18n("snapd error: ") + output
+                text: i18n("snapd error: %1", output)
                 textFormat: Text.StyledText
                 wrapMode: Text.Wrap
             }
