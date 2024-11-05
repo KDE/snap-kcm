@@ -26,18 +26,6 @@ package-repositories:
     key-server: keyserver.ubuntu.com
 
 parts:
-  kcmutils:
-    plugin: cmake
-    source: https://invent.kde.org/frameworks/kcmutils.git
-    source-tag: 'v6.5.0'
-    source-depth: 1
-    cmake-parameters:
-      - -DCMAKE_INSTALL_PREFIX=/usr
-      - -DBUILD_TESTING=OFF
-    prime:
-      - -usr/include/*
-      - -usr/lib/*/cmake
-
   # snapd-glib-api:
   #   source: https://github.com/canonical/snapd-glib.git
   #   source-tag: '1.66'
@@ -87,53 +75,12 @@ parts:
       - usr/lib/x86_64-linux-gnu/libjson-glib-1.0*
       - usr/lib/x86_64-linux-gnu/libsnapd-glib.so.1*
       - usr/lib/x86_64-linux-gnu/libsnapd-qt.so.1*
-
-plugs:
-    gtk-3-themes:
-        interface: content
-        target: $SNAP/data-dir/themes
-        default-provider: gtk-common-themes
-    kde-gtk3-themes:
-        interface: content
-        target: $SNAP/data-dir/themes
-        default-provider: qt-common-themes
-    gtk-2-themes:
-        interface: content
-        target: $SNAP/data-dir/themes
-        default-provider: gtk-common-themes
-    kde-gtk2-themes:
-        interface: content
-        target: $SNAP/data-dir/themes
-        default-provider: qt-common-themes
-    qt-icon-themes:
-        interface: content
-        target: $SNAP/data-dir/icons
-        default-provider: qt-common-themes
-    icon-themes:
-        interface: content
-        target: $SNAP/data-dir/icons
-        default-provider: gtk-common-themes
-    qt-sound-themes:
-        interface: content
-        target: $SNAP/data-dir/sounds
-        default-provider: qt-common-themes
-    sound-themes:
-        interface: content
-        target: $SNAP/data-dir/sounds
-        default-provider: gtk-common-themes
-    qt-6-themes:
-        interface: content
-        target: $SNAP/kf6
-        default-provider: qt-common-themes
-    dot-config-kde-globals:
-        interface: personal-files
-        read:
-            - $HOME/.config/kdeglobals
-
 apps:
   snap-kcm:
     command: usr/bin/kcmshell6 kcm_snap
     extensions: [kde-neon-6]
+    environment:
+      XDG_CONFIG_DIRS: $SNAP_REAL_HOME/.config:$XDG_CONFIG_DIRS
     desktop: usr/share/applications/kcm_snap.desktop
     plugs:
       - desktop-launch
