@@ -1,6 +1,3 @@
-# SPDX-FileCopyrightText: 2024 Soumyadeep Ghosh <soumyadghosh@ubuntu.com>
-# SPDX-License-Identifier: GPL-2.0-or-later
-
 Source: kde-config-snap
 Maintainer: Soumyadeep Ghosh <soumyadeepghosh2004+deb@zohomail.in>
 Section: misc
