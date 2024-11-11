@@ -1,12 +1,26 @@
 Source: kde-config-snap
-Maintainer: Soumyadeep Ghosh <soumyadeepghosh2004+deb@zohomail.in>
-Section: misc
+Section: unknown
 Priority: optional
-Standards-Version: 4.7.0
-Build-Depends: debhelper-compat (= 13), debhelper, libkf6kcmutils-dev, cmake, libsnapd-qt-dev, extra-cmake-modules
+Maintainer: Soumyadeep Ghosh <soumyadghosh@ubuntu.com>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13),
+ cmake,
+ libkf6kcmutils-dev, 
+ cmake, 
+ libsnapd-qt-dev, 
+ extra-cmake-modules
+Standards-Version: 4.6.2
+Homepage: https://invent.kde.org/soumyadghosh/snap-kcm
 
 Package: kde-config-snap
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: KDE Configuration Module to manage permissions of snap packages
- KDE Configuration Module to manage permissions of snap packages build on the snapd-glib api.mk
+Multi-Arch: foreign
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+Description: Snap permissions management KCM
+ Plasma System Settings module for managinng permissions of Snap apps.
+ .
+ The System Settings module allows users to changing what permissions have
+ been granted to installed Snap applications.

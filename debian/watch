@@ -1,0 +1,2 @@
+opts="mode=git" https://invent.kde.org/soumyadghosh/snap-kcm \
+   refs/tags/v([\d\.]+)
