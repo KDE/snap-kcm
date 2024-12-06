@@ -9,8 +9,6 @@
 #include <Snapd/Plug>
 #include <Snapd/Slot>
 #include <Snapd/Snap>
-#include <Snapd/plug.h>
-#include <qtmetamacros.h>
 
 class KCMSnap : public QObject
 {

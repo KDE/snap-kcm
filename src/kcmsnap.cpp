@@ -11,6 +11,8 @@
 #include <QVariant>
 #include <Snapd/Client>
 
+using namespace Qt::Literals::StringLiterals;
+
 KCMSnap::KCMSnap(QSnapdSnap *snap, const QList<QSnapdPlug *> plugs, const QList<QSnapdSlot *> slots)
     : m_snap(snap)
     , m_plugs(plugs)
@@ -42,7 +44,7 @@ QVariant KCMSnap::icon() const
             if (app->name() == m_snap->name()) {
                 if (app->desktopFile().isEmpty()) {
                     for (int m = 0; m < m_snap->mediaCount(); ++m) {
-                        if (m_snap->media(m)->type() == QStringLiteral("icon")) {
+                        if (m_snap->media(m)->type() == u"icon"_s) {
                             return QUrl(m_snap->media(m)->url());
                         }
                     }
@@ -69,7 +71,7 @@ QVariant KCMSnap::icon() const
     req->runSync();
 
     if (req->error() != QSnapdRequest::NoError) {
-        return QStringLiteral("package-x-generic");
+        return u"package-x-generic"_s;
     }
 
     QBuffer buffer;
@@ -77,5 +79,5 @@ QVariant KCMSnap::icon() const
     QImageReader reader(&buffer);
     const auto theIcon = QVariant::fromValue<QImage>(reader.read());
 
-    return theIcon.isNull() ? QStringLiteral("package-x-generic") : theIcon;
+    return theIcon.isNull() ? u"package-x-generic"_s : theIcon;
 }
