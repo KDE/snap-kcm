@@ -77,7 +77,7 @@ KCMUtils.ScrollViewKCM {
                 }
                 QQC2.Button {
                     id: invokeButton
-                    text: i18n("Open")
+                    text: i18n("Launch")
                     visible: root.perm.invokAble(modelData.snap)
                     onClicked: {
                         root.perm.invokeDesktopApp(modelData.snap);
@@ -109,7 +109,7 @@ KCMUtils.ScrollViewKCM {
                         property string plugLabel: root.perm.plugLabel(modelData)
                         contentItem: RowLayout {
                             Kirigami.Icon {
-                                source: i18n("%1", root.perm.plugIcon(plugInterface))
+                                source: root.perm.plugIcon(plugInterface)
                                 Layout.preferredWidth: Kirigami.Units.iconSizes.medium
                                 Layout.preferredHeight: Kirigami.Units.iconSizes.medium
                             }
