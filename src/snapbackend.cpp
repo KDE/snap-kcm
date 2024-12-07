@@ -6,7 +6,6 @@
 #include "snapbackend.h"
 #include <KLocalizedString>
 #include <QDBusInterface>
-#include <QtQml>
 
 using namespace Qt::Literals::StringLiterals;
 

@@ -4,8 +4,6 @@
  */
 
 #pragma once
-#include <QList>
-#include <QPointer>
 #include <Snapd/Plug>
 #include <Snapd/Slot>
 #include <Snapd/Snap>

@@ -6,10 +6,6 @@
 #pragma once
 #include "snapbackend.h"
 #include <KQuickConfigModule>
-#include <QList>
-#include <QObject>
-#include <Snapd/Client>
-
 class SnapPermissions : public KQuickConfigModule
 {
     Q_OBJECT

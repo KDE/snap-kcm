@@ -4,11 +4,6 @@
  */
 
 #include "snappermissions.h"
-#include <Snapd/Enums>
-#include <Snapd/Plug>
-#include <Snapd/Request>
-#include <Snapd/Slot>
-#include <Snapd/Snap>
 
 K_PLUGIN_CLASS_WITH_JSON(SnapPermissions, "kcm_snap.json")
 

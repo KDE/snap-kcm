@@ -5,8 +5,6 @@
 
 #pragma once
 #include "kcmsnap.h"
-#include <QObject>
-#include <QtQml>
 
 #include <Snapd/Client>
 
