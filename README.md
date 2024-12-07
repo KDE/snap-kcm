@@ -25,3 +25,9 @@ The KCM allows changing what permissions have been granted to installed Snap app
 ### Using kde-builder
 
 coming soon...
+
+### Installing in Ubuntu 24.10+
+
+<a href="https://code.launchpad.net/~soumyadghosh/+archive/ubuntu/snap-kcm-daily"><img src="http://media.launchpad.net/lp-badge-kit/launchpad-badge-w200px.png" alt="Launchpad logo"/></a>
+
+Get it from the Snap KCM PPA
