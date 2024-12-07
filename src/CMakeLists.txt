@@ -2,6 +2,7 @@
 #
 # SPDX-License-Identifier: GPL-2.0-or-later
 
+add_definitions(-DTRANSLATION_DOMAIN="kcm_snap")
 kcmutils_add_qml_kcm(kcm_snap)
 target_sources(kcm_snap PRIVATE
    snappermissions.cpp
