@@ -13,10 +13,11 @@
 class SnapPermissions : public KQuickConfigModule
 {
     Q_OBJECT
+    QML_ELEMENT
 
 public:
     SnapPermissions(QObject *parent, const KPluginMetaData &data);
 
 private:
-    SnapBackend *const snap_model;
+    QSharedPointer<SnapBackend> const snap_model;
 };

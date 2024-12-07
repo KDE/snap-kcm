@@ -16,8 +16,8 @@ SnapBackend::SnapBackend()
     QList<QSnapdSnap *> loadedSnaps;
     QList<QSnapdPlug *> loadedPlugs;
     QList<QSnapdSlot *> loadedSlots;
-    QSnapdGetSnapsRequest *reqGetSnaps{m_client.getSnaps()};
-    QSnapdGetConnectionsRequest *reqGetConnections{m_client.getConnections(QSnapdClient::GetConnectionsFlag::SelectAll)};
+    QScopedPointer<QSnapdGetSnapsRequest> reqGetSnaps{m_client.getSnaps()};
+    QScopedPointer<QSnapdGetConnectionsRequest> reqGetConnections{m_client.getConnections(QSnapdClient::GetConnectionsFlag::SelectAll)};
 
     // Fetch snaps
     if (reqGetSnaps) {
