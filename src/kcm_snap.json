@@ -1,7 +1,6 @@
 {
     "KPlugin": {
         "Description": "Configure Snap Permissions",
-        "Description[x-test]": "xxConfigure Snap Permissionsxx",
         "FormFactors": [
             "desktop",
             "handset",
@@ -9,8 +8,7 @@
             "mediacenter"
         ],
         "Icon": "folder-snap-symbolic",
-        "Name": "Snap Permissions",
-        "Name[x-test]": "xxSnap Permissionsxx"
+        "Name": "Snap Permissions"
     },
     "X-KDE-Keywords": "Snap,permission,permissions,access,sandbox,sandboxed,filesystem,file,files,folder,folders,network,networks,networking,bluetooth,print,printer,printing,audio,sound,login,remote login,ssh,smart card",
     "X-KDE-System-Settings-Parent-Category": "applications-permissions",
