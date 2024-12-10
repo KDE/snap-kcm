@@ -1,6 +1,14 @@
 {
     "KPlugin": {
         "Description": "Configure Snap Permissions",
+        "Description[ca]": "Configura els permisos de l'Snap",
+        "Description[es]": "Configurar los permisos de Snap",
+        "Description[eu]": "Konfiguratu Snap-en baimenak",
+        "Description[nl]": "Snap-toegangsrechten configureren",
+        "Description[sl]": "Konfguriraj dovoljenja snap",
+        "Description[tr]": "Snap İzinlerini Yapılandır",
+        "Description[uk]": "Налаштовування прав доступу Snap",
+        "Description[x-test]": "xxConfigure Snap Permissionsxx",
         "FormFactors": [
             "desktop",
             "handset",
@@ -8,9 +16,25 @@
             "mediacenter"
         ],
         "Icon": "folder-snap-symbolic",
-        "Name": "Snap Permissions"
+        "Name": "Snap Permissions",
+        "Name[ca]": "Permisos de l'Snap",
+        "Name[es]": "Permisos de Snap",
+        "Name[eu]": "Snap-en baimenak",
+        "Name[nl]": "Snap-toegangsrechten",
+        "Name[sl]": "Dovoljenja snap",
+        "Name[tr]": "Snap İzinleri",
+        "Name[uk]": "Права доступу Snap",
+        "Name[x-test]": "xxSnap Permissionsxx"
     },
     "X-KDE-Keywords": "Snap,permission,permissions,access,sandbox,sandboxed,filesystem,file,files,folder,folders,network,networks,networking,bluetooth,print,printer,printing,audio,sound,login,remote login,ssh,smart card",
+    "X-KDE-Keywords[ca]": "Snap,permís,permisos,accés,espai aïllat,entorn controlat,sistema de fitxers,fitxer,fitxers,carpeta,carpetes,xarxa,xarxes,en xarxa,bluetooth,impressió,impressora,àudio,so,inici sessió,inici sessió remot,ssh,targeta intel·ligent",
+    "X-KDE-Keywords[es]": "Snap,permiso,permisos,acceso,sandbox,entorno aislado,entorno de pruebas,sistema de archivos,archivo,archivos,carpeta,carpetas,red,redes,trabajo en red,entorno de red,bluetooth,imprimir,impresora,impresión,audio,sonido,inicio de sesión,iniciar sesión,inicio de sesión remoto,ssh,tarjeta inteligente",
+    "X-KDE-Keywords[eu]": "Snap,baimena,baimenak,sarbidea,sandbox,hondar-kutxa,hondar-kaxa,hondar-kutxanfitxategi-sistema,fitxategia,fitxategiak,karpeta,karpetak,sarea,sareak,saregintza,bluetooth,inprimatu,inprimagailua,inprimatzea,audioa,soinua,saioan sartu,saioa hasi,urrunetik saioan sartzea,ssh,txartel adimenduna",
+    "X-KDE-Keywords[nl]": "Snap,toegangsrecht,toegangsrechten,toegang,zandbak,sandboxed,bestandssysteem,bestand,bestanden,map,mappen,netwerk,netwerken,networking,bluetooth,afdruk,printer,afdrukken,audio,geluid,aanmelden,aanmelden op afstand,ssh,smartcard",
+    "X-KDE-Keywords[sl]": "Snap,dovoljenje,dovoljenja,dostop,peskovnik,peskovniški,datotečni sistem,datoteka,datoteke,mapa,mape,omrežje,omrežja,mreženje,bluetooth,tisk,tiskalnik,avdio,zvok,prijava,oddaljena prijava,ssh,pametna kartica",
+    "X-KDE-Keywords[tr]": "Snap,izin,izinler,erişim,sandbox,yalıtılmış,dosya sistemi,filesystem,dosya,dosyalar,file,files,klasör,klasörler,folder,folders,ağ,network,networking,bluetooth,print,printer,yazdır,yazdırma,baskı,ses,audio,sound,login,ssh,smart card,akıllı kart",
+    "X-KDE-Keywords[uk]": "Snap,permission,permissions,access,sandbox,sandboxed,filesystem,file,files,folder,folders,network,networks,networking,bluetooth,print,printer,printing,audio,sound,login,remote login,ssh,smart card,снеп,права,доступ,пісочниця,файлова,система,файл,файли,тека,теки,мережа,мережі,блютуф,друк,друкарка,принтер,звук,аудіо,вхід,віддалений,картка,пам'яті,смарт",
+    "X-KDE-Keywords[x-test]": "xxSnapxx,xxpermissionxx,xxpermissionsxx,xxaccessxx,xxsandboxxx,xxsandboxedxx,xxfilesystemxx,xxfilexx,xxfilesxx,xxfolderxx,xxfoldersxx,xxnetworkxx,xxnetworksxx,xxnetworkingxx,xxbluetoothxx,xxprintxx,xxprinterxx,xxprintingxx,xxaudioxx,xxsoundxx,xxloginxx,xxremote loginxx,xxsshxx,xxsmart cardxx",
     "X-KDE-System-Settings-Parent-Category": "applications-permissions",
     "X-KDE-Weight": 10
 }
