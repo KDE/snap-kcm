@@ -20,389 +20,389 @@ msgstr ""
 #: src/snapbackend.cpp:215
 #, kde-format
 msgid "Add user accounts and change passwords"
-msgstr ""
+msgstr "添加用户账户并更改密码"
 
 #: src/snapbackend.cpp:216
 #, kde-format
 msgid ""
 "Allows communication with the accounts service, such as GNOME Online Accounts"
-msgstr ""
+msgstr "允许与账户服务通信，例如 GNOME 在线账户"
 
 #: src/snapbackend.cpp:217 src/snapbackend.cpp:267
 #, kde-format
 msgid "Play and record sound"
-msgstr ""
+msgstr "播放和录制声音"
 
 #: src/snapbackend.cpp:218
 #, kde-format
 msgid "Allows access to AppStream metadata"
-msgstr ""
+msgstr "允许访问 AppStream 元数据"
 
 #: src/snapbackend.cpp:219
 #, kde-format
 msgid "Play audio"
-msgstr ""
+msgstr "播放音频"
 
 #: src/snapbackend.cpp:220
 #, kde-format
 msgid "Record audio"
-msgstr ""
+msgstr "录制音频"
 
 #: src/snapbackend.cpp:221
 #, kde-format
 msgid "Advertise services over the local network"
-msgstr ""
+msgstr "通过本地网络广播服务"
 
 #: src/snapbackend.cpp:222
 #, kde-format
 msgid "Detect network devices using mDNS/DNS-SD (Bonjour/zeroconf)"
-msgstr ""
+msgstr "使用 mDNS/DNS-SD 检测网络设备 (Bonjour/zeroconf)"
 
 #: src/snapbackend.cpp:223
 #, kde-format
 msgid "Access bluetooth hardware directly"
-msgstr ""
+msgstr "直接访问蓝牙硬件"
 
 #: src/snapbackend.cpp:224
 #, kde-format
 msgid "Use bluetooth devices"
-msgstr ""
+msgstr "管理蓝牙设备"
 
 #: src/snapbackend.cpp:225
 #, kde-format
 msgid "Use functions essential for Web browsers"
-msgstr ""
+msgstr "使用网页浏览器基本功能"
 
 #: src/snapbackend.cpp:226
 #, kde-format
 msgid "Use your camera"
-msgstr ""
+msgstr "使用摄像头"
 
 #: src/snapbackend.cpp:227
 #, kde-format
 msgid "Access to the CUPS socket for printing"
-msgstr ""
+msgstr "访问 CUPS 套接字进行打印"
 
 #: src/snapbackend.cpp:228
 #, kde-format
 msgid "Print documents"
-msgstr ""
+msgstr "打印文档"
 
 #: src/snapbackend.cpp:229
 #, kde-format
 msgid "Use any connected joystick"
-msgstr ""
+msgstr "使用任意已连接的游戏控制器"
 
 #: src/snapbackend.cpp:230
 #, kde-format
 msgid "Identify and launch desktop apps from other snaps"
-msgstr ""
+msgstr "通过其他 snap 程序识别和启动桌面应用"
 
 #: src/snapbackend.cpp:231
 #, kde-format
 msgid "Allow connecting to the Docker service"
-msgstr ""
+msgstr "允许连接到 Docker 服务"
 
 #: src/snapbackend.cpp:232
 #, kde-format
 msgid "Configure network firewall"
-msgstr ""
+msgstr "配置网络防火墙"
 
 #: src/snapbackend.cpp:233
 #, kde-format
 msgid "Setup and use privileged FUSE filesystems"
-msgstr ""
+msgstr "设置和使用已提权的 FUSE 文件系统"
 
 #: src/snapbackend.cpp:234
 #, kde-format
 msgid "Update firmware on this device"
-msgstr ""
+msgstr "更新设备固件"
 
 #: src/snapbackend.cpp:235
 #, kde-format
 msgid "Provides access to any GSettings item for current user"
-msgstr ""
+msgstr "为当前用户提供访问任意 GSettings 项目的权限"
 
 #: src/snapbackend.cpp:236
 #, kde-format
 msgid "Access hardware information"
-msgstr ""
+msgstr "访问硬件信息"
 
 #: src/snapbackend.cpp:237
 #, kde-format
 msgid "Provide entropy to hardware random number generator"
-msgstr ""
+msgstr "为硬件随机数生成器提供熵值"
 
 #: src/snapbackend.cpp:238
 #, kde-format
 msgid "Use hardware-generated random numbers"
-msgstr ""
+msgstr "使用硬件生成的随机数"
 
 #: src/snapbackend.cpp:239
 #, kde-format
 msgid "Access files in your home folder"
-msgstr ""
+msgstr "访问您主文件夹中的文件"
 
 #: src/snapbackend.cpp:240
 #, kde-format
 msgid "Access libvirt service"
-msgstr ""
+msgstr "访问 libvirt 服务"
 
 #: src/snapbackend.cpp:241
 #, kde-format
 msgid "Change system language and region settings"
-msgstr ""
+msgstr "更改系统语言和区域设置"
 
 #: src/snapbackend.cpp:242
 #, kde-format
 msgid "Change location settings and providers"
-msgstr ""
+msgstr "更改位置服务设置和提供者"
 
 #: src/snapbackend.cpp:243
 #, kde-format
 msgid "Access your location"
-msgstr ""
+msgstr "访问您的位置信息"
 
 #: src/snapbackend.cpp:244
 #, kde-format
 msgid "Read system and application logs"
-msgstr ""
+msgstr "读取系统和应用程序日志"
 
 #: src/snapbackend.cpp:245
 #, kde-format
 msgid "Access LXD service"
-msgstr ""
+msgstr "访问 LXD 服务"
 
 #: src/snapbackend.cpp:246
 #, kde-format
 msgid "Allows operating as the LXD service"
-msgstr ""
+msgstr "允许使用 LXD 服务"
 
 #: src/snapbackend.cpp:247
 #, kde-format
 msgid "Use and configure modems"
-msgstr ""
+msgstr "使用和配置调制解调器"
 
 #: src/snapbackend.cpp:248
 #, kde-format
 msgid "Read system mount information and disk quotas"
-msgstr ""
+msgstr "读取系统挂载信息和磁盘配额"
 
 #: src/snapbackend.cpp:249
 #, kde-format
 msgid "Control music and video players"
-msgstr ""
+msgstr "控制音乐和视频播放器"
 
 #: src/snapbackend.cpp:250
 #, kde-format
 msgid "Access the internet"
-msgstr ""
+msgstr "连接到互联网"
 
 #: src/snapbackend.cpp:251
 #, kde-format
 msgid "Allows operating as a network service, enabling snap to run a server"
-msgstr ""
+msgstr "允许作为网络服务运行，让 snap 运行服务器"
 
 #: src/snapbackend.cpp:252
 #, kde-format
 msgid "Change low-level network settings"
-msgstr ""
+msgstr "更改低级网络设置"
 
 #: src/snapbackend.cpp:253
 #, kde-format
 msgid "Access the NetworkManager service to read and change network settings"
-msgstr ""
+msgstr "访问 NetworkManager 服务来读取和更改网络设置"
 
 #: src/snapbackend.cpp:254
 #, kde-format
 msgid "Allows observing NetworkManager settings"
-msgstr ""
+msgstr "允许查看 NetworkManager 设置"
 
 #: src/snapbackend.cpp:255
 #, kde-format
 msgid "Read access to network settings"
-msgstr ""
+msgstr "读取网络设置的访问权限"
 
 #: src/snapbackend.cpp:256
 #, kde-format
 msgid "Change network settings"
-msgstr ""
+msgstr "更改网络设置"
 
 #: src/snapbackend.cpp:257
 #, kde-format
 msgid "Read network settings"
-msgstr ""
+msgstr "读取网络设置"
 
 #: src/snapbackend.cpp:258
 #, kde-format
 msgid "Access the NetworkStatus service"
-msgstr ""
+msgstr "访问网络状态服务"
 
 #: src/snapbackend.cpp:259
 #, kde-format
 msgid ""
 "Access the ofono service to read and change network settings for mobile "
 "telephony"
-msgstr ""
+msgstr "使用 ofono 服务读取和更改移动电话网络设置"
 
 #: src/snapbackend.cpp:260
 #, kde-format
 msgid "Control Open vSwitch hardware"
-msgstr ""
+msgstr "控制 Open vSwitch 硬件"
 
 #: src/snapbackend.cpp:261
 #, kde-format
 msgid "Read from CD/DVD"
-msgstr ""
+msgstr "读取 CD/DVD 内容"
 
 #: src/snapbackend.cpp:262
 #, kde-format
 msgid "Read, add, change, or remove saved passwords"
-msgstr ""
+msgstr "读取、添加、更改或移除已保存的密码"
 
 #: src/snapbackend.cpp:263
 #, kde-format
 msgid "Control the PackageKit service"
-msgstr ""
+msgstr "控制 PackageKit 服务"
 
 #: src/snapbackend.cpp:264
 #, kde-format
 msgid "Permits communication with PCSD smart card daemon"
-msgstr ""
+msgstr "允许与 PCSD 智能卡守护进程进行通信"
 
 #: src/snapbackend.cpp:265
 #, kde-format
 msgid ""
 "Access pppd and ppp devices for configuring Point-to-Point Protocol "
 "connections"
-msgstr ""
+msgstr "使用 pppd 和 ppp 设备配置点对点协议连接"
 
 #: src/snapbackend.cpp:266
 #, kde-format
 msgid "Pause or end any process on the system"
-msgstr ""
+msgstr "暂停或结束系统中的任意进程"
 
 #: src/snapbackend.cpp:268
 #, kde-format
 msgid "Access USB hardware directly"
-msgstr ""
+msgstr "直接访问 USB 硬件"
 
 #: src/snapbackend.cpp:269
 #, kde-format
 msgid "Read/write files on removable storage devices"
-msgstr ""
+msgstr "读写可移动存储设备的文件"
 
 #: src/snapbackend.cpp:270
 #, kde-format
 msgid "Prevent screen sleep/lock"
-msgstr ""
+msgstr "阻止屏幕睡眠/锁定"
 
 #: src/snapbackend.cpp:271
 #, kde-format
 msgid "Access serial port hardware"
-msgstr ""
+msgstr "访问串口硬件"
 
 #: src/snapbackend.cpp:272
 #, kde-format
 msgid "Enables two snaps to access the same shared memory"
-msgstr ""
+msgstr "允许两个 snap 程序访问相同的共享内存"
 
 #: src/snapbackend.cpp:273
 #, kde-format
 msgid "Restart or power off the device"
-msgstr ""
+msgstr "重启或关闭设备"
 
 #: src/snapbackend.cpp:274
 #, kde-format
 msgid "Install, remove and configure software (snaps)"
-msgstr ""
+msgstr "安装、移除和配置软件 (snap)"
 
 #: src/snapbackend.cpp:275
 #, kde-format
 msgid "Access SSH private and public keys"
-msgstr ""
+msgstr "访问 SSH 私钥和公钥"
 
 #: src/snapbackend.cpp:276
 #, kde-format
 msgid "Access SSH public keys"
-msgstr ""
+msgstr "访问 SSH 公钥"
 
 #: src/snapbackend.cpp:277
 #, kde-format
 msgid "Access Storage Framework service"
-msgstr ""
+msgstr "访问存储框架服务"
 
 #: src/snapbackend.cpp:278
 #, kde-format
 msgid "Read process and system information"
-msgstr ""
+msgstr "读取进程和系统信息"
 
 #: src/snapbackend.cpp:279
 #, kde-format
 msgid "Access system documentation in /usr/share/doc"
-msgstr ""
+msgstr "访问位于 /usr/shar/doc 的系统文档"
 
 #: src/snapbackend.cpp:280
 #, kde-format
 msgid "Monitor and control any running program"
-msgstr ""
+msgstr "监视和控制任意正在运行的程序"
 
 #: src/snapbackend.cpp:281
 #, kde-format
 msgid "Change the date and time"
-msgstr ""
+msgstr "更改日期和时间"
 
 #: src/snapbackend.cpp:282
 #, kde-format
 msgid "Change time server settings"
-msgstr ""
+msgstr "更改时间服务器设置"
 
 #: src/snapbackend.cpp:283
 #, kde-format
 msgid "Change the time zone"
-msgstr ""
+msgstr "更改时区"
 
 #: src/snapbackend.cpp:284
 #, kde-format
 msgid "Access the UDisks2 service for configuring disks and removable media"
-msgstr ""
+msgstr "访问 UDisks2 服务以配置磁盘和可移动媒体"
 
 #: src/snapbackend.cpp:285
 #, kde-format
 msgid "Access energy usage data"
-msgstr ""
+msgstr "访问电量使用数据"
 
 #: src/snapbackend.cpp:286
 #, kde-format
 msgid "Read/write access to U2F devices exposed"
-msgstr ""
+msgstr "读写可见的 U2F 设备"
 
 #: src/ui/main.qml:26
 #, kde-format
 msgid "Snap Applications"
-msgstr ""
+msgstr "Snap 应用程序"
 
 #: src/ui/main.qml:40
 #, kde-format
 msgid "Install snaps to change the permissions"
-msgstr ""
+msgstr "安装 snap 程序以更改权限"
 
 #: src/ui/main.qml:80
 #, kde-format
 msgid "Launch"
-msgstr ""
+msgstr "启动"
 
 #: src/ui/main.qml:95
 #, kde-format
 msgid "Permissions for %1"
-msgstr ""
+msgstr "%1 的权限"
 
 #: src/ui/main.qml:155
 #, kde-format
 msgid "Error"
-msgstr ""
+msgstr "错误"
 
 #: src/ui/main.qml:162
 #, kde-format
 msgid "snapd error: %1"
-msgstr ""
+msgstr "snapd 错误：%1"
