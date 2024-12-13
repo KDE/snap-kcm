@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: snap-kcm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-09 00:43+0000\n"
-"PO-Revision-Date: 2024-12-10 07:38+0200\n"
+"PO-Revision-Date: 2024-12-10 18:41+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -132,7 +132,7 @@ msgstr "גישה לפרטים על החומרה"
 #: src/snapbackend.cpp:237
 #, kde-format
 msgid "Provide entropy to hardware random number generator"
-msgstr ""
+msgstr "אספקת אנטרופיה ליצרן מספרים אקראיים חומרתי"
 
 #: src/snapbackend.cpp:238
 #, kde-format
@@ -244,44 +244,44 @@ msgstr "גישה לשירות NetworkStatus"
 msgid ""
 "Access the ofono service to read and change network settings for mobile "
 "telephony"
-msgstr ""
+msgstr "גישה לשירות ofono כדי לקרוא ולשנות את הגדרות רשת טלפוניה ניידת"
 
 #: src/snapbackend.cpp:260
 #, kde-format
 msgid "Control Open vSwitch hardware"
-msgstr ""
+msgstr "שליטה בחומרת Open vSwitch"
 
 #: src/snapbackend.cpp:261
 #, kde-format
 msgid "Read from CD/DVD"
-msgstr ""
+msgstr "קריאה מתקליטור/DVD"
 
 #: src/snapbackend.cpp:262
 #, kde-format
 msgid "Read, add, change, or remove saved passwords"
-msgstr ""
+msgstr "קריאה, הוספה או הסרה של סיסמאות שמורות"
 
 #: src/snapbackend.cpp:263
 #, kde-format
 msgid "Control the PackageKit service"
-msgstr ""
+msgstr "שליטה בשירות PackageKit"
 
 #: src/snapbackend.cpp:264
 #, kde-format
 msgid "Permits communication with PCSD smart card daemon"
-msgstr ""
+msgstr "מרשה לתקשר עם סוכן הכרטיסים החכמים PCSD"
 
 #: src/snapbackend.cpp:265
 #, kde-format
 msgid ""
 "Access pppd and ppp devices for configuring Point-to-Point Protocol "
 "connections"
-msgstr ""
+msgstr "גישה להתקני pppd ו־ppp להגדרת חיבורי פרוטוקול נקודה לנקודה (נל״ן)"
 
 #: src/snapbackend.cpp:266
 #, kde-format
 msgid "Pause or end any process on the system"
-msgstr ""
+msgstr "השהיית או הפסקת כל תהליך שהוא במערכת"
 
 #: src/snapbackend.cpp:268
 #, kde-format
@@ -291,12 +291,12 @@ msgstr "גישה לחומרת USB ישירות"
 #: src/snapbackend.cpp:269
 #, kde-format
 msgid "Read/write files on removable storage devices"
-msgstr ""
+msgstr "קריאת/כתיבת קבצים בהתקני אחסון נשלפים"
 
 #: src/snapbackend.cpp:270
 #, kde-format
 msgid "Prevent screen sleep/lock"
-msgstr ""
+msgstr "מניעת שינה/נעילה של המסך"
 
 #: src/snapbackend.cpp:271
 #, kde-format
