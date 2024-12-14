@@ -1,0 +1,421 @@
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the snap-kcm package.
+# SPDX-FileCopyrightText: 2024 Vincenzo Reale <smart2128vr@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: snap-kcm\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2024-12-09 00:43+0000\n"
+"PO-Revision-Date: 2024-12-09 19:58+0100\n"
+"Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
+"Language-Team: Italian <kde-i18n-it@kde.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 24.08.3\n"
+
+#: src/snapbackend.cpp:215
+#, kde-format
+msgid "Add user accounts and change passwords"
+msgstr "Aggiungi account utente e modifica password"
+
+#: src/snapbackend.cpp:216
+#, kde-format
+msgid ""
+"Allows communication with the accounts service, such as GNOME Online Accounts"
+msgstr ""
+"Consente la comunicazione con il servizio di account, come GNOME Online "
+"Accounts"
+
+#: src/snapbackend.cpp:217 src/snapbackend.cpp:267
+#, kde-format
+msgid "Play and record sound"
+msgstr "Riproduci e registra il suono"
+
+#: src/snapbackend.cpp:218
+#, kde-format
+msgid "Allows access to AppStream metadata"
+msgstr "Consente l'accesso ai metadati di AppStream"
+
+#: src/snapbackend.cpp:219
+#, kde-format
+msgid "Play audio"
+msgstr "Riproduci audio"
+
+#: src/snapbackend.cpp:220
+#, kde-format
+msgid "Record audio"
+msgstr "Registra audio"
+
+#: src/snapbackend.cpp:221
+#, kde-format
+msgid "Advertise services over the local network"
+msgstr "Annuncia servizi sulla rete locale"
+
+#: src/snapbackend.cpp:222
+#, kde-format
+msgid "Detect network devices using mDNS/DNS-SD (Bonjour/zeroconf)"
+msgstr ""
+"Rileva i dispositivi di rete utilizzando mDNS/DNS-SD (Bonjour/zeroconf)"
+
+#: src/snapbackend.cpp:223
+#, kde-format
+msgid "Access bluetooth hardware directly"
+msgstr "Accedi direttamente all'hardware Bluetooth"
+
+#: src/snapbackend.cpp:224
+#, kde-format
+msgid "Use bluetooth devices"
+msgstr "Utilizza dispositivi Bluetooth"
+
+#: src/snapbackend.cpp:225
+#, kde-format
+msgid "Use functions essential for Web browsers"
+msgstr "Utilizzare le funzioni essenziali per i browser web"
+
+#: src/snapbackend.cpp:226
+#, kde-format
+msgid "Use your camera"
+msgstr "Usa la tua macchina fotografica"
+
+#: src/snapbackend.cpp:227
+#, kde-format
+msgid "Access to the CUPS socket for printing"
+msgstr "Accesso alla presa CUPS per la stampa"
+
+#: src/snapbackend.cpp:228
+#, kde-format
+msgid "Print documents"
+msgstr "Stampa i documenti"
+
+#: src/snapbackend.cpp:229
+#, kde-format
+msgid "Use any connected joystick"
+msgstr "Utilizza qualsiasi joystick collegato"
+
+#: src/snapbackend.cpp:230
+#, kde-format
+msgid "Identify and launch desktop apps from other snaps"
+msgstr "Identifica e avvia le applicazioni desktop da altri snap"
+
+#: src/snapbackend.cpp:231
+#, kde-format
+msgid "Allow connecting to the Docker service"
+msgstr "Consenti la connessione al servizio Docker"
+
+#: src/snapbackend.cpp:232
+#, kde-format
+msgid "Configure network firewall"
+msgstr "Configura il firewall di rete"
+
+#: src/snapbackend.cpp:233
+#, kde-format
+msgid "Setup and use privileged FUSE filesystems"
+msgstr "Imposta e utilizza file system FUSE privilegiati"
+
+#: src/snapbackend.cpp:234
+#, kde-format
+msgid "Update firmware on this device"
+msgstr "Aggiorna il firmware su questo dispositivo"
+
+#: src/snapbackend.cpp:235
+#, kde-format
+msgid "Provides access to any GSettings item for current user"
+msgstr ""
+"Fornisce l'accesso a qualsiasi elemento di GSettings per l'utente attuale"
+
+#: src/snapbackend.cpp:236
+#, kde-format
+msgid "Access hardware information"
+msgstr "Accedi alle informazioni hardware"
+
+#: src/snapbackend.cpp:237
+#, kde-format
+msgid "Provide entropy to hardware random number generator"
+msgstr "Fornisci entropia al generatore di numeri casuali hardware"
+
+#: src/snapbackend.cpp:238
+#, kde-format
+msgid "Use hardware-generated random numbers"
+msgstr "Utilizza numeri casuali generati dall'hardware"
+
+#: src/snapbackend.cpp:239
+#, kde-format
+msgid "Access files in your home folder"
+msgstr "Accedi ai file nella tua cartella home"
+
+#: src/snapbackend.cpp:240
+#, kde-format
+msgid "Access libvirt service"
+msgstr "Accedi al servizio libvirt"
+
+#: src/snapbackend.cpp:241
+#, kde-format
+msgid "Change system language and region settings"
+msgstr "Modifica le impostazioni della lingua e regionali del sistema"
+
+#: src/snapbackend.cpp:242
+#, kde-format
+msgid "Change location settings and providers"
+msgstr "Modificare le impostazioni di posizione e i fornitori"
+
+#: src/snapbackend.cpp:243
+#, kde-format
+msgid "Access your location"
+msgstr "Accedi alla tua posizione"
+
+#: src/snapbackend.cpp:244
+#, kde-format
+msgid "Read system and application logs"
+msgstr "Leggi i registri di sistema e delle applicazioni"
+
+#: src/snapbackend.cpp:245
+#, kde-format
+msgid "Access LXD service"
+msgstr "Accedi al servizio LXD"
+
+#: src/snapbackend.cpp:246
+#, kde-format
+msgid "Allows operating as the LXD service"
+msgstr "Consente di operare come servizio LXD"
+
+#: src/snapbackend.cpp:247
+#, kde-format
+msgid "Use and configure modems"
+msgstr "Utilizza e configura i modem"
+
+#: src/snapbackend.cpp:248
+#, kde-format
+msgid "Read system mount information and disk quotas"
+msgstr "Leggi le informazioni di montaggio del sistema e le quote del disco"
+
+#: src/snapbackend.cpp:249
+#, kde-format
+msgid "Control music and video players"
+msgstr "Controlla i lettori musicali e video"
+
+#: src/snapbackend.cpp:250
+#, kde-format
+msgid "Access the internet"
+msgstr "Accedi a Internet"
+
+#: src/snapbackend.cpp:251
+#, kde-format
+msgid "Allows operating as a network service, enabling snap to run a server"
+msgstr ""
+"Consente di operare come servizio di rete, consentendo a snap di eseguire un "
+"server"
+
+#: src/snapbackend.cpp:252
+#, kde-format
+msgid "Change low-level network settings"
+msgstr "Modificare le impostazioni di rete di basso livello"
+
+#: src/snapbackend.cpp:253
+#, kde-format
+msgid "Access the NetworkManager service to read and change network settings"
+msgstr ""
+"Accedi al servizio NetworkManager per leggere e modificare le impostazioni "
+"di rete"
+
+#: src/snapbackend.cpp:254
+#, kde-format
+msgid "Allows observing NetworkManager settings"
+msgstr "Consente di osservare le impostazioni di NetworkManager"
+
+#: src/snapbackend.cpp:255
+#, kde-format
+msgid "Read access to network settings"
+msgstr "Accesso in lettura alle impostazioni di rete"
+
+#: src/snapbackend.cpp:256
+#, kde-format
+msgid "Change network settings"
+msgstr "Modifica le impostazioni di rete"
+
+#: src/snapbackend.cpp:257
+#, kde-format
+msgid "Read network settings"
+msgstr "Leggi le impostazioni di rete"
+
+#: src/snapbackend.cpp:258
+#, kde-format
+msgid "Access the NetworkStatus service"
+msgstr "Accedi al servizio NetworkStatus"
+
+#: src/snapbackend.cpp:259
+#, kde-format
+msgid ""
+"Access the ofono service to read and change network settings for mobile "
+"telephony"
+msgstr ""
+"Accedi al servizio ofono per leggere e modificare le impostazioni di rete "
+"per la telefonia mobile"
+
+#: src/snapbackend.cpp:260
+#, kde-format
+msgid "Control Open vSwitch hardware"
+msgstr "Controlla hardware Open vSwitch"
+
+#: src/snapbackend.cpp:261
+#, kde-format
+msgid "Read from CD/DVD"
+msgstr "Leggi da CD/DVD"
+
+#: src/snapbackend.cpp:262
+#, kde-format
+msgid "Read, add, change, or remove saved passwords"
+msgstr "Leggi, aggiungi, modifica o rimuovi le password salvate"
+
+#: src/snapbackend.cpp:263
+#, kde-format
+msgid "Control the PackageKit service"
+msgstr "Controlla il servizio PackageKit"
+
+#: src/snapbackend.cpp:264
+#, kde-format
+msgid "Permits communication with PCSD smart card daemon"
+msgstr "Consente la comunicazione con il demone della smart card PCSD"
+
+#: src/snapbackend.cpp:265
+#, kde-format
+msgid ""
+"Access pppd and ppp devices for configuring Point-to-Point Protocol "
+"connections"
+msgstr ""
+"Accedi ai dispositivi pppd e ppp per configurare le connessioni Point-to-"
+"Point Protocol"
+
+#: src/snapbackend.cpp:266
+#, kde-format
+msgid "Pause or end any process on the system"
+msgstr "Sospendi o termina qualsiasi processo sul sistema"
+
+#: src/snapbackend.cpp:268
+#, kde-format
+msgid "Access USB hardware directly"
+msgstr "Accedi direttamente all'hardware USB"
+
+#: src/snapbackend.cpp:269
+#, kde-format
+msgid "Read/write files on removable storage devices"
+msgstr "Leggi/scrivi file su dispositivi di archiviazione rimovibili"
+
+#: src/snapbackend.cpp:270
+#, kde-format
+msgid "Prevent screen sleep/lock"
+msgstr "Impedisci sospensione/blocco schermo"
+
+#: src/snapbackend.cpp:271
+#, kde-format
+msgid "Access serial port hardware"
+msgstr "Accesso all'hardware della porta seriale"
+
+#: src/snapbackend.cpp:272
+#, kde-format
+msgid "Enables two snaps to access the same shared memory"
+msgstr "Consente a due snap di accedere alla stessa memoria condivisa"
+
+#: src/snapbackend.cpp:273
+#, kde-format
+msgid "Restart or power off the device"
+msgstr "Riavvia o spegni il dispositivo"
+
+#: src/snapbackend.cpp:274
+#, kde-format
+msgid "Install, remove and configure software (snaps)"
+msgstr "Installa, rimuovi e configura software (snap)"
+
+#: src/snapbackend.cpp:275
+#, kde-format
+msgid "Access SSH private and public keys"
+msgstr "Accedi alle chiavi private e pubbliche SSH"
+
+#: src/snapbackend.cpp:276
+#, kde-format
+msgid "Access SSH public keys"
+msgstr "Accedi alle chiavi pubbliche SSH"
+
+#: src/snapbackend.cpp:277
+#, kde-format
+msgid "Access Storage Framework service"
+msgstr "Servizio Access Storage Framework"
+
+#: src/snapbackend.cpp:278
+#, kde-format
+msgid "Read process and system information"
+msgstr "Leggi le informazioni di processo e di sistema"
+
+#: src/snapbackend.cpp:279
+#, kde-format
+msgid "Access system documentation in /usr/share/doc"
+msgstr "Accedi alla documentazione di sistema in /usr/share/doc"
+
+#: src/snapbackend.cpp:280
+#, kde-format
+msgid "Monitor and control any running program"
+msgstr "Monitora e controlla qualsiasi programma in esecuzione"
+
+#: src/snapbackend.cpp:281
+#, kde-format
+msgid "Change the date and time"
+msgstr "Cambia la data e l'ora"
+
+#: src/snapbackend.cpp:282
+#, kde-format
+msgid "Change time server settings"
+msgstr "Modifica le impostazioni del server dell'ora"
+
+#: src/snapbackend.cpp:283
+#, kde-format
+msgid "Change the time zone"
+msgstr "Cambia il fuso orario"
+
+#: src/snapbackend.cpp:284
+#, kde-format
+msgid "Access the UDisks2 service for configuring disks and removable media"
+msgstr ""
+"Accedi al servizio UDisks2 per configurare dischi e supporti rimovibili"
+
+#: src/snapbackend.cpp:285
+#, kde-format
+msgid "Access energy usage data"
+msgstr "Accedi ai dati sull'utilizzo dell'energia"
+
+#: src/snapbackend.cpp:286
+#, kde-format
+msgid "Read/write access to U2F devices exposed"
+msgstr "Accedi in lettura/scrittura ai dispositivi U2F esposti"
+
+#: src/ui/main.qml:26
+#, kde-format
+msgid "Snap Applications"
+msgstr "Applicazioni Snap"
+
+#: src/ui/main.qml:40
+#, kde-format
+msgid "Install snaps to change the permissions"
+msgstr "Installa gli snap per modificare i permessi"
+
+#: src/ui/main.qml:80
+#, kde-format
+msgid "Launch"
+msgstr "Esegui"
+
+#: src/ui/main.qml:95
+#, kde-format
+msgid "Permissions for %1"
+msgstr "Permessi per %1"
+
+#: src/ui/main.qml:155
+#, kde-format
+msgid "Error"
+msgstr "Errore"
+
+#: src/ui/main.qml:162
+#, kde-format
+msgid "snapd error: %1"
+msgstr "Errore di snapd: %1"

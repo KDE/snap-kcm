@@ -1,0 +1,408 @@
+# Sanskrit translations for snap-kcm package.
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the snap-kcm package.
+# Kali <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: snap-kcm\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2024-12-09 00:43+0000\n"
+"PO-Revision-Date: 2024-12-13 19:09+0530\n"
+"Last-Translator: Kali <EMAIL@ADDRESS>\n"
+"Language-Team: Sanskrit\n"
+"Language: sa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/snapbackend.cpp:215
+#, kde-format
+msgid "Add user accounts and change passwords"
+msgstr "उपयोक्तृलेखाः योजयित्वा गुप्तशब्दान् परिवर्तयन्तु"
+
+#: src/snapbackend.cpp:216
+#, kde-format
+msgid ""
+"Allows communication with the accounts service, such as GNOME Online Accounts"
+msgstr "खातासेवायाः सह संचारस्य अनुमतिं ददाति, यथा GNOME Online Accounts"
+
+#: src/snapbackend.cpp:217 src/snapbackend.cpp:267
+#, kde-format
+msgid "Play and record sound"
+msgstr "ध्वनिं वादयन्तु, अभिलेखयन्तु च"
+
+#: src/snapbackend.cpp:218
+#, kde-format
+msgid "Allows access to AppStream metadata"
+msgstr "AppStream मेटाडाटा-पर्यन्तं प्रवेशं अनुमन्यते"
+
+#: src/snapbackend.cpp:219
+#, kde-format
+msgid "Play audio"
+msgstr "श्रव्यं वादयन्तु"
+
+#: src/snapbackend.cpp:220
+#, kde-format
+msgid "Record audio"
+msgstr "श्रव्यं अभिलेखयन्तु"
+
+#: src/snapbackend.cpp:221
+#, kde-format
+msgid "Advertise services over the local network"
+msgstr "स्थानीयजालद्वारा सेवानां विज्ञापनं कुर्वन्तु"
+
+#: src/snapbackend.cpp:222
+#, kde-format
+msgid "Detect network devices using mDNS/DNS-SD (Bonjour/zeroconf)"
+msgstr "mDNS/DNS-SD (Bonjour/zeroconf) इत्यस्य उपयोगेन संजालयन्त्राणां अन्वेषणं कुर्वन्तु ।"
+
+#: src/snapbackend.cpp:223
+#, kde-format
+msgid "Access bluetooth hardware directly"
+msgstr "bluetooth हार्डवेयरं प्रत्यक्षतया प्राप्तुं शक्नुवन्ति"
+
+#: src/snapbackend.cpp:224
+#, kde-format
+msgid "Use bluetooth devices"
+msgstr "ब्लूटूथ-यन्त्राणां उपयोगं कुर्वन्तु"
+
+#: src/snapbackend.cpp:225
+#, kde-format
+msgid "Use functions essential for Web browsers"
+msgstr "जालपुटस्य कृते आवश्यकानि कार्याणि उपयुज्यताम्"
+
+#: src/snapbackend.cpp:226
+#, kde-format
+msgid "Use your camera"
+msgstr "स्वस्य कॅमेरा-यंत्रस्य उपयोगं कुर्वन्तु"
+
+#: src/snapbackend.cpp:227
+#, kde-format
+msgid "Access to the CUPS socket for printing"
+msgstr "मुद्रणार्थं CUPS सॉकेट् मध्ये प्रवेशः"
+
+#: src/snapbackend.cpp:228
+#, kde-format
+msgid "Print documents"
+msgstr "दस्तावेजान् मुद्रयन्तु"
+
+#: src/snapbackend.cpp:229
+#, kde-format
+msgid "Use any connected joystick"
+msgstr "यत्किमपि सम्बद्धं जॉयस्टिकं उपयुज्यताम्"
+
+#: src/snapbackend.cpp:230
+#, kde-format
+msgid "Identify and launch desktop apps from other snaps"
+msgstr "अन्येभ्यः स्नैप्स् तः डेस्कटॉप् एप्स् चित्वा प्रारम्भं कुर्वन्तु"
+
+#: src/snapbackend.cpp:231
+#, kde-format
+msgid "Allow connecting to the Docker service"
+msgstr "Docker सेवायाः सह सम्बद्धतां अनुमन्यताम्"
+
+#: src/snapbackend.cpp:232
+#, kde-format
+msgid "Configure network firewall"
+msgstr "संजाल अग्निप्रावरणं विन्यस्यताम्"
+
+#: src/snapbackend.cpp:233
+#, kde-format
+msgid "Setup and use privileged FUSE filesystems"
+msgstr "विशेषाधिकारयुक्तानि FUSE सञ्चिकातन्त्राणि सेटअप कृत्वा उपयोगं कुर्वन्तु"
+
+#: src/snapbackend.cpp:234
+#, kde-format
+msgid "Update firmware on this device"
+msgstr "अस्मिन् उपकरणे फर्मवेयर अपडेट् कुर्वन्तु"
+
+#: src/snapbackend.cpp:235
+#, kde-format
+msgid "Provides access to any GSettings item for current user"
+msgstr "वर्तमान उपयोक्तुः कृते कस्यापि GSettings मदस्य अभिगमनं प्रदाति"
+
+#: src/snapbackend.cpp:236
+#, kde-format
+msgid "Access hardware information"
+msgstr "हार्डवेयर सूचनां प्राप्तुं शक्नुवन्ति"
+
+#: src/snapbackend.cpp:237
+#, kde-format
+msgid "Provide entropy to hardware random number generator"
+msgstr "हार्डवेयर यादृच्छिकसङ्ख्या जनरेटर् कृते एन्ट्रोपी प्रदातव्यम्"
+
+#: src/snapbackend.cpp:238
+#, kde-format
+msgid "Use hardware-generated random numbers"
+msgstr "हार्डवेयर-जनित-यादृच्छिक-सङ्ख्यानां उपयोगं कुर्वन्तु"
+
+#: src/snapbackend.cpp:239
+#, kde-format
+msgid "Access files in your home folder"
+msgstr "भवतः गृहपुटे सञ्चिकाः अभिगच्छन्तु"
+
+#: src/snapbackend.cpp:240
+#, kde-format
+msgid "Access libvirt service"
+msgstr "libvirt सेवां प्राप्तुं शक्नुवन्ति"
+
+#: src/snapbackend.cpp:241
+#, kde-format
+msgid "Change system language and region settings"
+msgstr "सिस्टम् भाषां क्षेत्रसेटिंग्स् च परिवर्तयन्तु"
+
+#: src/snapbackend.cpp:242
+#, kde-format
+msgid "Change location settings and providers"
+msgstr "स्थानसेटिंग्स् तथा प्रदातारं परिवर्तयन्तु"
+
+#: src/snapbackend.cpp:243
+#, kde-format
+msgid "Access your location"
+msgstr "स्वस्थानं प्राप्नुवन्तु"
+
+#: src/snapbackend.cpp:244
+#, kde-format
+msgid "Read system and application logs"
+msgstr "सिस्टम् एप्लिकेशन लॉग् पठन्तु"
+
+#: src/snapbackend.cpp:245
+#, kde-format
+msgid "Access LXD service"
+msgstr "LXD सेवां प्राप्तुं शक्नुवन्ति"
+
+#: src/snapbackend.cpp:246
+#, kde-format
+msgid "Allows operating as the LXD service"
+msgstr "LXD सेवारूपेण कार्यं कर्तुं अनुमतिं ददाति"
+
+#: src/snapbackend.cpp:247
+#, kde-format
+msgid "Use and configure modems"
+msgstr "मोडेम् इत्यस्य उपयोगं कुर्वन्तु विन्यस्तुं च"
+
+#: src/snapbackend.cpp:248
+#, kde-format
+msgid "Read system mount information and disk quotas"
+msgstr "सिस्टम् माउण्ट् सूचनां डिस्क कोटा च पठन्तु"
+
+#: src/snapbackend.cpp:249
+#, kde-format
+msgid "Control music and video players"
+msgstr "संगीतस्य, भिडियोप्लेयरस्य च नियन्त्रणं कुर्वन्तु"
+
+#: src/snapbackend.cpp:250
+#, kde-format
+msgid "Access the internet"
+msgstr "अन्तर्जालस्य उपयोगं कुर्वन्तु"
+
+#: src/snapbackend.cpp:251
+#, kde-format
+msgid "Allows operating as a network service, enabling snap to run a server"
+msgstr "जालसेवारूपेण कार्यं कर्तुं शक्नोति, सर्वरं चालयितुं snap सक्षमं करोति"
+
+#: src/snapbackend.cpp:252
+#, kde-format
+msgid "Change low-level network settings"
+msgstr "निम्नस्तरीयजालसेटिंग्स् परिवर्तयन्तु"
+
+#: src/snapbackend.cpp:253
+#, kde-format
+msgid "Access the NetworkManager service to read and change network settings"
+msgstr "संजालसेटिंग्स् पठितुं परिवर्तयितुं च NetworkManager सेवां प्रविशन्तु"
+
+#: src/snapbackend.cpp:254
+#, kde-format
+msgid "Allows observing NetworkManager settings"
+msgstr "NetworkManager सेटिंग्स् अवलोकयितुं अनुमतिं ददाति"
+
+#: src/snapbackend.cpp:255
+#, kde-format
+msgid "Read access to network settings"
+msgstr "संजालसेटिंग्स् मध्ये प्रवेशं पठन्तु"
+
+#: src/snapbackend.cpp:256
+#, kde-format
+msgid "Change network settings"
+msgstr "संजालसेटिंग्स् परिवर्तयन्तु"
+
+#: src/snapbackend.cpp:257
+#, kde-format
+msgid "Read network settings"
+msgstr "संजालसेटिंग्स् पठन्तु"
+
+#: src/snapbackend.cpp:258
+#, kde-format
+msgid "Access the NetworkStatus service"
+msgstr "NetworkStatus सेवां प्राप्नुवन्तु"
+
+#: src/snapbackend.cpp:259
+#, kde-format
+msgid ""
+"Access the ofono service to read and change network settings for mobile "
+"telephony"
+msgstr "मोबाईलदूरभाषस्य कृते संजालसेटिंग्स् पठितुं परिवर्तयितुं च ofono सेवां प्राप्नुवन्तु"
+
+#: src/snapbackend.cpp:260
+#, kde-format
+msgid "Control Open vSwitch hardware"
+msgstr "नियन्त्रणं vSwitch हार्डवेयरं उद्घाटयन्तु"
+
+#: src/snapbackend.cpp:261
+#, kde-format
+msgid "Read from CD/DVD"
+msgstr "CD/DVD तः पठन्तु"
+
+#: src/snapbackend.cpp:262
+#, kde-format
+msgid "Read, add, change, or remove saved passwords"
+msgstr "रक्षितगुप्तशब्दान् पठन्तु, योजयन्तु, परिवर्तयन्तु, निष्कासयन्तु वा"
+
+#: src/snapbackend.cpp:263
+#, kde-format
+msgid "Control the PackageKit service"
+msgstr "PackageKit सेवां नियन्त्रयन्तु"
+
+#: src/snapbackend.cpp:264
+#, kde-format
+msgid "Permits communication with PCSD smart card daemon"
+msgstr "PCSD स्मार्टकार्ड डेमन् इत्यनेन सह संचारस्य अनुमतिं ददाति"
+
+#: src/snapbackend.cpp:265
+#, kde-format
+msgid ""
+"Access pppd and ppp devices for configuring Point-to-Point Protocol "
+"connections"
+msgstr ""
+"Point-to-Point Protocol संयोजनानि विन्यस्तं कर्तुं pppd तथा ppp उपकरणेषु अभिगमनं कुर्वन्तु"
+
+#: src/snapbackend.cpp:266
+#, kde-format
+msgid "Pause or end any process on the system"
+msgstr "प्रणाल्यां कस्यापि प्रक्रियायाः विरामं कुर्वन्तु अथवा समाप्तं कुर्वन्तु"
+
+#: src/snapbackend.cpp:268
+#, kde-format
+msgid "Access USB hardware directly"
+msgstr "USB हार्डवेयरं प्रत्यक्षतया प्राप्तुं शक्नोति"
+
+#: src/snapbackend.cpp:269
+#, kde-format
+msgid "Read/write files on removable storage devices"
+msgstr "हटनीयभण्डारणयन्त्रेषु सञ्चिकाः पठन्तु/लेखयन्तु"
+
+#: src/snapbackend.cpp:270
+#, kde-format
+msgid "Prevent screen sleep/lock"
+msgstr "स्क्रीन निद्रा/ताला निवारयन्तु"
+
+#: src/snapbackend.cpp:271
+#, kde-format
+msgid "Access serial port hardware"
+msgstr "क्रमिक-पोर्ट-हार्डवेयर-प्रवेशं कुर्वन्तु"
+
+#: src/snapbackend.cpp:272
+#, kde-format
+msgid "Enables two snaps to access the same shared memory"
+msgstr "समानं साझास्मृतिं प्राप्तुं द्वौ स्नैपौ सक्षमं करोति"
+
+#: src/snapbackend.cpp:273
+#, kde-format
+msgid "Restart or power off the device"
+msgstr "यन्त्रं पुनः आरभत अथवा शक्तिं निष्क्रियं कुर्वन्तु"
+
+#: src/snapbackend.cpp:274
+#, kde-format
+msgid "Install, remove and configure software (snaps)"
+msgstr "सॉफ्टवेयर (स्नैप्स्) संस्थापनं, निष्कासनं, विन्यस्तं च कुर्वन्तु ।"
+
+#: src/snapbackend.cpp:275
+#, kde-format
+msgid "Access SSH private and public keys"
+msgstr "SSH निजीं सार्वजनिकं च कुञ्जीम् अभिगच्छतु"
+
+#: src/snapbackend.cpp:276
+#, kde-format
+msgid "Access SSH public keys"
+msgstr "SSH सार्वजनिककुंजीषु प्रवेशं कुर्वन्तु"
+
+#: src/snapbackend.cpp:277
+#, kde-format
+msgid "Access Storage Framework service"
+msgstr "भण्डारणरूपरेखा सेवां प्राप्तुं शक्नुवन्ति"
+
+#: src/snapbackend.cpp:278
+#, kde-format
+msgid "Read process and system information"
+msgstr "प्रक्रिया तथा प्रणाली सूचना पठन्तु"
+
+#: src/snapbackend.cpp:279
+#, kde-format
+msgid "Access system documentation in /usr/share/doc"
+msgstr "/usr/share/doc इत्यस्मिन् प्रणालीदस्तावेजं अभिगन्तुम्"
+
+#: src/snapbackend.cpp:280
+#, kde-format
+msgid "Monitor and control any running program"
+msgstr "कस्यापि चालितस्य कार्यक्रमस्य निरीक्षणं नियन्त्रणं च"
+
+#: src/snapbackend.cpp:281
+#, kde-format
+msgid "Change the date and time"
+msgstr "तिथिं समयं च परिवर्तयन्तु"
+
+#: src/snapbackend.cpp:282
+#, kde-format
+msgid "Change time server settings"
+msgstr "समयसर्वरसेटिंग्स् परिवर्तयन्तु"
+
+#: src/snapbackend.cpp:283
+#, kde-format
+msgid "Change the time zone"
+msgstr "समयक्षेत्रं परिवर्तयन्तु"
+
+#: src/snapbackend.cpp:284
+#, kde-format
+msgid "Access the UDisks2 service for configuring disks and removable media"
+msgstr "डिस्कं हटनीयं माध्यमं च विन्यस्तं कर्तुं UDisks2 सेवां प्राप्नुवन्तु"
+
+#: src/snapbackend.cpp:285
+#, kde-format
+msgid "Access energy usage data"
+msgstr "ऊर्जायाः उपयोगस्य आँकडानां अभिगमनं कुर्वन्तु"
+
+#: src/snapbackend.cpp:286
+#, kde-format
+msgid "Read/write access to U2F devices exposed"
+msgstr "उजागरित U2F उपकरणेषु पठन/लेखनप्रवेशः"
+
+#: src/ui/main.qml:26
+#, kde-format
+msgid "Snap Applications"
+msgstr "स्नैप अनुप्रयोगाः"
+
+#: src/ui/main.qml:40
+#, kde-format
+msgid "Install snaps to change the permissions"
+msgstr "अनुमतिः परिवर्तयितुं स्नैप्स् संस्थापयन्तु"
+
+#: src/ui/main.qml:80
+#, kde-format
+msgid "Launch"
+msgstr "प्रक्षेपनम्"
+
+#: src/ui/main.qml:95
+#, kde-format
+msgid "Permissions for %1"
+msgstr "%1 कृते अनुमतिः"
+
+#: src/ui/main.qml:155
+#, kde-format
+msgid "Error"
+msgstr "त्रुटि"
+
+#: src/ui/main.qml:162
+#, kde-format
+msgid "snapd error: %1"
+msgstr "snapd त्रुटिः %1"
