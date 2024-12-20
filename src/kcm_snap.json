@@ -19,6 +19,7 @@
         "Description[uk]": "Налаштовування прав доступу Snap",
         "Description[x-test]": "xxConfigure Snap Permissionsxx",
         "Description[zh_CN]": "配置 Snap 权限",
+        "Description[zh_TW]": "設定 Snap 權限",
         "FormFactors": [
             "desktop",
             "handset",
@@ -44,7 +45,8 @@
         "Name[tr]": "Snap İzinleri",
         "Name[uk]": "Права доступу Snap",
         "Name[x-test]": "xxSnap Permissionsxx",
-        "Name[zh_CN]": "Snap 权限"
+        "Name[zh_CN]": "Snap 权限",
+        "Name[zh_TW]": "Snap 權限"
     },
     "X-KDE-Keywords": "Snap,permission,permissions,access,sandbox,sandboxed,filesystem,file,files,folder,folders,network,networks,networking,bluetooth,print,printer,printing,audio,sound,login,remote login,ssh,smart card",
     "X-KDE-Keywords[ca@valencia]": "Snap,permís,permisos,accés,espai aïllat,entorn controlat,sistema de fitxers,fitxer,fitxers,carpeta,carpetes,xarxa,xarxes,en xarxa,bluetooth,impressió,impressora,àudio,so,inici sessió,inici sessió remot,ssh,targeta intel·ligent",
@@ -65,6 +67,7 @@
     "X-KDE-Keywords[uk]": "Snap,permission,permissions,access,sandbox,sandboxed,filesystem,file,files,folder,folders,network,networks,networking,bluetooth,print,printer,printing,audio,sound,login,remote login,ssh,smart card,снеп,права,доступ,пісочниця,файлова,система,файл,файли,тека,теки,мережа,мережі,блютуф,друк,друкарка,принтер,звук,аудіо,вхід,віддалений,картка,пам'яті,смарт",
     "X-KDE-Keywords[x-test]": "xxSnapxx,xxpermissionxx,xxpermissionsxx,xxaccessxx,xxsandboxxx,xxsandboxedxx,xxfilesystemxx,xxfilexx,xxfilesxx,xxfolderxx,xxfoldersxx,xxnetworkxx,xxnetworksxx,xxnetworkingxx,xxbluetoothxx,xxprintxx,xxprinterxx,xxprintingxx,xxaudioxx,xxsoundxx,xxloginxx,xxremote loginxx,xxsshxx,xxsmart cardxx",
     "X-KDE-Keywords[zh_CN]": "Snap,permission,permissions,access,sandbox,sandboxed,filesystem,file,files,folder,folders,network,networks,networking,bluetooth,print,printer,printing,audio,sound,login,remote login,ssh,smart card,kvm,device,session,session bus,system,system bus,environment,environment variable,quanxian,fangwen,fangwenquanxian,shaxiang,wenjianxitong,wenjian,wenjianjia,mulu,wangluo,lianwang,lanya,dayin,dayinji,yinpin,shengyin,denglu,denglu,yuanchengdenglu,zhinengka,shebei,huihua,huihuazongxian,xitong,xitongzongxian,huanjing,huanjingbianliang,权限,访问,访问权限,沙箱,文件系统,文件,文件夹,目录,网络,联网,蓝牙,打印,打印机,音频,声音,登录,登陆,远程登录,智能卡",
+    "X-KDE-Keywords[zh_TW]": "Snap,權限,權力,權利,權能,存取,沙盒,檔案系統,檔案,資料夾,目錄,網路,網絡,藍牙,藍芽,列印,影印,印表機,音效,音訊,聲音,登入,遠端登入,ssh,智慧卡",
     "X-KDE-System-Settings-Parent-Category": "applications-permissions",
     "X-KDE-Weight": 10
 }
