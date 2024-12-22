@@ -1,6 +1,7 @@
 {
     "KPlugin": {
         "Description": "Configure Snap Permissions",
+        "Description[ar]": "اضبط تصاريح سناب",
         "Description[ca@valencia]": "Configura els permisos de Snap",
         "Description[ca]": "Configura els permisos de l'Snap",
         "Description[es]": "Configurar los permisos de Snap",
@@ -29,6 +30,7 @@
         ],
         "Icon": "folder-snap-symbolic",
         "Name": "Snap Permissions",
+        "Name[ar]": "التّصاريح سناب",
         "Name[ca@valencia]": "Permisos de Snap",
         "Name[ca]": "Permisos de l'Snap",
         "Name[es]": "Permisos de Snap",
@@ -51,6 +53,7 @@
         "Name[zh_TW]": "Snap 權限"
     },
     "X-KDE-Keywords": "Snap,permission,permissions,access,sandbox,sandboxed,filesystem,file,files,folder,folders,network,networks,networking,bluetooth,print,printer,printing,audio,sound,login,remote login,ssh,smart card",
+    "X-KDE-Keywords[ar]": "سناب,إذن,أذونات,وصول,صندوق رمل,صندوق رمل,نظام ملفات,ملف,ملفات,مجلد,مجلدات,شبكة,شبكات,شبكات,بلوتوث,طباعة,طابعة,طباعة,صوت,صوت,تسجيل الدخول,تسجيل الدخول عن بعد,ssh,بطاقة ذكية",
     "X-KDE-Keywords[ca@valencia]": "Snap,permís,permisos,accés,espai aïllat,entorn controlat,sistema de fitxers,fitxer,fitxers,carpeta,carpetes,xarxa,xarxes,en xarxa,bluetooth,impressió,impressora,àudio,so,inici sessió,inici sessió remot,ssh,targeta intel·ligent",
     "X-KDE-Keywords[ca]": "Snap,permís,permisos,accés,espai aïllat,entorn controlat,sistema de fitxers,fitxer,fitxers,carpeta,carpetes,xarxa,xarxes,en xarxa,bluetooth,impressió,impressora,àudio,so,inici sessió,inici sessió remot,ssh,targeta intel·ligent",
     "X-KDE-Keywords[es]": "Snap,permiso,permisos,acceso,sandbox,entorno aislado,entorno de pruebas,sistema de archivos,archivo,archivos,carpeta,carpetas,red,redes,trabajo en red,entorno de red,bluetooth,imprimir,impresora,impresión,audio,sonido,inicio de sesión,iniciar sesión,inicio de sesión remoto,ssh,tarjeta inteligente",
