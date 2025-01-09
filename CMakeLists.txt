@@ -4,7 +4,7 @@
 
 cmake_minimum_required(VERSION 3.16)
 
-set(QT_MIN_VERSION "6.5.0")
+set(QT_MIN_VERSION "6.7.0")
 set(KF6_MIN_VERSION "6.10.0")
 set(SNAPD_MIN_VERSION "1.6.5")
 set(CMAKE_CXX_STANDARD 20)
