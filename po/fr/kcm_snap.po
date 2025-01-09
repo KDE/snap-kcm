@@ -1,11 +1,11 @@
 #
-# SPDX-FileCopyrightText: 2024 Xavier Besnard <xavier.besnard@kde.org>
+# SPDX-FileCopyrightText: 2024, 2025 Xavier Besnard <xavier.besnard@kde.org>
 msgid ""
 msgstr ""
 "Project-Id-Version: snap-kcm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-09 00:43+0000\n"
-"PO-Revision-Date: 2024-12-10 18:20+0100\n"
+"PO-Revision-Date: 2025-01-08 11:59+0100\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: French <French <kde-francophone@kde.org>>\n"
 "Language: fr\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 24.11.90\n"
+"X-Generator: Lokalize 24.12.0\n"
 
 #: src/snapbackend.cpp:215
 #, kde-format
@@ -383,7 +383,7 @@ msgstr "Modifier le fuseau horaire"
 #, kde-format
 msgid "Access the UDisks2 service for configuring disks and removable media"
 msgstr ""
-"Accéder au service « UDisks2 » pour configurer les disques et les supports "
+"Accéder au service « UDisks2 » pour configurer les disques et les média "
 "amovibles"
 
 #: src/snapbackend.cpp:285
