@@ -1,7 +1,7 @@
 # SPDX-FileCopyrightText: 2025 Johannes Obermayr <johannesobermayr@gmx.de>
 msgid ""
 msgstr ""
-"Project-Id-Version: snap-kcm\n"
+"Project-Id-Version: kcm_snap\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-09 00:43+0000\n"
 "PO-Revision-Date: 2025-01-09 20:25+0100\n"
