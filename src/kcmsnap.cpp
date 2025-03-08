@@ -6,9 +6,9 @@
 #include "kcmsnap.h"
 #include "kcmplug.h"
 #include "snapbackend.h"
+#include <KDesktopFile>
 #include <QBuffer>
 #include <QImageReader>
-#include <QSettings>
 #include <QVariant>
 #include <Snapd/Client>
 
@@ -44,9 +44,8 @@ QVariant KCMSnap::icon() const
                         }
                     }
                 } else {
-                    QSettings desktopFile(app->desktopFile(), QSettings::IniFormat);
-                    desktopFile.beginGroup("Desktop Entry");
-                    const QString iconName = desktopFile.value("Icon").toString();
+                    KDesktopFile desktopFile(app->desktopFile());
+                    const QString iconName = desktopFile.readIcon();
 
                     if (!iconName.isEmpty()) {
                         return iconName;
