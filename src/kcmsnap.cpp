@@ -1,9 +1,10 @@
 /**
- * SPDX-FileCopyrightText: 2024 Soumyadeep Ghosh <soumyadghosh@ubuntu.com>
+ * SPDX-FileCopyrightText: 2025 Soumyadeep Ghosh <soumyadghosh@ubuntu.com>
  * SPDX-License-Identifier: GPL-2.0-or-later
  */
 
 #include "kcmsnap.h"
+#include "kcmplug.h"
 #include "snapbackend.h"
 #include <QBuffer>
 #include <QImageReader>
@@ -13,10 +14,9 @@
 
 using namespace Qt::Literals::StringLiterals;
 
-KCMSnap::KCMSnap(QSnapdSnap *snap, const QList<QSnapdPlug *> plugs, const QList<QSnapdSlot *> slots)
+KCMSnap::KCMSnap(QSnapdSnap *snap, const QList<KCMPlug *> plugs)
     : m_snap(snap)
     , m_plugs(plugs)
-    , m_slots(slots)
 {
 }
 
@@ -25,14 +25,9 @@ QSnapdSnap *KCMSnap::snap() const
     return m_snap;
 }
 
-const QList<QSnapdPlug *> KCMSnap::plugs() const
+const QList<KCMPlug *> KCMSnap::plugs() const
 {
     return m_plugs;
-}
-
-const QList<QSnapdSlot *> KCMSnap::slots() const
-{
-    return m_slots;
 }
 
 QVariant KCMSnap::icon() const
@@ -62,7 +57,6 @@ QVariant KCMSnap::icon() const
     }
 
     if (!m_snap->icon().isEmpty() && !m_snap->icon().startsWith(QLatin1Char('/'))) {
-        qDebug() << m_snap->icon();
         return QUrl(m_snap->icon());
     }
 

@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: 2024 Soumyadeep Ghosh <soumyadghosh@ubuntu.com>
+ * SPDX-FileCopyrightText: 2025 Soumyadeep Ghosh <soumyadghosh@ubuntu.com>
  * SPDX-License-Identifier: GPL-2.0-or-later
  */
 
@@ -48,7 +48,7 @@ KCMUtils.ScrollViewKCM {
         height: parent.height
     }
 
-    ListView {
+    view: ListView {
         id: view
         anchors.fill: parent
         model: root.perm.snaps(root.searchQuery)
@@ -102,11 +102,12 @@ KCMUtils.ScrollViewKCM {
                         id: smallDelegate
                         width: parent.width
                         property string plugName: modelData.name
-                        property string plugInterface: modelData.interface
+                        property string plugInterface: modelData.plugInterface
                         property int plugCount: modelData.connectedSlotCount
-                        property string slotInterface: modelData.interface
-                        property string plugSnap: modelData.snap
-                        property string plugLabel: root.perm.plugLabel(modelData)
+                        property string slotInterface: modelData.plugInterface
+                        property string plugSnap: modelData.plugSnap
+                        property string plugLabel: root.perm.getPlugLabel(modelData.plugInterface)
+                        property string connectedSlotSnap: modelData.connectedSlotSnap
                         contentItem: RowLayout {
                             Kirigami.Icon {
                                 source: root.perm.plugIcon(plugInterface)
@@ -124,15 +125,25 @@ KCMUtils.ScrollViewKCM {
                                 Layout.margins: Kirigami.Units.mediumSpacing
                             }
 
+                            QQC2.ComboBox {
+                                id: slotList
+                                Layout.alignment: Qt.AlignHCenter
+                                enabled: !toggle.checked
+                                Layout.margins: Kirigami.Units.mediumSpacing
+                                model: root.perm.getSlotSnap(plugInterface)
+                            }
+
                             QQC2.Switch {
+                                id: toggle
+                                property string slotSnap: slotList.currentText
                                 checked: plugCount === 1 || modelData.checked === true
                                 Layout.margins: Kirigami.Units.mediumSpacing
                                 onClicked: {
                                     if (checked) {
-                                        output = root.perm.connectPlug(plugSnap, plugName, "snapd", slotInterface);
+                                        output = root.perm.connectPlug(plugSnap, plugName, slotSnap, slotInterface);
                                     }
                                     if (!checked) {
-                                        output = root.perm.disconnectPlug(plugSnap, plugName, "snapd", slotInterface);
+                                        output = root.perm.disconnectPlug(plugSnap, plugName, connectedSlotSnap, slotInterface);
                                     }
                                     if (output !== "") {
                                         errorOverlay.open();

@@ -1,9 +1,10 @@
 /**
- * SPDX-FileCopyrightText: 2024 Soumyadeep Ghosh <soumyadghosh@ubuntu.com>
+ * SPDX-FileCopyrightText: 2025 Soumyadeep Ghosh <soumyadghosh@ubuntu.com>
  * SPDX-License-Identifier: GPL-2.0-or-later
  */
 
 #include "snapbackend.h"
+#include "kcmplug.h"
 #include <KLocalizedString>
 #include <QDBusInterface>
 
@@ -14,9 +15,9 @@ SnapBackend::SnapBackend()
     // Initalize locals
     QList<QSnapdSnap *> loadedSnaps;
     QList<QSnapdPlug *> loadedPlugs;
-    QList<QSnapdSlot *> loadedSlots;
     QScopedPointer<QSnapdGetSnapsRequest> reqGetSnaps{m_client.getSnaps()};
     QScopedPointer<QSnapdGetConnectionsRequest> reqGetConnections{m_client.getConnections(QSnapdClient::GetConnectionsFlag::SelectAll)};
+    QScopedPointer<QSnapdGetInterfaces2Request> reqGetInterfaces{m_client.getInterfaces2(QSnapdClient::IncludeSlots)};
 
     // Fetch snaps
     if (reqGetSnaps) {
@@ -46,27 +47,26 @@ SnapBackend::SnapBackend()
         for (int i = 0; i < reqGetConnections->plugCount(); ++i) {
             loadedPlugs.append(reqGetConnections->plug(i));
         }
-        for (int i = 0; i < reqGetConnections->slotCount(); ++i) {
-            loadedSlots.append(reqGetConnections->slot(i));
-        }
     }
     // Get snaps and their associated plugs and slots
     for (QSnapdSnap *snap : loadedSnaps) {
-        QList<QSnapdPlug *> plugsForSnap;
-        QList<QSnapdSlot *> slotsForSnap;
+        QList<KCMPlug *> plugsForSnap;
         for (QSnapdPlug *plug : loadedPlugs) {
             if (plug->snap() == snap->name() && (!plug->hasAttribute(u"content"_s) && !(hiddenPlugs.contains(plug->name())))) {
-                plugsForSnap.append(plug);
+                plugsForSnap.append(new KCMPlug(plug));
             }
         }
-        for (QSnapdSlot *slot : loadedSlots) {
-            if (slot->snap() == snap->name()) {
-                slotsForSnap.append(slot);
-            }
+        if (!plugsForSnap.isEmpty()) {
+            m_snaps.append(new KCMSnap(snap, plugsForSnap));
         }
-        m_snaps.append(new KCMSnap(snap, plugsForSnap, slotsForSnap));
     }
-    // Print results
+
+    if (reqGetInterfaces) {
+        reqGetInterfaces->runSync();
+        for (int i = 0; i < reqGetInterfaces->interfaceCount(); ++i) {
+            m_interfaces.append(reqGetInterfaces->interface(i));
+        }
+    }
 }
 
 /**
@@ -194,6 +194,29 @@ void SnapBackend::invokeDesktopApp(QSnapdSnap *snap) const
                              u"io.snapcraft.PrivilegedDesktopLauncher"_s,
                              QDBusConnection::sessionBus());
     interface.call(u"OpenDesktopEntry"_s, desktop);
+}
+
+const QStringList SnapBackend::getSlotSnap(QString interface) const
+{
+    QStringList slotSnaps;
+    for (auto iface : m_interfaces) {
+        if (iface->name() == interface) {
+            for (int i = 0; i < iface->slotCount(); i++) {
+                slotSnaps.append(iface->slot(i)->snap());
+            }
+        }
+    }
+    return slotSnaps;
+}
+
+const QString SnapBackend::getPlugLabel(const QString interface)
+{
+    for (auto iface : m_interfaces) {
+        if (iface->name() == interface) {
+            return SnapBackend::capitalize(iface->summary());
+        }
+    }
+    return QString();
 }
 
 /**

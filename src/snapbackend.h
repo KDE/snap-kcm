@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: 2024 Soumyadeep Ghosh <soumyadghosh@ubuntu.com>
+ * SPDX-FileCopyrightText: 2025 Soumyadeep Ghosh <soumyadghosh@ubuntu.com>
  * SPDX-License-Identifier: GPL-2.0-or-later
  */
 
@@ -7,6 +7,7 @@
 #include "kcmsnap.h"
 
 #include <Snapd/Client>
+#include <Snapd/Interface>
 
 class SnapBackend : public QObject
 {
@@ -23,6 +24,8 @@ public:
     Q_INVOKABLE static const QString capitalize(const QString &text);
     Q_INVOKABLE static bool invokAble(QSnapdSnap *snap);
     Q_INVOKABLE void invokeDesktopApp(QSnapdSnap *snap) const;
+    Q_INVOKABLE const QStringList getSlotSnap(QString interface) const;
+    Q_INVOKABLE const QString getPlugLabel(const QString interface);
     static bool comparebyName(QSnapdSnap *, QSnapdSnap *);
 
 Q_SIGNALS:
@@ -30,5 +33,6 @@ Q_SIGNALS:
 
 private:
     QSnapdClient m_client;
+    QList<QSnapdInterface *> m_interfaces;
     QList<KCMSnap *> m_snaps;
 };

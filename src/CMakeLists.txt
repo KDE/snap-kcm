@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2024 Soumyadeep Ghosh <soumyadghosh@ubuntu.com>
+# SPDX-FileCopyrightText: 2025 Soumyadeep Ghosh <soumyadghosh@ubuntu.com>
 #
 # SPDX-License-Identifier: GPL-2.0-or-later
 
@@ -9,6 +9,8 @@ target_sources(kcm_snap PRIVATE
    snappermissions.h
    kcmsnap.cpp
    kcmsnap.h
+   kcmplug.cpp
+   kcmplug.h
    snapbackend.cpp
    snapbackend.h
 )
