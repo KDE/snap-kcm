@@ -6,11 +6,15 @@
 #include "kcmplug.h"
 #include "snapbackend.h"
 
-KCMPlug::KCMPlug(QSnapdPlug *plug, QString plugLabel, QString plugIcon)
+KCMPlug::KCMPlug(QSnapdPlug *plug, QString plugLabel, QString plugIcon, QStringList slotSnaps)
     : m_plug(plug)
     , m_plugLabel(plugLabel)
     , m_plugIcon(plugIcon)
+    , m_slotSnaps(slotSnaps)
 {
+    if (plug->connectedSlotCount() > 0) {
+        m_connectedSlotSnap = plug->connectedSlot(0)->snap();
+    }
 }
 
 QString KCMPlug::name() const
@@ -43,13 +47,39 @@ QString KCMPlug::plugSnap() const
 
 QString KCMPlug::connectedSlotSnap() const
 {
-    if (m_plug->connectedSlotCount() > 0) {
-        return m_plug->connectedSlot(0)->snap();
+    return m_connectedSlotSnap;
+}
+
+void KCMPlug::setconnectedSlotSnap(const QString &slotSnap)
+{
+    m_connectedSlotSnap = slotSnap;
+    Q_EMIT connectedSlotSnapChanged(slotSnap);
+}
+
+QStringList KCMPlug::slotSnaps() const
+{
+    QStringList slotSnaps = m_slotSnaps;
+    if (!connectedSlotSnap().isEmpty() && m_slotSnaps.contains(connectedSlotSnap())) {
+        slotSnaps.removeOne(connectedSlotSnap());
+        slotSnaps.insert(0, connectedSlotSnap());
     }
-    return QString();
+    return slotSnaps;
 }
 
 QString KCMPlug::title() const
 {
     return SnapBackend::capitalize(m_plug->name());
+}
+
+QString KCMPlug::changePermission(bool connect, QString slotSnap)
+{
+    QString errorString;
+    if (connect) {
+        errorString = SnapBackend::connectPlug(plugSnap(), name(), slotSnap, plugInterface());
+        setconnectedSlotSnap(slotSnap);
+    } else {
+        errorString = SnapBackend::disconnectPlug(plugSnap(), name(), slotSnap, plugInterface());
+        setconnectedSlotSnap(QString());
+    }
+    return errorString;
 }

@@ -32,15 +32,7 @@ SnapBackend::SnapBackend()
         Q_EMIT snapsChanged();
     }
     // Fetch connections
-    QStringList hiddenPlugs = {u"x11"_s,
-                               u"content"_s,
-                               u"cups"_s,
-                               u"desktop"_s,
-                               u"desktop-legacy"_s,
-                               u"mir"_s,
-                               u"wayland"_s,
-                               u"unity7"_s,
-                               u"opengl"_s};
+    QStringList hiddenPlugs = {u"x11"_s, u"content"_s, u"desktop"_s, u"desktop-legacy"_s, u"mir"_s, u"wayland"_s, u"unity7"_s, u"opengl"_s};
 
     if (reqGetConnections) {
         reqGetConnections->runSync();
@@ -61,7 +53,7 @@ SnapBackend::SnapBackend()
         QList<KCMPlug *> plugsForSnap;
         for (QSnapdPlug *plug : loadedPlugs) {
             if (plug->snap() == snap->name() && (!plug->hasAttribute(u"content"_s) && !(hiddenPlugs.contains(plug->name())))) {
-                plugsForSnap.append(new KCMPlug(plug, getPlugLabel(plug->interface()), plugIcon(plug->interface())));
+                plugsForSnap.append(new KCMPlug(plug, getPlugLabel(plug->interface()), plugIcon(plug->interface()), getSlotSnap(plug->interface())));
             }
         }
         if (!plugsForSnap.isEmpty()) {
@@ -112,7 +104,7 @@ const QList<KCMSnap *> SnapBackend::snaps(const QString &filter) const
  * @param slot_snap
  * @param slot_name
  */
-QString SnapBackend::connectPlug(const QString &plug_snap, const QString &plug_name, const QString &slot_snap, const QString &slot_name) const
+QString SnapBackend::connectPlug(const QString &plug_snap, const QString &plug_name, const QString &slot_snap, const QString &slot_name)
 {
     QSnapdClient client;
     QSnapdConnectInterfaceRequest *req = client.connectInterface(plug_snap, plug_name, slot_snap, slot_name);
@@ -133,7 +125,7 @@ QString SnapBackend::connectPlug(const QString &plug_snap, const QString &plug_n
  * @param slot_snap
  * @param slot_name
  */
-QString SnapBackend::disconnectPlug(const QString &plug_snap, const QString &plug_name, const QString &slot_snap, const QString &slot_name) const
+QString SnapBackend::disconnectPlug(const QString &plug_snap, const QString &plug_name, const QString &slot_snap, const QString &slot_name)
 {
     QSnapdClient client;
     QSnapdDisconnectInterfaceRequest *req = client.disconnectInterface(plug_snap, plug_name, slot_snap, slot_name);

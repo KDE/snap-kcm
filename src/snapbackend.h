@@ -17,8 +17,8 @@ public:
     explicit SnapBackend();
     Q_INVOKABLE const QList<KCMSnap *> snaps(const QString &filter = QString()) const;
     // Q_INVOKABLE const QList<KCMSnap *> slotSnaps() const;
-    Q_INVOKABLE QString connectPlug(const QString &plug_snap, const QString &plug_name, const QString &slot_snap, const QString &slot_name) const;
-    Q_INVOKABLE QString disconnectPlug(const QString &plug_snap, const QString &plug_name, const QString &slot_snap, const QString &slot_name) const;
+    static QString connectPlug(const QString &plug_snap, const QString &plug_name, const QString &slot_snap, const QString &slot_name);
+    static QString disconnectPlug(const QString &plug_snap, const QString &plug_name, const QString &slot_snap, const QString &slot_name);
     static const QString plugLabel(const QString &plugName);
     static const QString plugIcon(const QString &plugName);
     Q_INVOKABLE static const QString capitalize(const QString &text);

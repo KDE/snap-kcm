@@ -101,14 +101,9 @@ KCMUtils.ScrollViewKCM {
                     delegate: QQC2.ItemDelegate {
                         id: smallDelegate
                         width: parent.width
-                        property string plugName: modelData.name
-                        property string plugInterface: modelData.plugInterface
                         property int plugCount: modelData.connectedSlotCount
                         property string plugIcon: modelData.plugIcon
-                        property string slotInterface: modelData.plugInterface
                         property string plugLabel: modelData.plugLabel
-                        property string plugSnap: modelData.plugSnap
-                        property string connectedSlotSnap: modelData.connectedSlotSnap
                         contentItem: RowLayout {
                             Kirigami.Icon {
                                 source: plugIcon
@@ -129,24 +124,20 @@ KCMUtils.ScrollViewKCM {
                             QQC2.ComboBox {
                                 id: slotList
                                 Layout.alignment: Qt.AlignHCenter
-                                enabled: !toggle.checked
+                                enabled: !plugToggle.checked
                                 Layout.margins: Kirigami.Units.mediumSpacing
-                                model: root.perm.getSlotSnap(plugInterface)
+                                model: modelData.slotSnaps
                                 visible: count > 1
                             }
 
                             QQC2.Switch {
-                                id: toggle
+                                id: plugToggle
                                 property string slotSnap: slotList.currentText
                                 checked: plugCount === 1 || modelData.checked === true
                                 Layout.margins: Kirigami.Units.mediumSpacing
                                 onClicked: {
-                                    if (checked) {
-                                        output = root.perm.connectPlug(plugSnap, plugName, slotSnap, slotInterface);
-                                    }
-                                    if (!checked) {
-                                        output = root.perm.disconnectPlug(plugSnap, plugName, connectedSlotSnap, slotInterface);
-                                    }
+                                    var slotSnap = checked ? slotList.currentText : modelData.connectedSlotSnap;
+                                    output = modelData.changePermission(checked, slotSnap);
                                     if (output !== "") {
                                         errorOverlay.open();
                                         toggle();
