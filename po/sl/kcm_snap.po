@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-09 00:43+0000\n"
+"POT-Creation-Date: 2025-03-09 00:43+0000\n"
 "PO-Revision-Date: 2024-12-09 09:43+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -15,232 +15,232 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 
-#: src/snapbackend.cpp:215
+#: src/snapbackend.cpp:238
 #, kde-format
 msgid "Add user accounts and change passwords"
 msgstr "Dodaj uporabniške račune in spremeni gesla"
 
-#: src/snapbackend.cpp:216
+#: src/snapbackend.cpp:239
 #, kde-format
 msgid ""
 "Allows communication with the accounts service, such as GNOME Online Accounts"
 msgstr "Omogoča komunikacijo s storitvijo računov, kot so spletni računi GNOME"
 
-#: src/snapbackend.cpp:217 src/snapbackend.cpp:267
+#: src/snapbackend.cpp:240 src/snapbackend.cpp:290
 #, kde-format
 msgid "Play and record sound"
 msgstr "Predvaja in snema zvok"
 
-#: src/snapbackend.cpp:218
+#: src/snapbackend.cpp:241
 #, kde-format
 msgid "Allows access to AppStream metadata"
 msgstr "Omogoča dostop do metapodatkov AppStream"
 
-#: src/snapbackend.cpp:219
+#: src/snapbackend.cpp:242
 #, kde-format
 msgid "Play audio"
 msgstr "Predvajaj zvok"
 
-#: src/snapbackend.cpp:220
+#: src/snapbackend.cpp:243
 #, kde-format
 msgid "Record audio"
 msgstr "Posnemi zvok"
 
-#: src/snapbackend.cpp:221
+#: src/snapbackend.cpp:244
 #, kde-format
 msgid "Advertise services over the local network"
 msgstr "Oglašuj storitve prek lokalnega omrežja"
 
-#: src/snapbackend.cpp:222
+#: src/snapbackend.cpp:245
 #, kde-format
 msgid "Detect network devices using mDNS/DNS-SD (Bonjour/zeroconf)"
 msgstr "Zaznaj omrežne naprave z uporabo mDNS/DNS-SD (Bonjour/zeroconf)"
 
-#: src/snapbackend.cpp:223
+#: src/snapbackend.cpp:246
 #, kde-format
 msgid "Access bluetooth hardware directly"
 msgstr "Neposredno dostopaj do strojne opreme bluetooth"
 
-#: src/snapbackend.cpp:224
+#: src/snapbackend.cpp:247
 #, kde-format
 msgid "Use bluetooth devices"
 msgstr "Uporabljaj naprave bluetooth"
 
-#: src/snapbackend.cpp:225
+#: src/snapbackend.cpp:248
 #, kde-format
 msgid "Use functions essential for Web browsers"
 msgstr "Uporabi funkcije, ki so bistvene za spletne brskalnike"
 
-#: src/snapbackend.cpp:226
+#: src/snapbackend.cpp:249
 #, kde-format
 msgid "Use your camera"
 msgstr "Uporabi svojo kamero"
 
-#: src/snapbackend.cpp:227
+#: src/snapbackend.cpp:250
 #, kde-format
 msgid "Access to the CUPS socket for printing"
 msgstr "Dostop do vtičnice CUPS za tiskanje"
 
-#: src/snapbackend.cpp:228
+#: src/snapbackend.cpp:251
 #, kde-format
 msgid "Print documents"
 msgstr "Tiskaj dokumente"
 
-#: src/snapbackend.cpp:229
+#: src/snapbackend.cpp:252
 #, kde-format
 msgid "Use any connected joystick"
 msgstr "Uporabi katero koli povezano igralno palico"
 
-#: src/snapbackend.cpp:230
+#: src/snapbackend.cpp:253
 #, kde-format
 msgid "Identify and launch desktop apps from other snaps"
 msgstr "Prepoznaj in zaženi namizne aplikacije iz drugih snapov"
 
-#: src/snapbackend.cpp:231
+#: src/snapbackend.cpp:254
 #, kde-format
 msgid "Allow connecting to the Docker service"
 msgstr "Dovoli povezovanje s storitvijo Docker"
 
-#: src/snapbackend.cpp:232
+#: src/snapbackend.cpp:255
 #, kde-format
 msgid "Configure network firewall"
 msgstr "Konfiguriraj omrežni požarni zid"
 
-#: src/snapbackend.cpp:233
+#: src/snapbackend.cpp:256
 #, kde-format
 msgid "Setup and use privileged FUSE filesystems"
 msgstr "Nastavi in uporabi privilegirane datotečne sisteme FUSE"
 
-#: src/snapbackend.cpp:234
+#: src/snapbackend.cpp:257
 #, kde-format
 msgid "Update firmware on this device"
 msgstr "Posodobi vdelano programsko opremo na tej napravi"
 
-#: src/snapbackend.cpp:235
+#: src/snapbackend.cpp:258
 #, kde-format
 msgid "Provides access to any GSettings item for current user"
 msgstr ""
 "Omogoča dostop do katerega koli elementa GSettings za trenutnega uporabnika"
 
-#: src/snapbackend.cpp:236
+#: src/snapbackend.cpp:259
 #, kde-format
 msgid "Access hardware information"
 msgstr "Dostop do informacij o strojni opremi"
 
-#: src/snapbackend.cpp:237
+#: src/snapbackend.cpp:260
 #, kde-format
 msgid "Provide entropy to hardware random number generator"
 msgstr "Zagotavlja entropijo strojnemu generatorju naključnih števil"
 
-#: src/snapbackend.cpp:238
+#: src/snapbackend.cpp:261
 #, kde-format
 msgid "Use hardware-generated random numbers"
 msgstr "Uporabi strojno ustvarjena naključna števila"
 
-#: src/snapbackend.cpp:239
+#: src/snapbackend.cpp:262
 #, kde-format
 msgid "Access files in your home folder"
 msgstr "Dostop do datotek v domači mapi"
 
-#: src/snapbackend.cpp:240
+#: src/snapbackend.cpp:263
 #, kde-format
 msgid "Access libvirt service"
 msgstr "Dostop do storitve libvirt"
 
-#: src/snapbackend.cpp:241
+#: src/snapbackend.cpp:264
 #, kde-format
 msgid "Change system language and region settings"
 msgstr "Spremeni nastavitve jezika in regije sistema"
 
-#: src/snapbackend.cpp:242
+#: src/snapbackend.cpp:265
 #, kde-format
 msgid "Change location settings and providers"
 msgstr "Spremeni nastavitve lokacije in ponudnike"
 
-#: src/snapbackend.cpp:243
+#: src/snapbackend.cpp:266
 #, kde-format
 msgid "Access your location"
 msgstr "Dostop do vaše lokacije"
 
-#: src/snapbackend.cpp:244
+#: src/snapbackend.cpp:267
 #, kde-format
 msgid "Read system and application logs"
 msgstr "Preberi sistemske in aplikacijske dnevnike"
 
-#: src/snapbackend.cpp:245
+#: src/snapbackend.cpp:268
 #, kde-format
 msgid "Access LXD service"
 msgstr "Dostop do storitve LXD"
 
-#: src/snapbackend.cpp:246
+#: src/snapbackend.cpp:269
 #, kde-format
 msgid "Allows operating as the LXD service"
 msgstr "Omogoča delovanje kot storitev LXD"
 
-#: src/snapbackend.cpp:247
+#: src/snapbackend.cpp:270
 #, kde-format
 msgid "Use and configure modems"
 msgstr "Uporabi in konfiguraj modeme"
 
-#: src/snapbackend.cpp:248
+#: src/snapbackend.cpp:271
 #, kde-format
 msgid "Read system mount information and disk quotas"
 msgstr "Beri informacije o priklopu sistema in diskovnih kvot"
 
-#: src/snapbackend.cpp:249
+#: src/snapbackend.cpp:272
 #, kde-format
 msgid "Control music and video players"
 msgstr "Upravljaj glasbene in video predvajalnike"
 
-#: src/snapbackend.cpp:250
+#: src/snapbackend.cpp:273
 #, kde-format
 msgid "Access the internet"
 msgstr "Dostop do interneta"
 
-#: src/snapbackend.cpp:251
+#: src/snapbackend.cpp:274
 #, kde-format
 msgid "Allows operating as a network service, enabling snap to run a server"
 msgstr ""
 "Omogoča delovanje kot omrežna storitev, ki omogoča snap za zagon strežnika"
 
-#: src/snapbackend.cpp:252
+#: src/snapbackend.cpp:275
 #, kde-format
 msgid "Change low-level network settings"
 msgstr "Spremeni omrežne nastavitve nizke ravni"
 
-#: src/snapbackend.cpp:253
+#: src/snapbackend.cpp:276
 #, kde-format
 msgid "Access the NetworkManager service to read and change network settings"
 msgstr ""
 "Dostop do storitve NetworkManager za branje in spreminjanje omrežnih "
 "nastavitev"
 
-#: src/snapbackend.cpp:254
+#: src/snapbackend.cpp:277
 #, kde-format
 msgid "Allows observing NetworkManager settings"
 msgstr "Omogoča opazovanje nastavitev NetworkManagerja"
 
-#: src/snapbackend.cpp:255
+#: src/snapbackend.cpp:278
 #, kde-format
 msgid "Read access to network settings"
 msgstr "Bralni dostop omrežnih nastavitev"
 
-#: src/snapbackend.cpp:256
+#: src/snapbackend.cpp:279
 #, kde-format
 msgid "Change network settings"
 msgstr "Spremeni omrežne nastavitve"
 
-#: src/snapbackend.cpp:257
+#: src/snapbackend.cpp:280
 #, kde-format
 msgid "Read network settings"
 msgstr "Beri omrežne nastavitve"
 
-#: src/snapbackend.cpp:258
+#: src/snapbackend.cpp:281
 #, kde-format
 msgid "Access the NetworkStatus service"
 msgstr "Dostopaj do storitve NetworkStatus"
 
-#: src/snapbackend.cpp:259
+#: src/snapbackend.cpp:282
 #, kde-format
 msgid ""
 "Access the ofono service to read and change network settings for mobile "
@@ -249,32 +249,32 @@ msgstr ""
 "Dostopaj do storitve ofono za branje in spremeni omrežne nastavitve za "
 "mobilno telefonijo"
 
-#: src/snapbackend.cpp:260
+#: src/snapbackend.cpp:283
 #, kde-format
 msgid "Control Open vSwitch hardware"
 msgstr "Nadzor Odprte strojne opreme vSwitch"
 
-#: src/snapbackend.cpp:261
+#: src/snapbackend.cpp:284
 #, kde-format
 msgid "Read from CD/DVD"
 msgstr "Beri s CD/DVD"
 
-#: src/snapbackend.cpp:262
+#: src/snapbackend.cpp:285
 #, kde-format
 msgid "Read, add, change, or remove saved passwords"
 msgstr "Preberi, dodaj, spremeni ali odstrani shranjena gesla"
 
-#: src/snapbackend.cpp:263
+#: src/snapbackend.cpp:286
 #, kde-format
 msgid "Control the PackageKit service"
 msgstr "Nadzoruj storitev PackageKit"
 
-#: src/snapbackend.cpp:264
+#: src/snapbackend.cpp:287
 #, kde-format
 msgid "Permits communication with PCSD smart card daemon"
 msgstr "Omogoča komunikacijo z demonom pametne kartice PCSD"
 
-#: src/snapbackend.cpp:265
+#: src/snapbackend.cpp:288
 #, kde-format
 msgid ""
 "Access pppd and ppp devices for configuring Point-to-Point Protocol "
@@ -283,103 +283,103 @@ msgstr ""
 "Dostop do naprav pppd in ppp za konfiguriranje povezav protokola od točke do "
 "točke"
 
-#: src/snapbackend.cpp:266
+#: src/snapbackend.cpp:289
 #, kde-format
 msgid "Pause or end any process on the system"
 msgstr "Zaustavi ali končaj kateri koli proces v sistemu"
 
-#: src/snapbackend.cpp:268
+#: src/snapbackend.cpp:291
 #, kde-format
 msgid "Access USB hardware directly"
 msgstr "Neposredni dostop do strojne opreme USB"
 
-#: src/snapbackend.cpp:269
+#: src/snapbackend.cpp:292
 #, kde-format
 msgid "Read/write files on removable storage devices"
 msgstr "Beri/piši datoteke na izmenljive naprave za shranjevanje"
 
-#: src/snapbackend.cpp:270
+#: src/snapbackend.cpp:293
 #, kde-format
 msgid "Prevent screen sleep/lock"
 msgstr "Prepreči spanje/zaklepanje zaslona"
 
-#: src/snapbackend.cpp:271
+#: src/snapbackend.cpp:294
 #, kde-format
 msgid "Access serial port hardware"
 msgstr "Dostop do strojne opreme serijskih vrat"
 
-#: src/snapbackend.cpp:272
+#: src/snapbackend.cpp:295
 #, kde-format
 msgid "Enables two snaps to access the same shared memory"
 msgstr "Omogoča dvema snapoma dostop do istega skupnega pomnilnika"
 
-#: src/snapbackend.cpp:273
+#: src/snapbackend.cpp:296
 #, kde-format
 msgid "Restart or power off the device"
 msgstr "Znova zaženi ali izklopi napravo"
 
-#: src/snapbackend.cpp:274
+#: src/snapbackend.cpp:297
 #, kde-format
 msgid "Install, remove and configure software (snaps)"
 msgstr "Namesti, odstrani in konfiguriraj programsko opremo (snapov)"
 
-#: src/snapbackend.cpp:275
+#: src/snapbackend.cpp:298
 #, kde-format
 msgid "Access SSH private and public keys"
 msgstr "Dostop do zasebnih in javnih ključev SSH"
 
-#: src/snapbackend.cpp:276
+#: src/snapbackend.cpp:299
 #, kde-format
 msgid "Access SSH public keys"
 msgstr "Dostop do javnih ključev SSH"
 
-#: src/snapbackend.cpp:277
+#: src/snapbackend.cpp:300
 #, kde-format
 msgid "Access Storage Framework service"
 msgstr "Dostop do storitve Storage Framework"
 
-#: src/snapbackend.cpp:278
+#: src/snapbackend.cpp:301
 #, kde-format
 msgid "Read process and system information"
 msgstr "Preberi informacije o procesu in sistemu"
 
-#: src/snapbackend.cpp:279
+#: src/snapbackend.cpp:302
 #, kde-format
 msgid "Access system documentation in /usr/share/doc"
 msgstr "Dostop do sistemske dokumentacije v /usr/share/doc"
 
-#: src/snapbackend.cpp:280
+#: src/snapbackend.cpp:303
 #, kde-format
 msgid "Monitor and control any running program"
 msgstr "Nadzoruj in upravljaj kateri koli program, ki se izvaja"
 
-#: src/snapbackend.cpp:281
+#: src/snapbackend.cpp:304
 #, kde-format
 msgid "Change the date and time"
 msgstr "Spremeni datum in uro"
 
-#: src/snapbackend.cpp:282
+#: src/snapbackend.cpp:305
 #, kde-format
 msgid "Change time server settings"
 msgstr "Spremeni nastavitve časovnega strežnika"
 
-#: src/snapbackend.cpp:283
+#: src/snapbackend.cpp:306
 #, kde-format
 msgid "Change the time zone"
 msgstr "Spremeni časovni pas"
 
-#: src/snapbackend.cpp:284
+#: src/snapbackend.cpp:307
 #, kde-format
 msgid "Access the UDisks2 service for configuring disks and removable media"
 msgstr ""
 "Dostop do storitve UDisks2 za konfiguriranje diskov in izmenljivih medijev"
 
-#: src/snapbackend.cpp:285
+#: src/snapbackend.cpp:308
 #, kde-format
 msgid "Access energy usage data"
 msgstr "Dostop do podatkov o porabi energije"
 
-#: src/snapbackend.cpp:286
+#: src/snapbackend.cpp:309
 #, kde-format
 msgid "Read/write access to U2F devices exposed"
 msgstr "Razkrit dostop za branje/pisanje do naprav U2F"
@@ -404,12 +404,12 @@ msgstr "Zaženi"
 msgid "Permissions for %1"
 msgstr "Dovoljenja za %1"
 
-#: src/ui/main.qml:155
+#: src/ui/main.qml:166
 #, kde-format
 msgid "Error"
 msgstr "Napaka"
 
-#: src/ui/main.qml:162
+#: src/ui/main.qml:173
 #, kde-format
 msgid "snapd error: %1"
 msgstr "napaka snapd: %1"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: snap-kcm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-09 00:43+0000\n"
+"POT-Creation-Date: 2025-03-09 00:43+0000\n"
 "PO-Revision-Date: 2024-12-10 06:00+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -18,12 +18,12 @@ msgstr ""
 "X-Generator: Poedit 3.5\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: src/snapbackend.cpp:215
+#: src/snapbackend.cpp:238
 #, kde-format
 msgid "Add user accounts and change passwords"
 msgstr "დაამატეთ მომხმარებლის ანგარიშები და შეცვალეთ პაროლები"
 
-#: src/snapbackend.cpp:216
+#: src/snapbackend.cpp:239
 #, kde-format
 msgid ""
 "Allows communication with the accounts service, such as GNOME Online Accounts"
@@ -31,225 +31,225 @@ msgstr ""
 "უფლებას გაძლევს ანგარიშების სერვისთან (მაგ: GNOME-ის ანგარიშები) ურთიერთობის "
 "უფლება"
 
-#: src/snapbackend.cpp:217 src/snapbackend.cpp:267
+#: src/snapbackend.cpp:240 src/snapbackend.cpp:290
 #, kde-format
 msgid "Play and record sound"
 msgstr "ხმის დაკვრა და ჩაწერა"
 
-#: src/snapbackend.cpp:218
+#: src/snapbackend.cpp:241
 #, kde-format
 msgid "Allows access to AppStream metadata"
 msgstr "წვდომის დაშვება AppStream-ის მეტამონაცემებთან"
 
-#: src/snapbackend.cpp:219
+#: src/snapbackend.cpp:242
 #, kde-format
 msgid "Play audio"
 msgstr "ხმის დაკვრა"
 
-#: src/snapbackend.cpp:220
+#: src/snapbackend.cpp:243
 #, kde-format
 msgid "Record audio"
 msgstr "ხმის ჩაწერა"
 
-#: src/snapbackend.cpp:221
+#: src/snapbackend.cpp:244
 #, kde-format
 msgid "Advertise services over the local network"
 msgstr "სერვისების გამოცხადება ლოკალურ ქსელში"
 
-#: src/snapbackend.cpp:222
+#: src/snapbackend.cpp:245
 #, kde-format
 msgid "Detect network devices using mDNS/DNS-SD (Bonjour/zeroconf)"
 msgstr ""
 "ქსელური მოწყობილობების აღმოჩენა პროტოკოლით mDNS/DNS-SD (Bonjour/zeroconf)"
 
-#: src/snapbackend.cpp:223
+#: src/snapbackend.cpp:246
 #, kde-format
 msgid "Access bluetooth hardware directly"
 msgstr "პირდაპირი წვდომა ბლუთუზის აპარატურასთან"
 
-#: src/snapbackend.cpp:224
+#: src/snapbackend.cpp:247
 #, kde-format
 msgid "Use bluetooth devices"
 msgstr "ბლუთუზის მოწყობილობების გამოყენება"
 
-#: src/snapbackend.cpp:225
+#: src/snapbackend.cpp:248
 #, kde-format
 msgid "Use functions essential for Web browsers"
 msgstr "ბრაუზერებისთვის აუცილებელი ფუნქციების გამოყენება"
 
-#: src/snapbackend.cpp:226
+#: src/snapbackend.cpp:249
 #, kde-format
 msgid "Use your camera"
 msgstr "თქვენი კამერის გამოყენება"
 
-#: src/snapbackend.cpp:227
+#: src/snapbackend.cpp:250
 #, kde-format
 msgid "Access to the CUPS socket for printing"
 msgstr "წვდომა CUPS-ის სოკეტთან ბეჭდვისთვის"
 
-#: src/snapbackend.cpp:228
+#: src/snapbackend.cpp:251
 #, kde-format
 msgid "Print documents"
 msgstr "დოკუმენტების დაბეჭდვა"
 
-#: src/snapbackend.cpp:229
+#: src/snapbackend.cpp:252
 #, kde-format
 msgid "Use any connected joystick"
 msgstr "ნებისმიერი მიერთებული ჯოისტიკის გამოყენება"
 
-#: src/snapbackend.cpp:230
+#: src/snapbackend.cpp:253
 #, kde-format
 msgid "Identify and launch desktop apps from other snaps"
 msgstr ""
 "სამუშაო მაგიდის აპლიკაციების იდენტიფიკაცია და გაშვება სხვა snap "
 "აპლიკაციებიდან"
 
-#: src/snapbackend.cpp:231
+#: src/snapbackend.cpp:254
 #, kde-format
 msgid "Allow connecting to the Docker service"
 msgstr "Docker-ის სერვისთან მიერთების დაშვება"
 
-#: src/snapbackend.cpp:232
+#: src/snapbackend.cpp:255
 #, kde-format
 msgid "Configure network firewall"
 msgstr "ქსელის ბრანდმაუერის მორგება"
 
-#: src/snapbackend.cpp:233
+#: src/snapbackend.cpp:256
 #, kde-format
 msgid "Setup and use privileged FUSE filesystems"
 msgstr "მოირგეთ და გამოიყენეთ პრივილეგირებული FUSE ფაილური სისტემები"
 
-#: src/snapbackend.cpp:234
+#: src/snapbackend.cpp:257
 #, kde-format
 msgid "Update firmware on this device"
 msgstr "ამ მოწყობილობის მიკროკოდის განახლება"
 
-#: src/snapbackend.cpp:235
+#: src/snapbackend.cpp:258
 #, kde-format
 msgid "Provides access to any GSettings item for current user"
 msgstr ""
 "მოგაწვდით წვდომას ნებისმიერი GSettings ელემენტთან მიმდინარე მომხმარებლისთვის"
 
-#: src/snapbackend.cpp:236
+#: src/snapbackend.cpp:259
 #, kde-format
 msgid "Access hardware information"
 msgstr "წვდომა აპარატურის ინფორმაციასთან"
 
-#: src/snapbackend.cpp:237
+#: src/snapbackend.cpp:260
 #, kde-format
 msgid "Provide entropy to hardware random number generator"
 msgstr "ენტროპიის მიწოდება აპარატურული შემთხვევითი რიცხვების გენერატორისთვის"
 
-#: src/snapbackend.cpp:238
+#: src/snapbackend.cpp:261
 #, kde-format
 msgid "Use hardware-generated random numbers"
 msgstr "აპარატურულად აჩქარებული შემთხვევითი რიცხვების გამოყენება"
 
-#: src/snapbackend.cpp:239
+#: src/snapbackend.cpp:262
 #, kde-format
 msgid "Access files in your home folder"
 msgstr "წვდომა ფაილებთან თქვენს საწყის საქაღალდეში"
 
-#: src/snapbackend.cpp:240
+#: src/snapbackend.cpp:263
 #, kde-format
 msgid "Access libvirt service"
 msgstr "წვდომა libvirt-ის სერვისთან"
 
-#: src/snapbackend.cpp:241
+#: src/snapbackend.cpp:264
 #, kde-format
 msgid "Change system language and region settings"
 msgstr "რეგიონისა და სისტემის ენის პარამეტრების შეცვლა"
 
-#: src/snapbackend.cpp:242
+#: src/snapbackend.cpp:265
 #, kde-format
 msgid "Change location settings and providers"
 msgstr "მდებარეობს პარამეტრებისა და მომწოდებლების შეცვლა"
 
-#: src/snapbackend.cpp:243
+#: src/snapbackend.cpp:266
 #, kde-format
 msgid "Access your location"
 msgstr "წვდომა თქვენს მდებარეობასთან"
 
-#: src/snapbackend.cpp:244
+#: src/snapbackend.cpp:267
 #, kde-format
 msgid "Read system and application logs"
 msgstr "სისტემური და აპლიკაციის ჟურნალების წაკითხვა"
 
-#: src/snapbackend.cpp:245
+#: src/snapbackend.cpp:268
 #, kde-format
 msgid "Access LXD service"
 msgstr "წვდომა LXD-ის სერვისთან"
 
-#: src/snapbackend.cpp:246
+#: src/snapbackend.cpp:269
 #, kde-format
 msgid "Allows operating as the LXD service"
 msgstr "უფლებას გაძლევთ, იმუშაოთ LXD სერვისთან"
 
-#: src/snapbackend.cpp:247
+#: src/snapbackend.cpp:270
 #, kde-format
 msgid "Use and configure modems"
 msgstr "მოდემების გამოყენება და მორგება"
 
-#: src/snapbackend.cpp:248
+#: src/snapbackend.cpp:271
 #, kde-format
 msgid "Read system mount information and disk quotas"
 msgstr "სისტემის მიმაგრები ინფორმაციისა და დისკის კვოტების წაკითხვა"
 
-#: src/snapbackend.cpp:249
+#: src/snapbackend.cpp:272
 #, kde-format
 msgid "Control music and video players"
 msgstr "მუსიკის და ვიდეოს დამკვრელების კონტროლი"
 
-#: src/snapbackend.cpp:250
+#: src/snapbackend.cpp:273
 #, kde-format
 msgid "Access the internet"
 msgstr "ინტერნეტთან წვდომა"
 
-#: src/snapbackend.cpp:251
+#: src/snapbackend.cpp:274
 #, kde-format
 msgid "Allows operating as a network service, enabling snap to run a server"
 msgstr ""
 "საშუალებას გაძლევთ, იმუშაოთ, როგორც ქსელური სერვისი, რითიც snap-ს სერვერის "
 "გაშვების საშუალება ეძლევა"
 
-#: src/snapbackend.cpp:252
+#: src/snapbackend.cpp:275
 #, kde-format
 msgid "Change low-level network settings"
 msgstr "ქსელის აპარატურული პარამეტრების შეცვლა"
 
-#: src/snapbackend.cpp:253
+#: src/snapbackend.cpp:276
 #, kde-format
 msgid "Access the NetworkManager service to read and change network settings"
 msgstr ""
 "წვდომა სერვისთან NetworkManager ქსელის პარამეტრების წასაკითხავად და "
 "შესაცვლელად"
 
-#: src/snapbackend.cpp:254
+#: src/snapbackend.cpp:277
 #, kde-format
 msgid "Allows observing NetworkManager settings"
 msgstr "NetworkManager-ის პარამეტრების დათვალიერების დაშვება"
 
-#: src/snapbackend.cpp:255
+#: src/snapbackend.cpp:278
 #, kde-format
 msgid "Read access to network settings"
 msgstr "წაკითხვის წვდომა ქსელის პარამეტრებში"
 
-#: src/snapbackend.cpp:256
+#: src/snapbackend.cpp:279
 #, kde-format
 msgid "Change network settings"
 msgstr "ქსელის პარამეტრების შეცვლა"
 
-#: src/snapbackend.cpp:257
+#: src/snapbackend.cpp:280
 #, kde-format
 msgid "Read network settings"
 msgstr "ქსელის პარამეტრების წაკითხვა"
 
-#: src/snapbackend.cpp:258
+#: src/snapbackend.cpp:281
 #, kde-format
 msgid "Access the NetworkStatus service"
 msgstr "წვდომა სერვისთან NetworkManager"
 
-#: src/snapbackend.cpp:259
+#: src/snapbackend.cpp:282
 #, kde-format
 msgid ""
 "Access the ofono service to read and change network settings for mobile "
@@ -258,32 +258,32 @@ msgstr ""
 "წვდომა ofono სერვისთან მობილური ტელეფონიის ქსელის პარამეტრების წასაკითხად და "
 "შესაცვლელად"
 
-#: src/snapbackend.cpp:260
+#: src/snapbackend.cpp:283
 #, kde-format
 msgid "Control Open vSwitch hardware"
 msgstr "Open vSwitch-ის აპარატურის კონტროლი"
 
-#: src/snapbackend.cpp:261
+#: src/snapbackend.cpp:284
 #, kde-format
 msgid "Read from CD/DVD"
 msgstr "CD/DVD-ROM-დან წაკითხვა"
 
-#: src/snapbackend.cpp:262
+#: src/snapbackend.cpp:285
 #, kde-format
 msgid "Read, add, change, or remove saved passwords"
 msgstr "წაიკითხეთ, დაამატეთ, შეცვალეთ ან წაშალეთ შენახული პაროლები"
 
-#: src/snapbackend.cpp:263
+#: src/snapbackend.cpp:286
 #, kde-format
 msgid "Control the PackageKit service"
 msgstr "მართვა PackageKit სერვისისთვის"
 
-#: src/snapbackend.cpp:264
+#: src/snapbackend.cpp:287
 #, kde-format
 msgid "Permits communication with PCSD smart card daemon"
 msgstr "უშვებს კომუნიკაციას PCSD სმარტ ბარათების დემონთან"
 
-#: src/snapbackend.cpp:265
+#: src/snapbackend.cpp:288
 #, kde-format
 msgid ""
 "Access pppd and ppp devices for configuring Point-to-Point Protocol "
@@ -292,104 +292,104 @@ msgstr ""
 "წვდომა pppd da ppp მოწყობილობებთან Pont-to-Point პროტოკოლებით მიერთების "
 "მოსარგებად"
 
-#: src/snapbackend.cpp:266
+#: src/snapbackend.cpp:289
 #, kde-format
 msgid "Pause or end any process on the system"
 msgstr "შეაჩერეთ ან დაასრულეთ სისტემის ნებისმიერი პროცესი"
 
-#: src/snapbackend.cpp:268
+#: src/snapbackend.cpp:291
 #, kde-format
 msgid "Access USB hardware directly"
 msgstr "პირდაპირი წვდომა USB აპარატურასთან"
 
-#: src/snapbackend.cpp:269
+#: src/snapbackend.cpp:292
 #, kde-format
 msgid "Read/write files on removable storage devices"
 msgstr "ფაილების ჩაწერა/წაკითხვა მოხსნადი საცავის მოწყობილობებზე"
 
-#: src/snapbackend.cpp:270
+#: src/snapbackend.cpp:293
 #, kde-format
 msgid "Prevent screen sleep/lock"
 msgstr "ეკრანის ძილის/დაბლოკვის აკრძალვა"
 
-#: src/snapbackend.cpp:271
+#: src/snapbackend.cpp:294
 #, kde-format
 msgid "Access serial port hardware"
 msgstr "წვდომა სერიული პორტის აპარატურასთან"
 
-#: src/snapbackend.cpp:272
+#: src/snapbackend.cpp:295
 #, kde-format
 msgid "Enables two snaps to access the same shared memory"
 msgstr ""
 "უშვებს წვდომას, ორ snap-ით გაშვებულმა პროგრამამ, იგივე გაზიარებულ "
 "მეხსიერებასთან იმუშაოს"
 
-#: src/snapbackend.cpp:273
+#: src/snapbackend.cpp:296
 #, kde-format
 msgid "Restart or power off the device"
 msgstr "მოწყობილობის გადატვირთვა ან გამორთვა"
 
-#: src/snapbackend.cpp:274
+#: src/snapbackend.cpp:297
 #, kde-format
 msgid "Install, remove and configure software (snaps)"
 msgstr "დააყენეთ, წაშალეთ და მოირგეთ პროგრამები (ე.წ. snap-ები)"
 
-#: src/snapbackend.cpp:275
+#: src/snapbackend.cpp:298
 #, kde-format
 msgid "Access SSH private and public keys"
 msgstr "წვდომა საკუთარ და საჯარო SSH გასაღებებთან"
 
-#: src/snapbackend.cpp:276
+#: src/snapbackend.cpp:299
 #, kde-format
 msgid "Access SSH public keys"
 msgstr "წვდომა SSH პირად გასაღებებთან"
 
-#: src/snapbackend.cpp:277
+#: src/snapbackend.cpp:300
 #, kde-format
 msgid "Access Storage Framework service"
 msgstr "საცავზე წვდომის სერვისთან წვდომა"
 
-#: src/snapbackend.cpp:278
+#: src/snapbackend.cpp:301
 #, kde-format
 msgid "Read process and system information"
 msgstr "პროცესისა და სისტემის ინფორმაციის წაკითხვა"
 
-#: src/snapbackend.cpp:279
+#: src/snapbackend.cpp:302
 #, kde-format
 msgid "Access system documentation in /usr/share/doc"
 msgstr "წვდომა სისტემის დოკუმენტაციასთან საქაღალდეში /usr/share/doc"
 
-#: src/snapbackend.cpp:280
+#: src/snapbackend.cpp:303
 #, kde-format
 msgid "Monitor and control any running program"
 msgstr "ნებისმიერი გაშვებული პროგრამის მონიტორინგი და კონტროლი"
 
-#: src/snapbackend.cpp:281
+#: src/snapbackend.cpp:304
 #, kde-format
 msgid "Change the date and time"
 msgstr "დროისა და თარიღის შეცვლა"
 
-#: src/snapbackend.cpp:282
+#: src/snapbackend.cpp:305
 #, kde-format
 msgid "Change time server settings"
 msgstr "დროის სერვერის პარამეტრების შეცვლა"
 
-#: src/snapbackend.cpp:283
+#: src/snapbackend.cpp:306
 #, kde-format
 msgid "Change the time zone"
 msgstr "დროის სარტყლის შეცვლა"
 
-#: src/snapbackend.cpp:284
+#: src/snapbackend.cpp:307
 #, kde-format
 msgid "Access the UDisks2 service for configuring disks and removable media"
 msgstr "წვდომა UDisks2 სერვისთან დისკებისა და მოხსნადი მედიის მოსარგებად"
 
-#: src/snapbackend.cpp:285
+#: src/snapbackend.cpp:308
 #, kde-format
 msgid "Access energy usage data"
 msgstr "ენერგიის ხარჯვის მონაცემებთან წვდომა"
 
-#: src/snapbackend.cpp:286
+#: src/snapbackend.cpp:309
 #, kde-format
 msgid "Read/write access to U2F devices exposed"
 msgstr "წაკითხვა/ჩაწერა ნაჩვენებ U2F მოწყობილობებზე"
@@ -414,12 +414,12 @@ msgstr "გაშვება"
 msgid "Permissions for %1"
 msgstr "%1-ის წვდომები"
 
-#: src/ui/main.qml:155
+#: src/ui/main.qml:166
 #, kde-format
 msgid "Error"
 msgstr "შეცდომა"
 
-#: src/ui/main.qml:162
+#: src/ui/main.qml:173
 #, kde-format
 msgid "snapd error: %1"
 msgstr "snapd-ის შეცდომა: %1"
