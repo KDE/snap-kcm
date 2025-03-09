@@ -48,23 +48,24 @@ SnapBackend::SnapBackend()
             loadedPlugs.append(reqGetConnections->plug(i));
         }
     }
-    // Get snaps and their associated plugs and slots
-    for (QSnapdSnap *snap : loadedSnaps) {
-        QList<KCMPlug *> plugsForSnap;
-        for (QSnapdPlug *plug : loadedPlugs) {
-            if (plug->snap() == snap->name() && (!plug->hasAttribute(u"content"_s) && !(hiddenPlugs.contains(plug->name())))) {
-                plugsForSnap.append(new KCMPlug(plug));
-            }
-        }
-        if (!plugsForSnap.isEmpty()) {
-            m_snaps.append(new KCMSnap(snap, plugsForSnap));
-        }
-    }
 
     if (reqGetInterfaces) {
         reqGetInterfaces->runSync();
         for (int i = 0; i < reqGetInterfaces->interfaceCount(); ++i) {
             m_interfaces.append(reqGetInterfaces->interface(i));
+        }
+    }
+
+    // Get snaps and their associated plugs and slots
+    for (QSnapdSnap *snap : loadedSnaps) {
+        QList<KCMPlug *> plugsForSnap;
+        for (QSnapdPlug *plug : loadedPlugs) {
+            if (plug->snap() == snap->name() && (!plug->hasAttribute(u"content"_s) && !(hiddenPlugs.contains(plug->name())))) {
+                plugsForSnap.append(new KCMPlug(plug, getPlugLabel(plug->interface()), plugIcon(plug->interface())));
+            }
+        }
+        if (!plugsForSnap.isEmpty()) {
+            m_snaps.append(new KCMSnap(snap, plugsForSnap));
         }
     }
 }
@@ -88,7 +89,7 @@ const QList<KCMSnap *> SnapBackend::snaps(const QString &filter) const
     }
 
     for (KCMSnap *snap : m_snaps) {
-        if (snap->snap()->name().contains(filter, Qt::CaseInsensitive)) {
+        if (snap->name().contains(filter, Qt::CaseInsensitive)) {
             filteredSnaps.append(snap);
         }
     }
@@ -155,40 +156,14 @@ bool SnapBackend::comparebyName(QSnapdSnap *a, QSnapdSnap *b)
 }
 
 /**
- * Returns true if the given snap has any app with a desktop file, false otherwise.
- *
- * This is used to determine if a snap can be launched from the kcm.
- *
- * @param snap the snap to check
- */
-bool SnapBackend::invokAble(QSnapdSnap *snap)
-{
-    bool invokable = false;
-    for (int i = 0; i < snap->appCount(); i++) {
-        auto app = snap->app(i);
-        if (!app->desktopFile().isEmpty()) {
-            invokable = true;
-        }
-    }
-    return invokable;
-}
-
-/**
  * Launches the given snap if it has a desktop file.
  *
  * This is used when the user wants to launch a snap from the kcm.
  *
  * @param snap the snap to launch
  */
-void SnapBackend::invokeDesktopApp(QSnapdSnap *snap) const
+void SnapBackend::invokeDesktopApp(QString desktop) const
 {
-    QString desktop;
-    for (int i = 0; i < snap->appCount(); i++) {
-        QSnapdApp *app = snap->app(i);
-        if (app->name() == snap->name()) {
-            desktop = app->desktopFile().mid(app->desktopFile().lastIndexOf(QLatin1Char('/')) + 1);
-        }
-    }
     QDBusInterface interface(u"io.snapcraft.Launcher"_s,
                              u"/io/snapcraft/PrivilegedDesktopLauncher"_s,
                              u"io.snapcraft.PrivilegedDesktopLauncher"_s,
@@ -217,98 +192,6 @@ const QString SnapBackend::getPlugLabel(const QString interface)
         }
     }
     return QString();
-}
-
-/**
- * Returns a human-readable label for the given plug interface.
- *
- * This function maps a plug's interface name to a corresponding
- * description that explains what access or functionality the plug
- * provides. If the interface name is not recognized, the function
- * returns the plug's name in lowercase as a fallback.
- *
- * @param plug A pointer to the QSnapdPlug object representing the plug
- *             for which the label is requested.
- * @return A QString containing the user-friendly label or the plug
- *         name in lowercase if the interface is not found.
- */
-const QString SnapBackend::plugLabel(const QSnapdPlug *plug)
-{
-    static const QMap<QString, QString> interfaceLabels = {
-        {u"account-control"_s, i18n("Add user accounts and change passwords")},
-        {u"accounts-service"_s, i18n("Allows communication with the accounts service, such as GNOME Online Accounts")},
-        {u"alsa"_s, i18n("Play and record sound")},
-        {u"appstream-metadata"_s, i18n("Allows access to AppStream metadata")},
-        {u"audio-playback"_s, i18n("Play audio")},
-        {u"audio-record"_s, i18n("Record audio")},
-        {u"avahi-control"_s, i18n("Advertise services over the local network")},
-        {u"avahi-observe"_s, i18n("Detect network devices using mDNS/DNS-SD (Bonjour/zeroconf)")},
-        {u"bluetooth-control"_s, i18n("Access bluetooth hardware directly")},
-        {u"bluez"_s, i18n("Use bluetooth devices")},
-        {u"browser-support"_s, i18n("Use functions essential for Web browsers")},
-        {u"camera"_s, i18n("Use your camera")},
-        {u"cups"_s, i18n("Access to the CUPS socket for printing")},
-        {u"cups-control"_s, i18n("Print documents")},
-        {u"joystick"_s, i18n("Use any connected joystick")},
-        {u"desktop-launch"_s, i18n("Identify and launch desktop apps from other snaps")},
-        {u"docker"_s, i18n("Allow connecting to the Docker service")},
-        {u"firewall-control"_s, i18n("Configure network firewall")},
-        {u"fuse-support"_s, i18n("Setup and use privileged FUSE filesystems")},
-        {u"fwupd"_s, i18n("Update firmware on this device")},
-        {u"gsettings"_s, i18n("Provides access to any GSettings item for current user")},
-        {u"hardware-observe"_s, i18n("Access hardware information")},
-        {u"hardware-random-control"_s, i18n("Provide entropy to hardware random number generator")},
-        {u"hardware-random-observe"_s, i18n("Use hardware-generated random numbers")},
-        {u"home"_s, i18n("Access files in your home folder")},
-        {u"libvirt"_s, i18n("Access libvirt service")},
-        {u"locale-control"_s, i18n("Change system language and region settings")},
-        {u"location-control"_s, i18n("Change location settings and providers")},
-        {u"location-observe"_s, i18n("Access your location")},
-        {u"log-observe"_s, i18n("Read system and application logs")},
-        {u"lxd"_s, i18n("Access LXD service")},
-        {u"lxd-support"_s, i18n("Allows operating as the LXD service")},
-        {u"modem-manager"_s, i18n("Use and configure modems")},
-        {u"mount-observe"_s, i18n("Read system mount information and disk quotas")},
-        {u"mpris"_s, i18n("Control music and video players")},
-        {u"network"_s, i18n("Access the internet")},
-        {u"network-bind"_s, i18n("Allows operating as a network service, enabling snap to run a server")},
-        {u"network-control"_s, i18n("Change low-level network settings")},
-        {u"network-manager"_s, i18n("Access the NetworkManager service to read and change network settings")},
-        {u"network-manager-observe"_s, i18n("Allows observing NetworkManager settings")},
-        {u"network-observe"_s, i18n("Read access to network settings")},
-        {u"network-setup-control"_s, i18n("Change network settings")},
-        {u"network-setup-observe"_s, i18n("Read network settings")},
-        {u"network-status"_s, i18n("Access the NetworkStatus service")},
-        {u"ofono"_s, i18n("Access the ofono service to read and change network settings for mobile telephony")},
-        {u"openvswitch"_s, i18n("Control Open vSwitch hardware")},
-        {u"optical-drive"_s, i18n("Read from CD/DVD")},
-        {u"password-manager-service"_s, i18n("Read, add, change, or remove saved passwords")},
-        {u"packagekit-control"_s, i18n("Control the PackageKit service")},
-        {u"pcscd"_s, i18n("Permits communication with PCSD smart card daemon")},
-        {u"ppp"_s, i18n("Access pppd and ppp devices for configuring Point-to-Point Protocol connections")},
-        {u"process-control"_s, i18n("Pause or end any process on the system")},
-        {u"pulseaudio"_s, i18n("Play and record sound")},
-        {u"raw-usb"_s, i18n("Access USB hardware directly")},
-        {u"removable-media"_s, i18n("Read/write files on removable storage devices")},
-        {u"screen-inhibit-control"_s, i18n("Prevent screen sleep/lock")},
-        {u"serial-port"_s, i18n("Access serial port hardware")},
-        {u"shared-memory"_s, i18n("Enables two snaps to access the same shared memory")},
-        {u"shutdown"_s, i18n("Restart or power off the device")},
-        {u"snapd-control"_s, i18n("Install, remove and configure software (snaps)")},
-        {u"ssh-keys"_s, i18n("Access SSH private and public keys")},
-        {u"ssh-public-keys"_s, i18n("Access SSH public keys")},
-        {u"storage-framework-service"_s, i18n("Access Storage Framework service")},
-        {u"system-observe"_s, i18n("Read process and system information")},
-        {u"system-packages-doc"_s, i18n("Access system documentation in /usr/share/doc")},
-        {u"system-trace"_s, i18n("Monitor and control any running program")},
-        {u"time-control"_s, i18n("Change the date and time")},
-        {u"timeserver-control"_s, i18n("Change time server settings")},
-        {u"timezone-control"_s, i18n("Change the time zone")},
-        {u"udisks2"_s, i18n("Access the UDisks2 service for configuring disks and removable media")},
-        {u"upower-observe"_s, i18n("Access energy usage data")},
-        {u"u2f-devices"_s, i18n("Read/write access to U2F devices exposed")}};
-
-    return interfaceLabels.value(plug->interface(), plug->name().toCaseFolded());
 }
 
 /**

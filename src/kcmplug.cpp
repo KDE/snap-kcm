@@ -4,9 +4,12 @@
  */
 
 #include "kcmplug.h"
+#include "snapbackend.h"
 
-KCMPlug::KCMPlug(QSnapdPlug *plug)
+KCMPlug::KCMPlug(QSnapdPlug *plug, QString plugLabel, QString plugIcon)
     : m_plug(plug)
+    , m_plugLabel(plugLabel)
+    , m_plugIcon(plugIcon)
 {
 }
 
@@ -19,9 +22,18 @@ int KCMPlug::connectedSlotCount() const
     return m_plug->connectedSlotCount();
 }
 
+QString KCMPlug::plugIcon() const
+{
+    return m_plugIcon;
+}
 QString KCMPlug::plugInterface() const
 {
     return m_plug->interface();
+}
+
+QString KCMPlug::plugLabel() const
+{
+    return m_plugLabel;
 }
 
 QString KCMPlug::plugSnap() const
@@ -35,4 +47,9 @@ QString KCMPlug::connectedSlotSnap() const
         return m_plug->connectedSlot(0)->snap();
     }
     return QString();
+}
+
+QString KCMPlug::title() const
+{
+    return SnapBackend::capitalize(m_plug->name());
 }

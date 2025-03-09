@@ -56,7 +56,7 @@ KCMUtils.ScrollViewKCM {
         delegate: QQC2.ItemDelegate {
             id: delegate
             required property var modelData
-            property string snapTitle: root.perm.capitalize(modelData.snap.name)
+            property string snapTitle: modelData.title
             width: ListView.view.width
             contentItem: RowLayout {
                 spacing: 20
@@ -69,7 +69,7 @@ KCMUtils.ScrollViewKCM {
                 KD.TitleSubtitle {
                     id: appDelegates
                     title: snapTitle
-                    subtitle: modelData.snap.summary
+                    subtitle: modelData.description
                     selected: delegate.highlighted
                     font: delegate.font
                     Layout.fillWidth: true
@@ -78,9 +78,9 @@ KCMUtils.ScrollViewKCM {
                 QQC2.Button {
                     id: invokeButton
                     text: i18n("Launch")
-                    visible: root.perm.invokAble(modelData.snap)
+                    visible: modelData.invokable
                     onClicked: {
-                        root.perm.invokeDesktopApp(modelData.snap);
+                        root.perm.invokeDesktopApp(modelData.desktopFile);
                     }
                 }
             }
@@ -104,19 +104,20 @@ KCMUtils.ScrollViewKCM {
                         property string plugName: modelData.name
                         property string plugInterface: modelData.plugInterface
                         property int plugCount: modelData.connectedSlotCount
+                        property string plugIcon: modelData.plugIcon
                         property string slotInterface: modelData.plugInterface
+                        property string plugLabel: modelData.plugLabel
                         property string plugSnap: modelData.plugSnap
-                        property string plugLabel: root.perm.getPlugLabel(modelData.plugInterface)
                         property string connectedSlotSnap: modelData.connectedSlotSnap
                         contentItem: RowLayout {
                             Kirigami.Icon {
-                                source: root.perm.plugIcon(plugInterface)
+                                source: plugIcon
                                 Layout.preferredWidth: Kirigami.Units.iconSizes.medium
                                 Layout.preferredHeight: Kirigami.Units.iconSizes.medium
                             }
 
                             KD.TitleSubtitle {
-                                title: root.perm.capitalize(plugInterface)
+                                title: modelData.title
                                 subtitle: plugLabel
                                 selected: delegate.highlighted
                                 font: delegate.font
@@ -131,6 +132,7 @@ KCMUtils.ScrollViewKCM {
                                 enabled: !toggle.checked
                                 Layout.margins: Kirigami.Units.mediumSpacing
                                 model: root.perm.getSlotSnap(plugInterface)
+                                visible: count > 1
                             }
 
                             QQC2.Switch {
@@ -163,14 +165,14 @@ KCMUtils.ScrollViewKCM {
         property bool copyButtonEnabled: true
         parent: view.QQC2.Overlay.overlay
         width: view.width / 2
-        title: i18n("Error")
+        title: i18nc("error", "Error")
         visible: output !== ""
         bottomPadding: 10
 
         Kirigami.FormLayout {
             QQC2.Label {
                 Kirigami.FormData.label: ""
-                text: i18n("snapd error: %1", output)
+                text: i18nc("snap error", "snapd error: %1", output)
                 textFormat: Text.StyledText
                 wrapMode: Text.Wrap
             }

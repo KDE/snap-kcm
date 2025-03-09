@@ -12,15 +12,23 @@
 class KCMSnap : public QObject
 {
     Q_OBJECT
-    Q_PROPERTY(QSnapdSnap *snap READ snap CONSTANT)
-    Q_PROPERTY(QList<KCMPlug *> plugs READ plugs CONSTANT)
+    Q_PROPERTY(QString description READ description CONSTANT)
+    Q_PROPERTY(QString desktopFile READ desktopFile CONSTANT)
+    Q_PROPERTY(bool invokable READ invokable CONSTANT)
     Q_PROPERTY(QVariant icon READ icon CONSTANT)
+    Q_PROPERTY(QString name READ name CONSTANT)
+    Q_PROPERTY(QList<KCMPlug *> plugs READ plugs CONSTANT)
+    Q_PROPERTY(QString title READ title CONSTANT)
 
 public:
     KCMSnap(QSnapdSnap *snap, const QList<KCMPlug *> plugs);
-    QSnapdSnap *snap() const;
+    const QString description() const;
+    const QString desktopFile() const;
+    bool invokable() const;
+    const QVariant icon() const;
+    const QString name() const;
     const QList<KCMPlug *> plugs() const;
-    QVariant icon() const;
+    const QString title() const;
 
 private:
     QSnapdSnap *m_snap;

@@ -20,9 +20,28 @@ KCMSnap::KCMSnap(QSnapdSnap *snap, const QList<KCMPlug *> plugs)
 {
 }
 
-QSnapdSnap *KCMSnap::snap() const
+const QString KCMSnap::desktopFile() const
 {
-    return m_snap;
+    QString desktop;
+    for (int i = 0; i < m_snap->appCount(); i++) {
+        QSnapdApp *app = m_snap->app(i);
+        if (app->name() == m_snap->name()) {
+            desktop = app->desktopFile().mid(app->desktopFile().lastIndexOf(QLatin1Char('/')) + 1);
+        }
+    }
+    return desktop;
+}
+
+bool KCMSnap::invokable() const
+{
+    bool invokable = false;
+    for (int i = 0; i < m_snap->appCount(); i++) {
+        auto app = m_snap->app(i);
+        if (!app->desktopFile().isEmpty()) {
+            invokable = true;
+        }
+    }
+    return invokable;
 }
 
 const QList<KCMPlug *> KCMSnap::plugs() const
@@ -30,9 +49,19 @@ const QList<KCMPlug *> KCMSnap::plugs() const
     return m_plugs;
 }
 
-QVariant KCMSnap::icon() const
+const QString KCMSnap::name() const
 {
-    if (SnapBackend::invokAble(m_snap)) {
+    return m_snap->name();
+}
+
+const QString KCMSnap::description() const
+{
+    return m_snap->summary();
+}
+
+const QVariant KCMSnap::icon() const
+{
+    if (invokable()) {
         for (int i = 0; i < m_snap->appCount(); ++i) {
             const auto app = m_snap->app(i);
 
@@ -73,4 +102,9 @@ QVariant KCMSnap::icon() const
     const auto theIcon = QVariant::fromValue<QImage>(reader.read());
 
     return theIcon.isNull() ? u"package-x-generic"_s : theIcon;
+}
+
+const QString KCMSnap::title() const
+{
+    return m_snap->title() != m_snap->title() ? m_snap->title() : SnapBackend::capitalize(m_snap->name());
 }
