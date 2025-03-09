@@ -1,6 +1,6 @@
 # SPDX-FileCopyrightText: 2025 Soumyadeep Ghosh <soumyadghosh@ubuntu.com>
 #
-# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-License-Identifier: BSD-2-Clause
 
 cmake_minimum_required(VERSION 3.16)
 
@@ -26,8 +26,12 @@ set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake )
 include(KDEInstallDirs)
 include(KDECompilerSettings NO_POLICY_SCOPE)
 include(KDECMakeSettings)
+include(KDEClangFormat)
+include(KDEGitCommitHooks)
+include(FeatureSummary)
+include(ECMDeprecationSettings)
 
-find_package(Qt6 ${QT_MIN_VERSION} CONFIG REQUIRED Core Quick Gui Qml)
+find_package(Qt6 ${QT_MIN_VERSION} CONFIG REQUIRED Core Quick Gui Qml DBus)
 
 find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS
     Config
@@ -37,3 +41,8 @@ find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS
 )
 
 add_subdirectory(src)
+
+ki18n_install(po)
+kde_configure_git_pre_commit_hook(CHECKS CLANG_FORMAT)
+
+feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
