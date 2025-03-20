@@ -20,13 +20,14 @@ KCMSnap::KCMSnap(QSnapdSnap *snap, const QList<KCMPlug *> plugs)
 {
 }
 
-const QString KCMSnap::desktopFile() const
+QString KCMSnap::desktopFile() const
 {
     QString desktop;
     for (int i = 0; i < m_snap->appCount(); i++) {
         QSnapdApp *app = m_snap->app(i);
         if (app->name() == m_snap->name()) {
             desktop = app->desktopFile().mid(app->desktopFile().lastIndexOf(QLatin1Char('/')) + 1);
+            break;
         }
     }
     return desktop;
@@ -49,17 +50,17 @@ const QList<KCMPlug *> KCMSnap::plugs() const
     return m_plugs;
 }
 
-const QString KCMSnap::name() const
+QString KCMSnap::name() const
 {
     return m_snap->name();
 }
 
-const QString KCMSnap::description() const
+QString KCMSnap::description() const
 {
     return m_snap->summary();
 }
 
-const QVariant KCMSnap::icon() const
+QVariant KCMSnap::icon() const
 {
     if (invokable()) {
         for (int i = 0; i < m_snap->appCount(); ++i) {
@@ -104,7 +105,7 @@ const QVariant KCMSnap::icon() const
     return theIcon.isNull() ? u"package-x-generic"_s : theIcon;
 }
 
-const QString KCMSnap::title() const
+QString KCMSnap::title() const
 {
     return m_snap->title() != m_snap->title() ? m_snap->title() : SnapBackend::capitalize(m_snap->name());
 }

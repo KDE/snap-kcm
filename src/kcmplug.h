@@ -23,7 +23,7 @@ class KCMPlug : public QObject
     Q_PROPERTY(QString title READ title CONSTANT)
 
 public:
-    KCMPlug(QSnapdPlug *plug, QString m_plugLabel, QString m_plugIcon, QStringList m_slotSnaps);
+    KCMPlug(QSnapdPlug *plug, const QString &plugLabel, const QString &plugIcon, const QStringList &slotSnaps);
     QString name() const;
     int connectedSlotCount() const;
     QString plugSnap() const;

@@ -154,7 +154,7 @@ bool SnapBackend::comparebyName(QSnapdSnap *a, QSnapdSnap *b)
  *
  * @param snap the snap to launch
  */
-void SnapBackend::invokeDesktopApp(QString desktop) const
+void SnapBackend::invokeDesktopApp(const QString &desktop) const
 {
     QDBusInterface interface(u"io.snapcraft.Launcher"_s,
                              u"/io/snapcraft/PrivilegedDesktopLauncher"_s,
@@ -163,7 +163,7 @@ void SnapBackend::invokeDesktopApp(QString desktop) const
     interface.call(u"OpenDesktopEntry"_s, desktop);
 }
 
-const QStringList SnapBackend::getSlotSnap(QString interface) const
+const QStringList SnapBackend::getSlotSnap(const QString &interface) const
 {
     QStringList slotSnaps;
     for (auto iface : m_interfaces) {
@@ -176,7 +176,7 @@ const QStringList SnapBackend::getSlotSnap(QString interface) const
     return slotSnaps;
 }
 
-const QString SnapBackend::getPlugLabel(const QString interface)
+const QString SnapBackend::getPlugLabel(const QString &interface)
 {
     for (auto iface : m_interfaces) {
         if (iface->name() == interface) {

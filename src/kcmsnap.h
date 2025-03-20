@@ -22,13 +22,13 @@ class KCMSnap : public QObject
 
 public:
     KCMSnap(QSnapdSnap *snap, const QList<KCMPlug *> plugs);
-    const QString description() const;
-    const QString desktopFile() const;
+    QString description() const;
+    QString desktopFile() const;
     bool invokable() const;
-    const QVariant icon() const;
-    const QString name() const;
+    QVariant icon() const;
+    QString name() const;
     const QList<KCMPlug *> plugs() const;
-    const QString title() const;
+    QString title() const;
 
 private:
     QSnapdSnap *m_snap;

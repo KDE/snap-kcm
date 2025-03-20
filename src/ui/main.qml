@@ -50,7 +50,6 @@ KCMUtils.ScrollViewKCM {
 
     view: ListView {
         id: view
-        anchors.fill: parent
         model: root.perm.snaps(root.searchQuery)
         spacing: Kirigami.Units.largeSpacing
         delegate: QQC2.ItemDelegate {
@@ -97,7 +96,6 @@ KCMUtils.ScrollViewKCM {
                 ListView {
                     id: overlayView
                     model: modelData.plugs
-                    anchors.fill: parent
                     delegate: QQC2.ItemDelegate {
                         id: smallDelegate
                         width: parent.width
@@ -136,7 +134,7 @@ KCMUtils.ScrollViewKCM {
                                 checked: plugCount === 1 || modelData.checked === true
                                 Layout.margins: Kirigami.Units.mediumSpacing
                                 onClicked: {
-                                    var slotSnap = checked ? slotList.currentText : modelData.connectedSlotSnap;
+                                    let slotSnap = checked ? slotList.currentText : modelData.connectedSlotSnap;
                                     output = modelData.changePermission(checked, slotSnap);
                                     if (output !== "") {
                                         errorOverlay.open();

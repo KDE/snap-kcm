@@ -6,7 +6,7 @@
 #include "kcmplug.h"
 #include "snapbackend.h"
 
-KCMPlug::KCMPlug(QSnapdPlug *plug, QString plugLabel, QString plugIcon, QStringList slotSnaps)
+KCMPlug::KCMPlug(QSnapdPlug *plug, const QString &plugLabel, const QString &plugIcon, const QStringList &slotSnaps)
     : m_plug(plug)
     , m_plugLabel(plugLabel)
     , m_plugIcon(plugIcon)

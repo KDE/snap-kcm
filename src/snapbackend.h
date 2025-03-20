@@ -22,9 +22,9 @@ public:
     static const QString plugLabel(const QString &plugName);
     static const QString plugIcon(const QString &plugName);
     Q_INVOKABLE static const QString capitalize(const QString &text);
-    Q_INVOKABLE void invokeDesktopApp(QString desktop) const;
-    Q_INVOKABLE const QStringList getSlotSnap(QString interface) const;
-    Q_INVOKABLE const QString getPlugLabel(const QString interface);
+    Q_INVOKABLE void invokeDesktopApp(const QString &desktop) const;
+    Q_INVOKABLE const QStringList getSlotSnap(const QString &interface) const;
+    Q_INVOKABLE const QString getPlugLabel(const QString &interface);
     static bool comparebyName(QSnapdSnap *, QSnapdSnap *);
 
 Q_SIGNALS:
