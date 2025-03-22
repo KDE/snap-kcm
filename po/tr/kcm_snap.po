@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: snap-kcm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-09 00:43+0000\n"
+"POT-Creation-Date: 2025-03-22 00:43+0000\n"
 "PO-Revision-Date: 2025-01-11 17:11+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -16,375 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Lokalize 25.03.70\n"
-
-#: src/snapbackend.cpp:238
-#, kde-format
-msgid "Add user accounts and change passwords"
-msgstr "Kullanıcı hesapları ekle ve parolaları değiştir"
-
-#: src/snapbackend.cpp:239
-#, kde-format
-msgid ""
-"Allows communication with the accounts service, such as GNOME Online Accounts"
-msgstr ""
-"GNOME Çevrimiçi Hesaplar gibi hesaplar hizmetleriyle iletişime izin verir"
-
-#: src/snapbackend.cpp:240 src/snapbackend.cpp:290
-#, kde-format
-msgid "Play and record sound"
-msgstr "Ses kaydet ve çal"
-
-#: src/snapbackend.cpp:241
-#, kde-format
-msgid "Allows access to AppStream metadata"
-msgstr "AppStream üst verisine erişime izin verir"
-
-#: src/snapbackend.cpp:242
-#, kde-format
-msgid "Play audio"
-msgstr "Ses çal"
-
-#: src/snapbackend.cpp:243
-#, kde-format
-msgid "Record audio"
-msgstr "Ses kaydet"
-
-#: src/snapbackend.cpp:244
-#, kde-format
-msgid "Advertise services over the local network"
-msgstr "Yerel ağ üzerinde hizmetlerin reklâmını yap"
-
-#: src/snapbackend.cpp:245
-#, kde-format
-msgid "Detect network devices using mDNS/DNS-SD (Bonjour/zeroconf)"
-msgstr "mDNS/DNS-SD (Bonjour/zeroconf) kullanarak ağ aygıtlarını algıla"
-
-#: src/snapbackend.cpp:246
-#, kde-format
-msgid "Access bluetooth hardware directly"
-msgstr "Bluetooth donanımına doğrudan eriş"
-
-#: src/snapbackend.cpp:247
-#, kde-format
-msgid "Use bluetooth devices"
-msgstr "Bluetooth aygıtlarını kullan"
-
-#: src/snapbackend.cpp:248
-#, kde-format
-msgid "Use functions essential for Web browsers"
-msgstr "Web tarayıcıları için elzem işlevleri kullan"
-
-#: src/snapbackend.cpp:249
-#, kde-format
-msgid "Use your camera"
-msgstr "Kamerayı kullan"
-
-#: src/snapbackend.cpp:250
-#, kde-format
-msgid "Access to the CUPS socket for printing"
-msgstr "Yazdırma için CUPS yuvasına eriş"
-
-#: src/snapbackend.cpp:251
-#, kde-format
-msgid "Print documents"
-msgstr "Belgeler yazdır"
-
-#: src/snapbackend.cpp:252
-#, kde-format
-msgid "Use any connected joystick"
-msgstr "Herhangi takılı bir oyun çubuğunu kullan"
-
-#: src/snapbackend.cpp:253
-#, kde-format
-msgid "Identify and launch desktop apps from other snaps"
-msgstr "Başka Snap’lerden masaüstü uygulamalarını tanımla ve başlat"
-
-#: src/snapbackend.cpp:254
-#, kde-format
-msgid "Allow connecting to the Docker service"
-msgstr "Docker hizmetine bağlanmaya izin ver"
-
-#: src/snapbackend.cpp:255
-#, kde-format
-msgid "Configure network firewall"
-msgstr "Ağ güvenlik duvarını yapılandır"
-
-#: src/snapbackend.cpp:256
-#, kde-format
-msgid "Setup and use privileged FUSE filesystems"
-msgstr "Ayrıcalıklı FUSE dosya sistemlerini ayarla ve kullan"
-
-#: src/snapbackend.cpp:257
-#, kde-format
-msgid "Update firmware on this device"
-msgstr "Bu aygıttaki donanım yazılımını güncelle"
-
-#: src/snapbackend.cpp:258
-#, kde-format
-msgid "Provides access to any GSettings item for current user"
-msgstr "Geçerli kullanıcı için herhangi bir GSettings’e erişim sağlar"
-
-#: src/snapbackend.cpp:259
-#, kde-format
-msgid "Access hardware information"
-msgstr "Donanım bilgisine eriş"
-
-#: src/snapbackend.cpp:260
-#, kde-format
-msgid "Provide entropy to hardware random number generator"
-msgstr "Donanım rastgele sayı üretecine entropi sağla"
-
-#: src/snapbackend.cpp:261
-#, kde-format
-msgid "Use hardware-generated random numbers"
-msgstr "Donanım tarafından üretilmiş rastgele sayılar kullan"
-
-#: src/snapbackend.cpp:262
-#, kde-format
-msgid "Access files in your home folder"
-msgstr "Ana klasördeki dosyalara eriş"
-
-#: src/snapbackend.cpp:263
-#, kde-format
-msgid "Access libvirt service"
-msgstr "libvirt hizmetine eriş"
-
-#: src/snapbackend.cpp:264
-#, kde-format
-msgid "Change system language and region settings"
-msgstr "Sistem dilini ve bölgesini değiştir"
-
-#: src/snapbackend.cpp:265
-#, kde-format
-msgid "Change location settings and providers"
-msgstr "Konum ayarlarını ve sağlayıcılarını değiştir"
-
-#: src/snapbackend.cpp:266
-#, kde-format
-msgid "Access your location"
-msgstr "Konuma eriş"
-
-#: src/snapbackend.cpp:267
-#, kde-format
-msgid "Read system and application logs"
-msgstr "Sistem ve uygulama günlüklerini oku"
-
-#: src/snapbackend.cpp:268
-#, kde-format
-msgid "Access LXD service"
-msgstr "LXD hizmetine eriş"
-
-#: src/snapbackend.cpp:269
-#, kde-format
-msgid "Allows operating as the LXD service"
-msgstr "LXD hizmeti olarak işletmeye izin verir"
-
-#: src/snapbackend.cpp:270
-#, kde-format
-msgid "Use and configure modems"
-msgstr "Modemleri kullan ve yapılandır"
-
-#: src/snapbackend.cpp:271
-#, kde-format
-msgid "Read system mount information and disk quotas"
-msgstr "Sistem bağlama bilgisini ve disk kotasını oku"
-
-#: src/snapbackend.cpp:272
-#, kde-format
-msgid "Control music and video players"
-msgstr "Müzik çalarları ve video oynatıcıları denetle"
-
-#: src/snapbackend.cpp:273
-#, kde-format
-msgid "Access the internet"
-msgstr "İnternete eriş"
-
-#: src/snapbackend.cpp:274
-#, kde-format
-msgid "Allows operating as a network service, enabling snap to run a server"
-msgstr ""
-"Snap’in bir sunucu çalıştırmasına izin vererek bir ağ hizmeti olarak "
-"işletmeye izin verir"
-
-#: src/snapbackend.cpp:275
-#, kde-format
-msgid "Change low-level network settings"
-msgstr "Düşük düzey ağ ayarlarını değiştir"
-
-#: src/snapbackend.cpp:276
-#, kde-format
-msgid "Access the NetworkManager service to read and change network settings"
-msgstr "Ağ ayarlarını okuyup değiştirmek için NetworkManager hizmetine eriş"
-
-#: src/snapbackend.cpp:277
-#, kde-format
-msgid "Allows observing NetworkManager settings"
-msgstr "NetworkManager ayarlarını gözlemlemeye izin verir"
-
-#: src/snapbackend.cpp:278
-#, kde-format
-msgid "Read access to network settings"
-msgstr "Ağ ayarlarını okuma erişimi"
-
-#: src/snapbackend.cpp:279
-#, kde-format
-msgid "Change network settings"
-msgstr "Ağ ayarlarını değiştir"
-
-#: src/snapbackend.cpp:280
-#, kde-format
-msgid "Read network settings"
-msgstr "Ağ ayarlarını oku"
-
-#: src/snapbackend.cpp:281
-#, kde-format
-msgid "Access the NetworkStatus service"
-msgstr "NetworkStatus hizmetine eriş"
-
-#: src/snapbackend.cpp:282
-#, kde-format
-msgid ""
-"Access the ofono service to read and change network settings for mobile "
-"telephony"
-msgstr ""
-"Taşınabilir telefon aygıtları için olan ağ ayarlarını okuyup değiştirmek "
-"için ofono hizmetine eriş"
-
-#: src/snapbackend.cpp:283
-#, kde-format
-msgid "Control Open vSwitch hardware"
-msgstr "Open vSwitch donanımını denetle"
-
-#: src/snapbackend.cpp:284
-#, kde-format
-msgid "Read from CD/DVD"
-msgstr "CD/DVD okumaya izin ver"
-
-#: src/snapbackend.cpp:285
-#, kde-format
-msgid "Read, add, change, or remove saved passwords"
-msgstr "Kayıtlı parolaları oku, yeni ekle, onları değiştir veya kaldır"
-
-#: src/snapbackend.cpp:286
-#, kde-format
-msgid "Control the PackageKit service"
-msgstr "PackageKit hizmetini denetle"
-
-#: src/snapbackend.cpp:287
-#, kde-format
-msgid "Permits communication with PCSD smart card daemon"
-msgstr "PCSD akıllı kart ardalan süreciyle iletişime izin verir"
-
-#: src/snapbackend.cpp:288
-#, kde-format
-msgid ""
-"Access pppd and ppp devices for configuring Point-to-Point Protocol "
-"connections"
-msgstr ""
-"Noktadan Noktaya Protokolü bağlantılarını yapılandırmak için pppd ve ppp "
-"aygıtlarına eriş"
-
-#: src/snapbackend.cpp:289
-#, kde-format
-msgid "Pause or end any process on the system"
-msgstr "Sistemdeki herhangi bir süreci duraklat veya sonlandır"
-
-#: src/snapbackend.cpp:291
-#, kde-format
-msgid "Access USB hardware directly"
-msgstr "USB donanımına doğrudan eriş"
-
-#: src/snapbackend.cpp:292
-#, kde-format
-msgid "Read/write files on removable storage devices"
-msgstr "Kaldırılabilir depolama aygıtlarındaki dosyaları oku veya dosyalar yaz"
-
-#: src/snapbackend.cpp:293
-#, kde-format
-msgid "Prevent screen sleep/lock"
-msgstr "Ekran uykusunu/kilidini engelle"
-
-#: src/snapbackend.cpp:294
-#, kde-format
-msgid "Access serial port hardware"
-msgstr "Seri kapı donanımlara eriş"
-
-#: src/snapbackend.cpp:295
-#, kde-format
-msgid "Enables two snaps to access the same shared memory"
-msgstr "İki Snap’in aynı paylaşılan belleğe erişimini etkinleştirir"
-
-#: src/snapbackend.cpp:296
-#, kde-format
-msgid "Restart or power off the device"
-msgstr "Aygıtı yeniden başlat veya kapat"
-
-#: src/snapbackend.cpp:297
-#, kde-format
-msgid "Install, remove and configure software (snaps)"
-msgstr "Yazılım kur, kaldır veya yapılandır (Snap’ler)"
-
-#: src/snapbackend.cpp:298
-#, kde-format
-msgid "Access SSH private and public keys"
-msgstr "SSH genel ve özel anahtarlarına eriş"
-
-#: src/snapbackend.cpp:299
-#, kde-format
-msgid "Access SSH public keys"
-msgstr "SSH genel anahtarlarına eriş"
-
-#: src/snapbackend.cpp:300
-#, kde-format
-msgid "Access Storage Framework service"
-msgstr "Depolama çatısı hizmetine eriş"
-
-#: src/snapbackend.cpp:301
-#, kde-format
-msgid "Read process and system information"
-msgstr "Süreç ve sistem bilgisini oku"
-
-#: src/snapbackend.cpp:302
-#, kde-format
-msgid "Access system documentation in /usr/share/doc"
-msgstr "/usr/share/doc içindeki sistem belgelendirmesine eriş"
-
-#: src/snapbackend.cpp:303
-#, kde-format
-msgid "Monitor and control any running program"
-msgstr "Çalışan herhangi bir programı izle ve denetle"
-
-#: src/snapbackend.cpp:304
-#, kde-format
-msgid "Change the date and time"
-msgstr "Tarihi ve zamanı değiştir"
-
-#: src/snapbackend.cpp:305
-#, kde-format
-msgid "Change time server settings"
-msgstr "Zaman sunucusu ayarlarını değiştir"
-
-#: src/snapbackend.cpp:306
-#, kde-format
-msgid "Change the time zone"
-msgstr "Zaman dilimini değiştir"
-
-#: src/snapbackend.cpp:307
-#, kde-format
-msgid "Access the UDisks2 service for configuring disks and removable media"
-msgstr ""
-"Diskleri ve kaldırılabilir ortamları yapılandırmak için UDisks2 hizmetine "
-"eriş"
-
-#: src/snapbackend.cpp:308
-#, kde-format
-msgid "Access energy usage data"
-msgstr "Enerji kullanımı verisine eriş"
-
-#: src/snapbackend.cpp:309
-#, kde-format
-msgid "Read/write access to U2F devices exposed"
-msgstr "Açıktaki U2F aygıtlarını oku ve onlara yaz"
 
 #: src/ui/main.qml:26
 #, kde-format
@@ -396,22 +27,256 @@ msgstr "Snap Uygulamalar"
 msgid "Install snaps to change the permissions"
 msgstr "İzinlerini değiştirmek için Snap’ler kurun"
 
-#: src/ui/main.qml:80
+#: src/ui/main.qml:79
 #, kde-format
 msgid "Launch"
 msgstr "Başlat"
 
-#: src/ui/main.qml:95
+#: src/ui/main.qml:94
 #, kde-format
 msgid "Permissions for %1"
 msgstr "%1 İzinleri"
 
-#: src/ui/main.qml:166
-#, kde-format
+#: src/ui/main.qml:157
+#, fuzzy, kde-format
+#| msgid "Error"
+msgctxt "error"
 msgid "Error"
 msgstr "Hata"
 
-#: src/ui/main.qml:173
-#, kde-format
+#: src/ui/main.qml:164
+#, fuzzy, kde-format
+#| msgid "snapd error: %1"
+msgctxt "snap error"
 msgid "snapd error: %1"
 msgstr "snapd hatası: %1"
+
+#~ msgid "Add user accounts and change passwords"
+#~ msgstr "Kullanıcı hesapları ekle ve parolaları değiştir"
+
+#~ msgid ""
+#~ "Allows communication with the accounts service, such as GNOME Online "
+#~ "Accounts"
+#~ msgstr ""
+#~ "GNOME Çevrimiçi Hesaplar gibi hesaplar hizmetleriyle iletişime izin verir"
+
+#~ msgid "Play and record sound"
+#~ msgstr "Ses kaydet ve çal"
+
+#~ msgid "Allows access to AppStream metadata"
+#~ msgstr "AppStream üst verisine erişime izin verir"
+
+#~ msgid "Play audio"
+#~ msgstr "Ses çal"
+
+#~ msgid "Record audio"
+#~ msgstr "Ses kaydet"
+
+#~ msgid "Advertise services over the local network"
+#~ msgstr "Yerel ağ üzerinde hizmetlerin reklâmını yap"
+
+#~ msgid "Detect network devices using mDNS/DNS-SD (Bonjour/zeroconf)"
+#~ msgstr "mDNS/DNS-SD (Bonjour/zeroconf) kullanarak ağ aygıtlarını algıla"
+
+#~ msgid "Access bluetooth hardware directly"
+#~ msgstr "Bluetooth donanımına doğrudan eriş"
+
+#~ msgid "Use bluetooth devices"
+#~ msgstr "Bluetooth aygıtlarını kullan"
+
+#~ msgid "Use functions essential for Web browsers"
+#~ msgstr "Web tarayıcıları için elzem işlevleri kullan"
+
+#~ msgid "Use your camera"
+#~ msgstr "Kamerayı kullan"
+
+#~ msgid "Access to the CUPS socket for printing"
+#~ msgstr "Yazdırma için CUPS yuvasına eriş"
+
+#~ msgid "Print documents"
+#~ msgstr "Belgeler yazdır"
+
+#~ msgid "Use any connected joystick"
+#~ msgstr "Herhangi takılı bir oyun çubuğunu kullan"
+
+#~ msgid "Identify and launch desktop apps from other snaps"
+#~ msgstr "Başka Snap’lerden masaüstü uygulamalarını tanımla ve başlat"
+
+#~ msgid "Allow connecting to the Docker service"
+#~ msgstr "Docker hizmetine bağlanmaya izin ver"
+
+#~ msgid "Configure network firewall"
+#~ msgstr "Ağ güvenlik duvarını yapılandır"
+
+#~ msgid "Setup and use privileged FUSE filesystems"
+#~ msgstr "Ayrıcalıklı FUSE dosya sistemlerini ayarla ve kullan"
+
+#~ msgid "Update firmware on this device"
+#~ msgstr "Bu aygıttaki donanım yazılımını güncelle"
+
+#~ msgid "Provides access to any GSettings item for current user"
+#~ msgstr "Geçerli kullanıcı için herhangi bir GSettings’e erişim sağlar"
+
+#~ msgid "Access hardware information"
+#~ msgstr "Donanım bilgisine eriş"
+
+#~ msgid "Provide entropy to hardware random number generator"
+#~ msgstr "Donanım rastgele sayı üretecine entropi sağla"
+
+#~ msgid "Use hardware-generated random numbers"
+#~ msgstr "Donanım tarafından üretilmiş rastgele sayılar kullan"
+
+#~ msgid "Access files in your home folder"
+#~ msgstr "Ana klasördeki dosyalara eriş"
+
+#~ msgid "Access libvirt service"
+#~ msgstr "libvirt hizmetine eriş"
+
+#~ msgid "Change system language and region settings"
+#~ msgstr "Sistem dilini ve bölgesini değiştir"
+
+#~ msgid "Change location settings and providers"
+#~ msgstr "Konum ayarlarını ve sağlayıcılarını değiştir"
+
+#~ msgid "Access your location"
+#~ msgstr "Konuma eriş"
+
+#~ msgid "Read system and application logs"
+#~ msgstr "Sistem ve uygulama günlüklerini oku"
+
+#~ msgid "Access LXD service"
+#~ msgstr "LXD hizmetine eriş"
+
+#~ msgid "Allows operating as the LXD service"
+#~ msgstr "LXD hizmeti olarak işletmeye izin verir"
+
+#~ msgid "Use and configure modems"
+#~ msgstr "Modemleri kullan ve yapılandır"
+
+#~ msgid "Read system mount information and disk quotas"
+#~ msgstr "Sistem bağlama bilgisini ve disk kotasını oku"
+
+#~ msgid "Control music and video players"
+#~ msgstr "Müzik çalarları ve video oynatıcıları denetle"
+
+#~ msgid "Access the internet"
+#~ msgstr "İnternete eriş"
+
+#~ msgid "Allows operating as a network service, enabling snap to run a server"
+#~ msgstr ""
+#~ "Snap’in bir sunucu çalıştırmasına izin vererek bir ağ hizmeti olarak "
+#~ "işletmeye izin verir"
+
+#~ msgid "Change low-level network settings"
+#~ msgstr "Düşük düzey ağ ayarlarını değiştir"
+
+#~ msgid ""
+#~ "Access the NetworkManager service to read and change network settings"
+#~ msgstr "Ağ ayarlarını okuyup değiştirmek için NetworkManager hizmetine eriş"
+
+#~ msgid "Allows observing NetworkManager settings"
+#~ msgstr "NetworkManager ayarlarını gözlemlemeye izin verir"
+
+#~ msgid "Read access to network settings"
+#~ msgstr "Ağ ayarlarını okuma erişimi"
+
+#~ msgid "Change network settings"
+#~ msgstr "Ağ ayarlarını değiştir"
+
+#~ msgid "Read network settings"
+#~ msgstr "Ağ ayarlarını oku"
+
+#~ msgid "Access the NetworkStatus service"
+#~ msgstr "NetworkStatus hizmetine eriş"
+
+#~ msgid ""
+#~ "Access the ofono service to read and change network settings for mobile "
+#~ "telephony"
+#~ msgstr ""
+#~ "Taşınabilir telefon aygıtları için olan ağ ayarlarını okuyup değiştirmek "
+#~ "için ofono hizmetine eriş"
+
+#~ msgid "Control Open vSwitch hardware"
+#~ msgstr "Open vSwitch donanımını denetle"
+
+#~ msgid "Read from CD/DVD"
+#~ msgstr "CD/DVD okumaya izin ver"
+
+#~ msgid "Read, add, change, or remove saved passwords"
+#~ msgstr "Kayıtlı parolaları oku, yeni ekle, onları değiştir veya kaldır"
+
+#~ msgid "Control the PackageKit service"
+#~ msgstr "PackageKit hizmetini denetle"
+
+#~ msgid "Permits communication with PCSD smart card daemon"
+#~ msgstr "PCSD akıllı kart ardalan süreciyle iletişime izin verir"
+
+#~ msgid ""
+#~ "Access pppd and ppp devices for configuring Point-to-Point Protocol "
+#~ "connections"
+#~ msgstr ""
+#~ "Noktadan Noktaya Protokolü bağlantılarını yapılandırmak için pppd ve ppp "
+#~ "aygıtlarına eriş"
+
+#~ msgid "Pause or end any process on the system"
+#~ msgstr "Sistemdeki herhangi bir süreci duraklat veya sonlandır"
+
+#~ msgid "Access USB hardware directly"
+#~ msgstr "USB donanımına doğrudan eriş"
+
+#~ msgid "Read/write files on removable storage devices"
+#~ msgstr ""
+#~ "Kaldırılabilir depolama aygıtlarındaki dosyaları oku veya dosyalar yaz"
+
+#~ msgid "Prevent screen sleep/lock"
+#~ msgstr "Ekran uykusunu/kilidini engelle"
+
+#~ msgid "Access serial port hardware"
+#~ msgstr "Seri kapı donanımlara eriş"
+
+#~ msgid "Enables two snaps to access the same shared memory"
+#~ msgstr "İki Snap’in aynı paylaşılan belleğe erişimini etkinleştirir"
+
+#~ msgid "Restart or power off the device"
+#~ msgstr "Aygıtı yeniden başlat veya kapat"
+
+#~ msgid "Install, remove and configure software (snaps)"
+#~ msgstr "Yazılım kur, kaldır veya yapılandır (Snap’ler)"
+
+#~ msgid "Access SSH private and public keys"
+#~ msgstr "SSH genel ve özel anahtarlarına eriş"
+
+#~ msgid "Access SSH public keys"
+#~ msgstr "SSH genel anahtarlarına eriş"
+
+#~ msgid "Access Storage Framework service"
+#~ msgstr "Depolama çatısı hizmetine eriş"
+
+#~ msgid "Read process and system information"
+#~ msgstr "Süreç ve sistem bilgisini oku"
+
+#~ msgid "Access system documentation in /usr/share/doc"
+#~ msgstr "/usr/share/doc içindeki sistem belgelendirmesine eriş"
+
+#~ msgid "Monitor and control any running program"
+#~ msgstr "Çalışan herhangi bir programı izle ve denetle"
+
+#~ msgid "Change the date and time"
+#~ msgstr "Tarihi ve zamanı değiştir"
+
+#~ msgid "Change time server settings"
+#~ msgstr "Zaman sunucusu ayarlarını değiştir"
+
+#~ msgid "Change the time zone"
+#~ msgstr "Zaman dilimini değiştir"
+
+#~ msgid "Access the UDisks2 service for configuring disks and removable media"
+#~ msgstr ""
+#~ "Diskleri ve kaldırılabilir ortamları yapılandırmak için UDisks2 hizmetine "
+#~ "eriş"
+
+#~ msgid "Access energy usage data"
+#~ msgstr "Enerji kullanımı verisine eriş"
+
+#~ msgid "Read/write access to U2F devices exposed"
+#~ msgstr "Açıktaki U2F aygıtlarını oku ve onlara yaz"

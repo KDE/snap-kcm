@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: snap-kcm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-09 00:43+0000\n"
+"POT-Creation-Date: 2025-03-22 00:43+0000\n"
 "PO-Revision-Date: 2024-12-09 11:13+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -18,378 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 22.12.3\n"
-
-#: src/snapbackend.cpp:238
-#, kde-format
-msgid "Add user accounts and change passwords"
-msgstr "Afegeix comptes d'usuari i canvia les contrasenyes"
-
-#: src/snapbackend.cpp:239
-#, kde-format
-msgid ""
-"Allows communication with the accounts service, such as GNOME Online Accounts"
-msgstr ""
-"Permet la comunicació amb el servei de comptes, com ara els comptes en línia "
-"del GNOME"
-
-#: src/snapbackend.cpp:240 src/snapbackend.cpp:290
-#, kde-format
-msgid "Play and record sound"
-msgstr "Reprodueix i grava so"
-
-#: src/snapbackend.cpp:241
-#, kde-format
-msgid "Allows access to AppStream metadata"
-msgstr "Permet l'accés a les metadades d'AppStream"
-
-#: src/snapbackend.cpp:242
-#, kde-format
-msgid "Play audio"
-msgstr "Reprodueix àudio"
-
-#: src/snapbackend.cpp:243
-#, kde-format
-msgid "Record audio"
-msgstr "Enregistra àudio"
-
-#: src/snapbackend.cpp:244
-#, kde-format
-msgid "Advertise services over the local network"
-msgstr "Publica els serveis a través de la xarxa local"
-
-#: src/snapbackend.cpp:245
-#, kde-format
-msgid "Detect network devices using mDNS/DNS-SD (Bonjour/zeroconf)"
-msgstr "Detecta dispositius de xarxa utilitzant mDNS/DNS-SD (Bonjour/zeroconf)"
-
-#: src/snapbackend.cpp:246
-#, kde-format
-msgid "Access bluetooth hardware directly"
-msgstr "Accedeix directament al maquinari Bluetooth"
-
-#: src/snapbackend.cpp:247
-#, kde-format
-msgid "Use bluetooth devices"
-msgstr "Utilitza dispositius Bluetooth"
-
-#: src/snapbackend.cpp:248
-#, kde-format
-msgid "Use functions essential for Web browsers"
-msgstr "Utilitza funcions essencials per als navegadors web"
-
-#: src/snapbackend.cpp:249
-#, kde-format
-msgid "Use your camera"
-msgstr "Utilitza la càmera"
-
-#: src/snapbackend.cpp:250
-#, kde-format
-msgid "Access to the CUPS socket for printing"
-msgstr "Accés al sòcol del CUPS per a imprimir"
-
-#: src/snapbackend.cpp:251
-#, kde-format
-msgid "Print documents"
-msgstr "Imprimeix documents"
-
-#: src/snapbackend.cpp:252
-#, kde-format
-msgid "Use any connected joystick"
-msgstr "Utilitza qualsevol palanca de control connectada"
-
-#: src/snapbackend.cpp:253
-#, kde-format
-msgid "Identify and launch desktop apps from other snaps"
-msgstr "Identifica i llança aplicacions d'escriptori des d'altres «snaps»"
-
-# skip-rule: kct-docker
-#: src/snapbackend.cpp:254
-#, kde-format
-msgid "Allow connecting to the Docker service"
-msgstr "Permet la connexió al servei Docker"
-
-#: src/snapbackend.cpp:255
-#, kde-format
-msgid "Configure network firewall"
-msgstr "Configura el tallafoc de xarxa"
-
-#: src/snapbackend.cpp:256
-#, kde-format
-msgid "Setup and use privileged FUSE filesystems"
-msgstr "Configura i utilitza sistemes de fitxers FUSE privilegiats"
-
-#: src/snapbackend.cpp:257
-#, kde-format
-msgid "Update firmware on this device"
-msgstr "Actualitza microprogramari en aquest dispositiu"
-
-#: src/snapbackend.cpp:258
-#, kde-format
-msgid "Provides access to any GSettings item for current user"
-msgstr ""
-"Proporciona accés a qualsevol element de GSettings per a l'usuari actual"
-
-#: src/snapbackend.cpp:259
-#, kde-format
-msgid "Access hardware information"
-msgstr "Accés a la informació del maquinari"
-
-#: src/snapbackend.cpp:260
-#, kde-format
-msgid "Provide entropy to hardware random number generator"
-msgstr "Proporciona entropia al generador de nombres aleatoris de maquinari"
-
-#: src/snapbackend.cpp:261
-#, kde-format
-msgid "Use hardware-generated random numbers"
-msgstr "Utilitza nombres aleatoris generats per maquinari"
-
-#: src/snapbackend.cpp:262
-#, kde-format
-msgid "Access files in your home folder"
-msgstr "Accedeix als fitxers de la carpeta d'inici"
-
-#: src/snapbackend.cpp:263
-#, kde-format
-msgid "Access libvirt service"
-msgstr "Accedeix al servei «libvirt»"
-
-#: src/snapbackend.cpp:264
-#, kde-format
-msgid "Change system language and region settings"
-msgstr "Canvia la configuració d'idioma i regió del sistema"
-
-#: src/snapbackend.cpp:265
-#, kde-format
-msgid "Change location settings and providers"
-msgstr "Canvia la configuració d'ubicació i els proveïdors"
-
-#: src/snapbackend.cpp:266
-#, kde-format
-msgid "Access your location"
-msgstr "Accedeix a la vostra ubicació"
-
-#: src/snapbackend.cpp:267
-#, kde-format
-msgid "Read system and application logs"
-msgstr "Llegeix els registres del sistema i de les aplicacions"
-
-#: src/snapbackend.cpp:268
-#, kde-format
-msgid "Access LXD service"
-msgstr "Accedeix al servei LXD"
-
-#: src/snapbackend.cpp:269
-#, kde-format
-msgid "Allows operating as the LXD service"
-msgstr "Permet operar com a servei LXD"
-
-#: src/snapbackend.cpp:270
-#, kde-format
-msgid "Use and configure modems"
-msgstr "Utilitza i configura mòdems"
-
-#: src/snapbackend.cpp:271
-#, kde-format
-msgid "Read system mount information and disk quotas"
-msgstr "Llegeix la informació de muntatge del sistema i quotes de disc"
-
-#: src/snapbackend.cpp:272
-#, kde-format
-msgid "Control music and video players"
-msgstr "Controla els reproductors de música i vídeo"
-
-#: src/snapbackend.cpp:273
-#, kde-format
-msgid "Access the internet"
-msgstr "Accés a Internet"
-
-#: src/snapbackend.cpp:274
-#, kde-format
-msgid "Allows operating as a network service, enabling snap to run a server"
-msgstr ""
-"Permet operar com a servei de xarxa, habilitant l'«snap» per a executar un "
-"servidor"
-
-#: src/snapbackend.cpp:275
-#, kde-format
-msgid "Change low-level network settings"
-msgstr "Canvia la configuració de la xarxa a baix nivell"
-
-#: src/snapbackend.cpp:276
-#, kde-format
-msgid "Access the NetworkManager service to read and change network settings"
-msgstr ""
-"Accés al servei NetworkManager per a llegir i canviar la configuració de la "
-"xarxa"
-
-#: src/snapbackend.cpp:277
-#, kde-format
-msgid "Allows observing NetworkManager settings"
-msgstr "Permet observar la configuració del NetworkManager"
-
-#: src/snapbackend.cpp:278
-#, kde-format
-msgid "Read access to network settings"
-msgstr "Accés de lectura a la configuració de la xarxa"
-
-#: src/snapbackend.cpp:279
-#, kde-format
-msgid "Change network settings"
-msgstr "Canvia la configuració de la xarxa"
-
-#: src/snapbackend.cpp:280
-#, kde-format
-msgid "Read network settings"
-msgstr "Llegeix la configuració de la xarxa"
-
-#: src/snapbackend.cpp:281
-#, kde-format
-msgid "Access the NetworkStatus service"
-msgstr "Accedeix al servei NetworkStatus"
-
-#: src/snapbackend.cpp:282
-#, kde-format
-msgid ""
-"Access the ofono service to read and change network settings for mobile "
-"telephony"
-msgstr ""
-"Accedeix al servei «ofono» per a llegir i canviar la configuració de la "
-"xarxa de telefonia mòbil"
-
-#: src/snapbackend.cpp:283
-#, kde-format
-msgid "Control Open vSwitch hardware"
-msgstr "Controla el maquinari Open vSwitch"
-
-#: src/snapbackend.cpp:284
-#, kde-format
-msgid "Read from CD/DVD"
-msgstr "Llegeix des de CD/DVD"
-
-#: src/snapbackend.cpp:285
-#, kde-format
-msgid "Read, add, change, or remove saved passwords"
-msgstr "Llegeix, afegeix, canvia o elimina contrasenyes desades"
-
-#: src/snapbackend.cpp:286
-#, kde-format
-msgid "Control the PackageKit service"
-msgstr "Controla el servei PackageKit"
-
-#: src/snapbackend.cpp:287
-#, kde-format
-msgid "Permits communication with PCSD smart card daemon"
-msgstr "Permet la comunicació amb el dimoni de targetes intel·ligents PCSD"
-
-#: src/snapbackend.cpp:288
-#, kde-format
-msgid ""
-"Access pppd and ppp devices for configuring Point-to-Point Protocol "
-"connections"
-msgstr ""
-"Accedeix als dispositius «pppd» i «ppp» per a configurar connexions del "
-"protocol punt a punt"
-
-#: src/snapbackend.cpp:289
-#, kde-format
-msgid "Pause or end any process on the system"
-msgstr "Posa en pausa o finalitza qualsevol procés al sistema"
-
-#: src/snapbackend.cpp:291
-#, kde-format
-msgid "Access USB hardware directly"
-msgstr "Accedeix directament al maquinari USB"
-
-#: src/snapbackend.cpp:292
-#, kde-format
-msgid "Read/write files on removable storage devices"
-msgstr "Llegeix/escriu fitxers en dispositius d'emmagatzematge extraïbles"
-
-#: src/snapbackend.cpp:293
-#, kde-format
-msgid "Prevent screen sleep/lock"
-msgstr "Evita la suspensió/bloqueig de la pantalla"
-
-#: src/snapbackend.cpp:294
-#, kde-format
-msgid "Access serial port hardware"
-msgstr "Accedeix al maquinari del port en sèrie"
-
-#: src/snapbackend.cpp:295
-#, kde-format
-msgid "Enables two snaps to access the same shared memory"
-msgstr "Habilita dos «snaps» per a accedir a la mateixa memòria compartida"
-
-#: src/snapbackend.cpp:296
-#, kde-format
-msgid "Restart or power off the device"
-msgstr "Reinicia o apaga el dispositiu"
-
-#: src/snapbackend.cpp:297
-#, kde-format
-msgid "Install, remove and configure software (snaps)"
-msgstr "Instal·la, elimina i configura programari («snaps»)"
-
-#: src/snapbackend.cpp:298
-#, kde-format
-msgid "Access SSH private and public keys"
-msgstr "Accedeix a les claus SSH privades i públiques"
-
-#: src/snapbackend.cpp:299
-#, kde-format
-msgid "Access SSH public keys"
-msgstr "Accedeix a les claus SSH públiques"
-
-#: src/snapbackend.cpp:300
-#, kde-format
-msgid "Access Storage Framework service"
-msgstr "Accedeix al servei de l'entorn de treball d'emmagatzematge"
-
-#: src/snapbackend.cpp:301
-#, kde-format
-msgid "Read process and system information"
-msgstr "Llegeix la informació dels processos i del sistema"
-
-#: src/snapbackend.cpp:302
-#, kde-format
-msgid "Access system documentation in /usr/share/doc"
-msgstr "Accedeix a la documentació del sistema a /usr/share/doc"
-
-#: src/snapbackend.cpp:303
-#, kde-format
-msgid "Monitor and control any running program"
-msgstr "Segueix i controla qualsevol programa en execució"
-
-#: src/snapbackend.cpp:304
-#, kde-format
-msgid "Change the date and time"
-msgstr "Canvia la data i l'hora"
-
-#: src/snapbackend.cpp:305
-#, kde-format
-msgid "Change time server settings"
-msgstr "Canvia la configuració del servidor de temps"
-
-#: src/snapbackend.cpp:306
-#, kde-format
-msgid "Change the time zone"
-msgstr "Canvia la zona horària"
-
-#: src/snapbackend.cpp:307
-#, kde-format
-msgid "Access the UDisks2 service for configuring disks and removable media"
-msgstr "Accedeix al servei UDisks2 per a configurar discs i suports extraïbles"
-
-#: src/snapbackend.cpp:308
-#, kde-format
-msgid "Access energy usage data"
-msgstr "Accedeix a les dades d'ús d'energia"
-
-#: src/snapbackend.cpp:309
-#, kde-format
-msgid "Read/write access to U2F devices exposed"
-msgstr "Accés de lectura/escriptura als dispositius U2F exposats"
 
 #: src/ui/main.qml:26
 #, kde-format
@@ -401,22 +29,260 @@ msgstr "Aplicacions Snap"
 msgid "Install snaps to change the permissions"
 msgstr "Instal·la «snaps» per a canviar els permisos"
 
-#: src/ui/main.qml:80
+#: src/ui/main.qml:79
 #, kde-format
 msgid "Launch"
 msgstr "Llança"
 
-#: src/ui/main.qml:95
+#: src/ui/main.qml:94
 #, kde-format
 msgid "Permissions for %1"
 msgstr "Permisos de %1"
 
-#: src/ui/main.qml:166
-#, kde-format
+#: src/ui/main.qml:157
+#, fuzzy, kde-format
+#| msgid "Error"
+msgctxt "error"
 msgid "Error"
 msgstr "Error"
 
-#: src/ui/main.qml:173
-#, kde-format
+#: src/ui/main.qml:164
+#, fuzzy, kde-format
+#| msgid "snapd error: %1"
+msgctxt "snap error"
 msgid "snapd error: %1"
 msgstr "Error de l'«snapd»: %1"
+
+#~ msgid "Add user accounts and change passwords"
+#~ msgstr "Afegeix comptes d'usuari i canvia les contrasenyes"
+
+#~ msgid ""
+#~ "Allows communication with the accounts service, such as GNOME Online "
+#~ "Accounts"
+#~ msgstr ""
+#~ "Permet la comunicació amb el servei de comptes, com ara els comptes en "
+#~ "línia del GNOME"
+
+#~ msgid "Play and record sound"
+#~ msgstr "Reprodueix i grava so"
+
+#~ msgid "Allows access to AppStream metadata"
+#~ msgstr "Permet l'accés a les metadades d'AppStream"
+
+#~ msgid "Play audio"
+#~ msgstr "Reprodueix àudio"
+
+#~ msgid "Record audio"
+#~ msgstr "Enregistra àudio"
+
+#~ msgid "Advertise services over the local network"
+#~ msgstr "Publica els serveis a través de la xarxa local"
+
+#~ msgid "Detect network devices using mDNS/DNS-SD (Bonjour/zeroconf)"
+#~ msgstr ""
+#~ "Detecta dispositius de xarxa utilitzant mDNS/DNS-SD (Bonjour/zeroconf)"
+
+#~ msgid "Access bluetooth hardware directly"
+#~ msgstr "Accedeix directament al maquinari Bluetooth"
+
+#~ msgid "Use bluetooth devices"
+#~ msgstr "Utilitza dispositius Bluetooth"
+
+#~ msgid "Use functions essential for Web browsers"
+#~ msgstr "Utilitza funcions essencials per als navegadors web"
+
+#~ msgid "Use your camera"
+#~ msgstr "Utilitza la càmera"
+
+#~ msgid "Access to the CUPS socket for printing"
+#~ msgstr "Accés al sòcol del CUPS per a imprimir"
+
+#~ msgid "Print documents"
+#~ msgstr "Imprimeix documents"
+
+#~ msgid "Use any connected joystick"
+#~ msgstr "Utilitza qualsevol palanca de control connectada"
+
+#~ msgid "Identify and launch desktop apps from other snaps"
+#~ msgstr "Identifica i llança aplicacions d'escriptori des d'altres «snaps»"
+
+# skip-rule: kct-docker
+#~ msgid "Allow connecting to the Docker service"
+#~ msgstr "Permet la connexió al servei Docker"
+
+#~ msgid "Configure network firewall"
+#~ msgstr "Configura el tallafoc de xarxa"
+
+#~ msgid "Setup and use privileged FUSE filesystems"
+#~ msgstr "Configura i utilitza sistemes de fitxers FUSE privilegiats"
+
+#~ msgid "Update firmware on this device"
+#~ msgstr "Actualitza microprogramari en aquest dispositiu"
+
+#~ msgid "Provides access to any GSettings item for current user"
+#~ msgstr ""
+#~ "Proporciona accés a qualsevol element de GSettings per a l'usuari actual"
+
+#~ msgid "Access hardware information"
+#~ msgstr "Accés a la informació del maquinari"
+
+#~ msgid "Provide entropy to hardware random number generator"
+#~ msgstr "Proporciona entropia al generador de nombres aleatoris de maquinari"
+
+#~ msgid "Use hardware-generated random numbers"
+#~ msgstr "Utilitza nombres aleatoris generats per maquinari"
+
+#~ msgid "Access files in your home folder"
+#~ msgstr "Accedeix als fitxers de la carpeta d'inici"
+
+#~ msgid "Access libvirt service"
+#~ msgstr "Accedeix al servei «libvirt»"
+
+#~ msgid "Change system language and region settings"
+#~ msgstr "Canvia la configuració d'idioma i regió del sistema"
+
+#~ msgid "Change location settings and providers"
+#~ msgstr "Canvia la configuració d'ubicació i els proveïdors"
+
+#~ msgid "Access your location"
+#~ msgstr "Accedeix a la vostra ubicació"
+
+#~ msgid "Read system and application logs"
+#~ msgstr "Llegeix els registres del sistema i de les aplicacions"
+
+#~ msgid "Access LXD service"
+#~ msgstr "Accedeix al servei LXD"
+
+#~ msgid "Allows operating as the LXD service"
+#~ msgstr "Permet operar com a servei LXD"
+
+#~ msgid "Use and configure modems"
+#~ msgstr "Utilitza i configura mòdems"
+
+#~ msgid "Read system mount information and disk quotas"
+#~ msgstr "Llegeix la informació de muntatge del sistema i quotes de disc"
+
+#~ msgid "Control music and video players"
+#~ msgstr "Controla els reproductors de música i vídeo"
+
+#~ msgid "Access the internet"
+#~ msgstr "Accés a Internet"
+
+#~ msgid "Allows operating as a network service, enabling snap to run a server"
+#~ msgstr ""
+#~ "Permet operar com a servei de xarxa, habilitant l'«snap» per a executar "
+#~ "un servidor"
+
+#~ msgid "Change low-level network settings"
+#~ msgstr "Canvia la configuració de la xarxa a baix nivell"
+
+#~ msgid ""
+#~ "Access the NetworkManager service to read and change network settings"
+#~ msgstr ""
+#~ "Accés al servei NetworkManager per a llegir i canviar la configuració de "
+#~ "la xarxa"
+
+#~ msgid "Allows observing NetworkManager settings"
+#~ msgstr "Permet observar la configuració del NetworkManager"
+
+#~ msgid "Read access to network settings"
+#~ msgstr "Accés de lectura a la configuració de la xarxa"
+
+#~ msgid "Change network settings"
+#~ msgstr "Canvia la configuració de la xarxa"
+
+#~ msgid "Read network settings"
+#~ msgstr "Llegeix la configuració de la xarxa"
+
+#~ msgid "Access the NetworkStatus service"
+#~ msgstr "Accedeix al servei NetworkStatus"
+
+#~ msgid ""
+#~ "Access the ofono service to read and change network settings for mobile "
+#~ "telephony"
+#~ msgstr ""
+#~ "Accedeix al servei «ofono» per a llegir i canviar la configuració de la "
+#~ "xarxa de telefonia mòbil"
+
+#~ msgid "Control Open vSwitch hardware"
+#~ msgstr "Controla el maquinari Open vSwitch"
+
+#~ msgid "Read from CD/DVD"
+#~ msgstr "Llegeix des de CD/DVD"
+
+#~ msgid "Read, add, change, or remove saved passwords"
+#~ msgstr "Llegeix, afegeix, canvia o elimina contrasenyes desades"
+
+#~ msgid "Control the PackageKit service"
+#~ msgstr "Controla el servei PackageKit"
+
+#~ msgid "Permits communication with PCSD smart card daemon"
+#~ msgstr "Permet la comunicació amb el dimoni de targetes intel·ligents PCSD"
+
+#~ msgid ""
+#~ "Access pppd and ppp devices for configuring Point-to-Point Protocol "
+#~ "connections"
+#~ msgstr ""
+#~ "Accedeix als dispositius «pppd» i «ppp» per a configurar connexions del "
+#~ "protocol punt a punt"
+
+#~ msgid "Pause or end any process on the system"
+#~ msgstr "Posa en pausa o finalitza qualsevol procés al sistema"
+
+#~ msgid "Access USB hardware directly"
+#~ msgstr "Accedeix directament al maquinari USB"
+
+#~ msgid "Read/write files on removable storage devices"
+#~ msgstr "Llegeix/escriu fitxers en dispositius d'emmagatzematge extraïbles"
+
+#~ msgid "Prevent screen sleep/lock"
+#~ msgstr "Evita la suspensió/bloqueig de la pantalla"
+
+#~ msgid "Access serial port hardware"
+#~ msgstr "Accedeix al maquinari del port en sèrie"
+
+#~ msgid "Enables two snaps to access the same shared memory"
+#~ msgstr "Habilita dos «snaps» per a accedir a la mateixa memòria compartida"
+
+#~ msgid "Restart or power off the device"
+#~ msgstr "Reinicia o apaga el dispositiu"
+
+#~ msgid "Install, remove and configure software (snaps)"
+#~ msgstr "Instal·la, elimina i configura programari («snaps»)"
+
+#~ msgid "Access SSH private and public keys"
+#~ msgstr "Accedeix a les claus SSH privades i públiques"
+
+#~ msgid "Access SSH public keys"
+#~ msgstr "Accedeix a les claus SSH públiques"
+
+#~ msgid "Access Storage Framework service"
+#~ msgstr "Accedeix al servei de l'entorn de treball d'emmagatzematge"
+
+#~ msgid "Read process and system information"
+#~ msgstr "Llegeix la informació dels processos i del sistema"
+
+#~ msgid "Access system documentation in /usr/share/doc"
+#~ msgstr "Accedeix a la documentació del sistema a /usr/share/doc"
+
+#~ msgid "Monitor and control any running program"
+#~ msgstr "Segueix i controla qualsevol programa en execució"
+
+#~ msgid "Change the date and time"
+#~ msgstr "Canvia la data i l'hora"
+
+#~ msgid "Change time server settings"
+#~ msgstr "Canvia la configuració del servidor de temps"
+
+#~ msgid "Change the time zone"
+#~ msgstr "Canvia la zona horària"
+
+#~ msgid "Access the UDisks2 service for configuring disks and removable media"
+#~ msgstr ""
+#~ "Accedeix al servei UDisks2 per a configurar discs i suports extraïbles"
+
+#~ msgid "Access energy usage data"
+#~ msgstr "Accedeix a les dades d'ús d'energia"
+
+#~ msgid "Read/write access to U2F devices exposed"
+#~ msgstr "Accés de lectura/escriptura als dispositius U2F exposats"

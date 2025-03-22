@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: snap-kcm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-09 00:43+0000\n"
+"POT-Creation-Date: 2025-03-22 00:43+0000\n"
 "PO-Revision-Date: 2024-12-11 21:43+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -16,372 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 22.12.3\n"
-
-#: src/snapbackend.cpp:238
-#, kde-format
-msgid "Add user accounts and change passwords"
-msgstr "Lisää käyttäjätilejä ja vaihda salasanoja"
-
-#: src/snapbackend.cpp:239
-#, kde-format
-msgid ""
-"Allows communication with the accounts service, such as GNOME Online Accounts"
-msgstr "Mahdollistaa viestinnän tilipalvelun kuten Gnomen verkkotilien kanssa"
-
-#: src/snapbackend.cpp:240 src/snapbackend.cpp:290
-#, kde-format
-msgid "Play and record sound"
-msgstr "Toista ja nauhoita ääntä"
-
-#: src/snapbackend.cpp:241
-#, kde-format
-msgid "Allows access to AppStream metadata"
-msgstr "Mahdollistaa pääsyn AppStream-metatietoon"
-
-#: src/snapbackend.cpp:242
-#, kde-format
-msgid "Play audio"
-msgstr "Toista ääntä"
-
-#: src/snapbackend.cpp:243
-#, kde-format
-msgid "Record audio"
-msgstr "Nauhoita ääntä"
-
-#: src/snapbackend.cpp:244
-#, kde-format
-msgid "Advertise services over the local network"
-msgstr "Mainosta palvelua paikallisverkossa"
-
-#: src/snapbackend.cpp:245
-#, kde-format
-msgid "Detect network devices using mDNS/DNS-SD (Bonjour/zeroconf)"
-msgstr "Havaitse verkkolaitteet mDNS/DNS-SD:llä (Bonjour/zeroconf)"
-
-#: src/snapbackend.cpp:246
-#, kde-format
-msgid "Access bluetooth hardware directly"
-msgstr "Suora pääsy Bluetooth-laitteisiin"
-
-#: src/snapbackend.cpp:247
-#, kde-format
-msgid "Use bluetooth devices"
-msgstr "Käytä Bluetooth-laitteita"
-
-#: src/snapbackend.cpp:248
-#, kde-format
-msgid "Use functions essential for Web browsers"
-msgstr "Käytä verkkoselaimille oleellisia toimintoja"
-
-#: src/snapbackend.cpp:249
-#, kde-format
-msgid "Use your camera"
-msgstr "Käytä kameraa"
-
-#: src/snapbackend.cpp:250
-#, kde-format
-msgid "Access to the CUPS socket for printing"
-msgstr "Pääsy CUPS-pistokkeeseen tulostusta varten"
-
-#: src/snapbackend.cpp:251
-#, kde-format
-msgid "Print documents"
-msgstr "Tulosta tiedostoja"
-
-#: src/snapbackend.cpp:252
-#, kde-format
-msgid "Use any connected joystick"
-msgstr "Käytä mitä tahansa kytkettyä peliohjainta"
-
-#: src/snapbackend.cpp:253
-#, kde-format
-msgid "Identify and launch desktop apps from other snaps"
-msgstr "Tunnista ja käynnistä muiden Snap-tiedostojen työpöytäsovellukset"
-
-#: src/snapbackend.cpp:254
-#, kde-format
-msgid "Allow connecting to the Docker service"
-msgstr "Mahdollista yhdistäminen Docker-palveluun"
-
-#: src/snapbackend.cpp:255
-#, kde-format
-msgid "Configure network firewall"
-msgstr "Määritä verkon palomuuri"
-
-#: src/snapbackend.cpp:256
-#, kde-format
-msgid "Setup and use privileged FUSE filesystems"
-msgstr "Aseta ja käytä etuoikeutettuja FUSE-tiedostojärjestelmiä"
-
-#: src/snapbackend.cpp:257
-#, kde-format
-msgid "Update firmware on this device"
-msgstr "Päivitä laitteen varusohjelmisto"
-
-#: src/snapbackend.cpp:258
-#, kde-format
-msgid "Provides access to any GSettings item for current user"
-msgstr "Tarjoaa pääsyn nykyisen käyttäjän GSettings-tietueisiin"
-
-#: src/snapbackend.cpp:259
-#, kde-format
-msgid "Access hardware information"
-msgstr "Pääsy laitetietoihin"
-
-#: src/snapbackend.cpp:260
-#, kde-format
-msgid "Provide entropy to hardware random number generator"
-msgstr "Tarjoa entropia laitteiston satunnaislukugeneraattorille"
-
-#: src/snapbackend.cpp:261
-#, kde-format
-msgid "Use hardware-generated random numbers"
-msgstr "Käytä laitteiston tuottamia satunnaislukuja"
-
-#: src/snapbackend.cpp:262
-#, kde-format
-msgid "Access files in your home folder"
-msgstr "Käytä kotikansiosi tiedostoja"
-
-#: src/snapbackend.cpp:263
-#, kde-format
-msgid "Access libvirt service"
-msgstr "Pääsy libvirt-palveluun"
-
-#: src/snapbackend.cpp:264
-#, kde-format
-msgid "Change system language and region settings"
-msgstr "Muuta järjestelmän kieli- ja alueasetuksia"
-
-#: src/snapbackend.cpp:265
-#, kde-format
-msgid "Change location settings and providers"
-msgstr "Muuta sijainti- ja tarjoaja-asetuksia"
-
-#: src/snapbackend.cpp:266
-#, kde-format
-msgid "Access your location"
-msgstr "Pääsy sijaintiisi"
-
-#: src/snapbackend.cpp:267
-#, kde-format
-msgid "Read system and application logs"
-msgstr "Lue järjestelmän ja sovelluksen lokeja"
-
-#: src/snapbackend.cpp:268
-#, kde-format
-msgid "Access LXD service"
-msgstr "Pääsy LXD-palveluun"
-
-#: src/snapbackend.cpp:269
-#, kde-format
-msgid "Allows operating as the LXD service"
-msgstr "Mahdollistaa toimimisen LXD-palveluna"
-
-#: src/snapbackend.cpp:270
-#, kde-format
-msgid "Use and configure modems"
-msgstr "Käytä ja määritä modeemeja"
-
-#: src/snapbackend.cpp:271
-#, kde-format
-msgid "Read system mount information and disk quotas"
-msgstr "Lue järjestelmän liitospiste- ja levyvaraustiedot"
-
-#: src/snapbackend.cpp:272
-#, kde-format
-msgid "Control music and video players"
-msgstr "Hallitse musiikki- ja videosoittimia"
-
-#: src/snapbackend.cpp:273
-#, kde-format
-msgid "Access the internet"
-msgstr "Pääsy internetiin"
-
-#: src/snapbackend.cpp:274
-#, kde-format
-msgid "Allows operating as a network service, enabling snap to run a server"
-msgstr ""
-"Mahdollistaa toimimisen verkkopalveluna, jolloin Snap voi toimia palvelimena"
-
-#: src/snapbackend.cpp:275
-#, kde-format
-msgid "Change low-level network settings"
-msgstr "Muuta alatason verkko-asetuksia"
-
-#: src/snapbackend.cpp:276
-#, kde-format
-msgid "Access the NetworkManager service to read and change network settings"
-msgstr ""
-"Pääsy verkkoasetukset lukevat ja niitä muuttavaan NetWorkManager-palveluun"
-
-#: src/snapbackend.cpp:277
-#, kde-format
-msgid "Allows observing NetworkManager settings"
-msgstr "Mahdollistaa NetworkManager-asetusten tarkkailun"
-
-#: src/snapbackend.cpp:278
-#, kde-format
-msgid "Read access to network settings"
-msgstr "Lukuoikeus verkkoasetuksiin"
-
-#: src/snapbackend.cpp:279
-#, kde-format
-msgid "Change network settings"
-msgstr "Muuta verkkoasetuksia"
-
-#: src/snapbackend.cpp:280
-#, kde-format
-msgid "Read network settings"
-msgstr "Lue verkkoasetukset"
-
-#: src/snapbackend.cpp:281
-#, kde-format
-msgid "Access the NetworkStatus service"
-msgstr "Pääsy NetworkStatus-palveluun"
-
-#: src/snapbackend.cpp:282
-#, kde-format
-msgid ""
-"Access the ofono service to read and change network settings for mobile "
-"telephony"
-msgstr ""
-"Pääsy mobiiliverkkoasetukset lukevaan ja niitä muuttavaan ofono-palveluun"
-
-#: src/snapbackend.cpp:283
-#, kde-format
-msgid "Control Open vSwitch hardware"
-msgstr "Hallitse Open vSwitch -laitteistoa"
-
-#: src/snapbackend.cpp:284
-#, kde-format
-msgid "Read from CD/DVD"
-msgstr "Lue CD:ltä tai DVD:ltä"
-
-#: src/snapbackend.cpp:285
-#, kde-format
-msgid "Read, add, change, or remove saved passwords"
-msgstr "Lue, lisää, vaihda tai poista tallennettuja salasanoja"
-
-#: src/snapbackend.cpp:286
-#, kde-format
-msgid "Control the PackageKit service"
-msgstr "Hallitse PackageKit-palvelua"
-
-#: src/snapbackend.cpp:287
-#, kde-format
-msgid "Permits communication with PCSD smart card daemon"
-msgstr "Sallii viestinnän PCSD-älykorttipalvelun kanssa"
-
-#: src/snapbackend.cpp:288
-#, kde-format
-msgid ""
-"Access pppd and ppp devices for configuring Point-to-Point Protocol "
-"connections"
-msgstr ""
-"Pääsy pppd- ja ppp-laitteisiin PPP-yhteyskäytännön yhteyksien määrittämiseksi"
-
-#: src/snapbackend.cpp:289
-#, kde-format
-msgid "Pause or end any process on the system"
-msgstr "Keskeytä tai lopeta mikä tahansa järjestelmän prosessi"
-
-#: src/snapbackend.cpp:291
-#, kde-format
-msgid "Access USB hardware directly"
-msgstr "Suora pääsy USB-laitteistoon"
-
-#: src/snapbackend.cpp:292
-#, kde-format
-msgid "Read/write files on removable storage devices"
-msgstr "Lue ja kirjoita tiedostoja irrotettavilla talletuslaitteilla"
-
-#: src/snapbackend.cpp:293
-#, kde-format
-msgid "Prevent screen sleep/lock"
-msgstr "Estä näytön sammutus ja lukitus"
-
-#: src/snapbackend.cpp:294
-#, kde-format
-msgid "Access serial port hardware"
-msgstr "Pääsy sarjaporttilaitteisiin"
-
-#: src/snapbackend.cpp:295
-#, kde-format
-msgid "Enables two snaps to access the same shared memory"
-msgstr "Mahdollistaa kahden Snap-tiedoston käyttää samaa jaettua muistia"
-
-#: src/snapbackend.cpp:296
-#, kde-format
-msgid "Restart or power off the device"
-msgstr "Käynnistä uudelleen tai sammuta laite"
-
-#: src/snapbackend.cpp:297
-#, kde-format
-msgid "Install, remove and configure software (snaps)"
-msgstr "Asenna, poista ja määritä Snap-ohjelmia"
-
-#: src/snapbackend.cpp:298
-#, kde-format
-msgid "Access SSH private and public keys"
-msgstr "Pääsy yksityisiin ja julkisiin SSH-avaimiin"
-
-#: src/snapbackend.cpp:299
-#, kde-format
-msgid "Access SSH public keys"
-msgstr "Pääsy julkisiin SSH-avaimiin"
-
-#: src/snapbackend.cpp:300
-#, kde-format
-msgid "Access Storage Framework service"
-msgstr "Pääsy talletustilakehyspalveluun"
-
-#: src/snapbackend.cpp:301
-#, kde-format
-msgid "Read process and system information"
-msgstr "Lue prosessien ja järjestelmän tietoja"
-
-#: src/snapbackend.cpp:302
-#, kde-format
-msgid "Access system documentation in /usr/share/doc"
-msgstr "Pääsy /usr/share/doc-järjestelmäohjeisiin"
-
-#: src/snapbackend.cpp:303
-#, kde-format
-msgid "Monitor and control any running program"
-msgstr "Valvo ja hallitse mitä tahansa käynnissä olevaa ohjelmaa"
-
-#: src/snapbackend.cpp:304
-#, kde-format
-msgid "Change the date and time"
-msgstr "Muuta päiväys ja aika"
-
-#: src/snapbackend.cpp:305
-#, kde-format
-msgid "Change time server settings"
-msgstr "Muuta aikapalvelimen asetuksia"
-
-#: src/snapbackend.cpp:306
-#, kde-format
-msgid "Change the time zone"
-msgstr "Vaihda aikavyöhyke"
-
-#: src/snapbackend.cpp:307
-#, kde-format
-msgid "Access the UDisks2 service for configuring disks and removable media"
-msgstr ""
-"Pääsy UDisks2-palveluun levyjen ja irrotettavien tietovälineiden "
-"määrittämiseksi"
-
-#: src/snapbackend.cpp:308
-#, kde-format
-msgid "Access energy usage data"
-msgstr "Pääsy virrankäyttötietoon"
-
-#: src/snapbackend.cpp:309
-#, kde-format
-msgid "Read/write access to U2F devices exposed"
-msgstr "U2F-laitteiden luku- ja kirjoitusoikeus paljastettu"
 
 #: src/ui/main.qml:26
 #, kde-format
@@ -393,22 +27,255 @@ msgstr "Snap-sovellukset"
 msgid "Install snaps to change the permissions"
 msgstr "Muuta käyttöoikeuksia asentamalla Snap-ohjelmia"
 
-#: src/ui/main.qml:80
+#: src/ui/main.qml:79
 #, kde-format
 msgid "Launch"
 msgstr "Käynnistä"
 
-#: src/ui/main.qml:95
+#: src/ui/main.qml:94
 #, kde-format
 msgid "Permissions for %1"
 msgstr "%1 – käyttöoikeudet"
 
-#: src/ui/main.qml:166
-#, kde-format
+#: src/ui/main.qml:157
+#, fuzzy, kde-format
+#| msgid "Error"
+msgctxt "error"
 msgid "Error"
 msgstr "Virhe"
 
-#: src/ui/main.qml:173
-#, kde-format
+#: src/ui/main.qml:164
+#, fuzzy, kde-format
+#| msgid "snapd error: %1"
+msgctxt "snap error"
 msgid "snapd error: %1"
 msgstr "snapd-virhe: %1"
+
+#~ msgid "Add user accounts and change passwords"
+#~ msgstr "Lisää käyttäjätilejä ja vaihda salasanoja"
+
+#~ msgid ""
+#~ "Allows communication with the accounts service, such as GNOME Online "
+#~ "Accounts"
+#~ msgstr ""
+#~ "Mahdollistaa viestinnän tilipalvelun kuten Gnomen verkkotilien kanssa"
+
+#~ msgid "Play and record sound"
+#~ msgstr "Toista ja nauhoita ääntä"
+
+#~ msgid "Allows access to AppStream metadata"
+#~ msgstr "Mahdollistaa pääsyn AppStream-metatietoon"
+
+#~ msgid "Play audio"
+#~ msgstr "Toista ääntä"
+
+#~ msgid "Record audio"
+#~ msgstr "Nauhoita ääntä"
+
+#~ msgid "Advertise services over the local network"
+#~ msgstr "Mainosta palvelua paikallisverkossa"
+
+#~ msgid "Detect network devices using mDNS/DNS-SD (Bonjour/zeroconf)"
+#~ msgstr "Havaitse verkkolaitteet mDNS/DNS-SD:llä (Bonjour/zeroconf)"
+
+#~ msgid "Access bluetooth hardware directly"
+#~ msgstr "Suora pääsy Bluetooth-laitteisiin"
+
+#~ msgid "Use bluetooth devices"
+#~ msgstr "Käytä Bluetooth-laitteita"
+
+#~ msgid "Use functions essential for Web browsers"
+#~ msgstr "Käytä verkkoselaimille oleellisia toimintoja"
+
+#~ msgid "Use your camera"
+#~ msgstr "Käytä kameraa"
+
+#~ msgid "Access to the CUPS socket for printing"
+#~ msgstr "Pääsy CUPS-pistokkeeseen tulostusta varten"
+
+#~ msgid "Print documents"
+#~ msgstr "Tulosta tiedostoja"
+
+#~ msgid "Use any connected joystick"
+#~ msgstr "Käytä mitä tahansa kytkettyä peliohjainta"
+
+#~ msgid "Identify and launch desktop apps from other snaps"
+#~ msgstr "Tunnista ja käynnistä muiden Snap-tiedostojen työpöytäsovellukset"
+
+#~ msgid "Allow connecting to the Docker service"
+#~ msgstr "Mahdollista yhdistäminen Docker-palveluun"
+
+#~ msgid "Configure network firewall"
+#~ msgstr "Määritä verkon palomuuri"
+
+#~ msgid "Setup and use privileged FUSE filesystems"
+#~ msgstr "Aseta ja käytä etuoikeutettuja FUSE-tiedostojärjestelmiä"
+
+#~ msgid "Update firmware on this device"
+#~ msgstr "Päivitä laitteen varusohjelmisto"
+
+#~ msgid "Provides access to any GSettings item for current user"
+#~ msgstr "Tarjoaa pääsyn nykyisen käyttäjän GSettings-tietueisiin"
+
+#~ msgid "Access hardware information"
+#~ msgstr "Pääsy laitetietoihin"
+
+#~ msgid "Provide entropy to hardware random number generator"
+#~ msgstr "Tarjoa entropia laitteiston satunnaislukugeneraattorille"
+
+#~ msgid "Use hardware-generated random numbers"
+#~ msgstr "Käytä laitteiston tuottamia satunnaislukuja"
+
+#~ msgid "Access files in your home folder"
+#~ msgstr "Käytä kotikansiosi tiedostoja"
+
+#~ msgid "Access libvirt service"
+#~ msgstr "Pääsy libvirt-palveluun"
+
+#~ msgid "Change system language and region settings"
+#~ msgstr "Muuta järjestelmän kieli- ja alueasetuksia"
+
+#~ msgid "Change location settings and providers"
+#~ msgstr "Muuta sijainti- ja tarjoaja-asetuksia"
+
+#~ msgid "Access your location"
+#~ msgstr "Pääsy sijaintiisi"
+
+#~ msgid "Read system and application logs"
+#~ msgstr "Lue järjestelmän ja sovelluksen lokeja"
+
+#~ msgid "Access LXD service"
+#~ msgstr "Pääsy LXD-palveluun"
+
+#~ msgid "Allows operating as the LXD service"
+#~ msgstr "Mahdollistaa toimimisen LXD-palveluna"
+
+#~ msgid "Use and configure modems"
+#~ msgstr "Käytä ja määritä modeemeja"
+
+#~ msgid "Read system mount information and disk quotas"
+#~ msgstr "Lue järjestelmän liitospiste- ja levyvaraustiedot"
+
+#~ msgid "Control music and video players"
+#~ msgstr "Hallitse musiikki- ja videosoittimia"
+
+#~ msgid "Access the internet"
+#~ msgstr "Pääsy internetiin"
+
+#~ msgid "Allows operating as a network service, enabling snap to run a server"
+#~ msgstr ""
+#~ "Mahdollistaa toimimisen verkkopalveluna, jolloin Snap voi toimia "
+#~ "palvelimena"
+
+#~ msgid "Change low-level network settings"
+#~ msgstr "Muuta alatason verkko-asetuksia"
+
+#~ msgid ""
+#~ "Access the NetworkManager service to read and change network settings"
+#~ msgstr ""
+#~ "Pääsy verkkoasetukset lukevat ja niitä muuttavaan NetWorkManager-palveluun"
+
+#~ msgid "Allows observing NetworkManager settings"
+#~ msgstr "Mahdollistaa NetworkManager-asetusten tarkkailun"
+
+#~ msgid "Read access to network settings"
+#~ msgstr "Lukuoikeus verkkoasetuksiin"
+
+#~ msgid "Change network settings"
+#~ msgstr "Muuta verkkoasetuksia"
+
+#~ msgid "Read network settings"
+#~ msgstr "Lue verkkoasetukset"
+
+#~ msgid "Access the NetworkStatus service"
+#~ msgstr "Pääsy NetworkStatus-palveluun"
+
+#~ msgid ""
+#~ "Access the ofono service to read and change network settings for mobile "
+#~ "telephony"
+#~ msgstr ""
+#~ "Pääsy mobiiliverkkoasetukset lukevaan ja niitä muuttavaan ofono-palveluun"
+
+#~ msgid "Control Open vSwitch hardware"
+#~ msgstr "Hallitse Open vSwitch -laitteistoa"
+
+#~ msgid "Read from CD/DVD"
+#~ msgstr "Lue CD:ltä tai DVD:ltä"
+
+#~ msgid "Read, add, change, or remove saved passwords"
+#~ msgstr "Lue, lisää, vaihda tai poista tallennettuja salasanoja"
+
+#~ msgid "Control the PackageKit service"
+#~ msgstr "Hallitse PackageKit-palvelua"
+
+#~ msgid "Permits communication with PCSD smart card daemon"
+#~ msgstr "Sallii viestinnän PCSD-älykorttipalvelun kanssa"
+
+#~ msgid ""
+#~ "Access pppd and ppp devices for configuring Point-to-Point Protocol "
+#~ "connections"
+#~ msgstr ""
+#~ "Pääsy pppd- ja ppp-laitteisiin PPP-yhteyskäytännön yhteyksien "
+#~ "määrittämiseksi"
+
+#~ msgid "Pause or end any process on the system"
+#~ msgstr "Keskeytä tai lopeta mikä tahansa järjestelmän prosessi"
+
+#~ msgid "Access USB hardware directly"
+#~ msgstr "Suora pääsy USB-laitteistoon"
+
+#~ msgid "Read/write files on removable storage devices"
+#~ msgstr "Lue ja kirjoita tiedostoja irrotettavilla talletuslaitteilla"
+
+#~ msgid "Prevent screen sleep/lock"
+#~ msgstr "Estä näytön sammutus ja lukitus"
+
+#~ msgid "Access serial port hardware"
+#~ msgstr "Pääsy sarjaporttilaitteisiin"
+
+#~ msgid "Enables two snaps to access the same shared memory"
+#~ msgstr "Mahdollistaa kahden Snap-tiedoston käyttää samaa jaettua muistia"
+
+#~ msgid "Restart or power off the device"
+#~ msgstr "Käynnistä uudelleen tai sammuta laite"
+
+#~ msgid "Install, remove and configure software (snaps)"
+#~ msgstr "Asenna, poista ja määritä Snap-ohjelmia"
+
+#~ msgid "Access SSH private and public keys"
+#~ msgstr "Pääsy yksityisiin ja julkisiin SSH-avaimiin"
+
+#~ msgid "Access SSH public keys"
+#~ msgstr "Pääsy julkisiin SSH-avaimiin"
+
+#~ msgid "Access Storage Framework service"
+#~ msgstr "Pääsy talletustilakehyspalveluun"
+
+#~ msgid "Read process and system information"
+#~ msgstr "Lue prosessien ja järjestelmän tietoja"
+
+#~ msgid "Access system documentation in /usr/share/doc"
+#~ msgstr "Pääsy /usr/share/doc-järjestelmäohjeisiin"
+
+#~ msgid "Monitor and control any running program"
+#~ msgstr "Valvo ja hallitse mitä tahansa käynnissä olevaa ohjelmaa"
+
+#~ msgid "Change the date and time"
+#~ msgstr "Muuta päiväys ja aika"
+
+#~ msgid "Change time server settings"
+#~ msgstr "Muuta aikapalvelimen asetuksia"
+
+#~ msgid "Change the time zone"
+#~ msgstr "Vaihda aikavyöhyke"
+
+#~ msgid "Access the UDisks2 service for configuring disks and removable media"
+#~ msgstr ""
+#~ "Pääsy UDisks2-palveluun levyjen ja irrotettavien tietovälineiden "
+#~ "määrittämiseksi"
+
+#~ msgid "Access energy usage data"
+#~ msgstr "Pääsy virrankäyttötietoon"
+
+#~ msgid "Read/write access to U2F devices exposed"
+#~ msgstr "U2F-laitteiden luku- ja kirjoitusoikeus paljastettu"

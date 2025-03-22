@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: snap-kcm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-09 00:43+0000\n"
+"POT-Creation-Date: 2025-03-22 00:43+0000\n"
 "PO-Revision-Date: 2024-12-19 16:31+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -16,366 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Lokalize 24.12.0\n"
-
-#: src/snapbackend.cpp:238
-#, kde-format
-msgid "Add user accounts and change passwords"
-msgstr "新增使用者帳號或變更密碼"
-
-#: src/snapbackend.cpp:239
-#, kde-format
-msgid ""
-"Allows communication with the accounts service, such as GNOME Online Accounts"
-msgstr "允許與《GNOME 線上帳號》等提供帳號存取的服務溝通"
-
-#: src/snapbackend.cpp:240 src/snapbackend.cpp:290
-#, kde-format
-msgid "Play and record sound"
-msgstr "播放或錄製聲音"
-
-#: src/snapbackend.cpp:241
-#, kde-format
-msgid "Allows access to AppStream metadata"
-msgstr "允許存取 AppStream 中繼資料"
-
-#: src/snapbackend.cpp:242
-#, kde-format
-msgid "Play audio"
-msgstr "播放音訊"
-
-#: src/snapbackend.cpp:243
-#, kde-format
-msgid "Record audio"
-msgstr "錄製音訊"
-
-#: src/snapbackend.cpp:244
-#, kde-format
-msgid "Advertise services over the local network"
-msgstr "在本地網路上廣播服務"
-
-#: src/snapbackend.cpp:245
-#, kde-format
-msgid "Detect network devices using mDNS/DNS-SD (Bonjour/zeroconf)"
-msgstr "使用 mDNS/DNS-SD (Bonjour/zeroconf) 來偵測網路裝置"
-
-#: src/snapbackend.cpp:246
-#, kde-format
-msgid "Access bluetooth hardware directly"
-msgstr "直接存取藍牙硬體"
-
-#: src/snapbackend.cpp:247
-#, kde-format
-msgid "Use bluetooth devices"
-msgstr "使用藍牙裝置"
-
-#: src/snapbackend.cpp:248
-#, kde-format
-msgid "Use functions essential for Web browsers"
-msgstr "使用網頁瀏覽器所需的各種功能"
-
-#: src/snapbackend.cpp:249
-#, kde-format
-msgid "Use your camera"
-msgstr "使用您的相機"
-
-#: src/snapbackend.cpp:250
-#, kde-format
-msgid "Access to the CUPS socket for printing"
-msgstr "存取 CUPS socket 以便進行列印"
-
-#: src/snapbackend.cpp:251
-#, kde-format
-msgid "Print documents"
-msgstr "列印文件"
-
-#: src/snapbackend.cpp:252
-#, kde-format
-msgid "Use any connected joystick"
-msgstr "使用任何已連接的控制桿"
-
-#: src/snapbackend.cpp:253
-#, kde-format
-msgid "Identify and launch desktop apps from other snaps"
-msgstr "識別並啟動其他 snap 當中的桌面應用程式"
-
-#: src/snapbackend.cpp:254
-#, kde-format
-msgid "Allow connecting to the Docker service"
-msgstr "允許連線到 Docker 服務"
-
-#: src/snapbackend.cpp:255
-#, kde-format
-msgid "Configure network firewall"
-msgstr "設定網路防火牆"
-
-#: src/snapbackend.cpp:256
-#, kde-format
-msgid "Setup and use privileged FUSE filesystems"
-msgstr "設定並使用有權力的 FUSE 檔案系統"
-
-#: src/snapbackend.cpp:257
-#, kde-format
-msgid "Update firmware on this device"
-msgstr "更新此裝置的韌體"
-
-#: src/snapbackend.cpp:258
-#, kde-format
-msgid "Provides access to any GSettings item for current user"
-msgstr "提供目前使用者任何 GSettings 項目的存取"
-
-#: src/snapbackend.cpp:259
-#, kde-format
-msgid "Access hardware information"
-msgstr "存取硬體資訊"
-
-#: src/snapbackend.cpp:260
-#, kde-format
-msgid "Provide entropy to hardware random number generator"
-msgstr "提供 entropy 給硬體的隨機亂數產生器"
-
-#: src/snapbackend.cpp:261
-#, kde-format
-msgid "Use hardware-generated random numbers"
-msgstr "使用硬體產生的隨機亂數"
-
-#: src/snapbackend.cpp:262
-#, kde-format
-msgid "Access files in your home folder"
-msgstr "存取您的家目錄當中的檔案"
-
-#: src/snapbackend.cpp:263
-#, kde-format
-msgid "Access libvirt service"
-msgstr "存取 libvirt 服務"
-
-#: src/snapbackend.cpp:264
-#, kde-format
-msgid "Change system language and region settings"
-msgstr "變更系統語言與地區設定值"
-
-#: src/snapbackend.cpp:265
-#, kde-format
-msgid "Change location settings and providers"
-msgstr "變更地理位置設定值與提供者"
-
-#: src/snapbackend.cpp:266
-#, kde-format
-msgid "Access your location"
-msgstr "存取您的地理位置"
-
-#: src/snapbackend.cpp:267
-#, kde-format
-msgid "Read system and application logs"
-msgstr "讀取系統與應用程式的日誌"
-
-#: src/snapbackend.cpp:268
-#, kde-format
-msgid "Access LXD service"
-msgstr "存取 LXD 服務"
-
-#: src/snapbackend.cpp:269
-#, kde-format
-msgid "Allows operating as the LXD service"
-msgstr "允許作為 LXD 服務運行"
-
-#: src/snapbackend.cpp:270
-#, kde-format
-msgid "Use and configure modems"
-msgstr "使用或設定數據機"
-
-#: src/snapbackend.cpp:271
-#, kde-format
-msgid "Read system mount information and disk quotas"
-msgstr "讀取系統的掛載資訊與磁碟配額"
-
-#: src/snapbackend.cpp:272
-#, kde-format
-msgid "Control music and video players"
-msgstr "控制音樂與影片播放器"
-
-#: src/snapbackend.cpp:273
-#, kde-format
-msgid "Access the internet"
-msgstr "存取網際網路"
-
-#: src/snapbackend.cpp:274
-#, kde-format
-msgid "Allows operating as a network service, enabling snap to run a server"
-msgstr "允許作為網路服務運行，讓 snap 能夠執行伺服器"
-
-#: src/snapbackend.cpp:275
-#, kde-format
-msgid "Change low-level network settings"
-msgstr "變更底層的網路設定"
-
-#: src/snapbackend.cpp:276
-#, kde-format
-msgid "Access the NetworkManager service to read and change network settings"
-msgstr "存取 NetworkManager 服務來讀取或變更網路設定"
-
-#: src/snapbackend.cpp:277
-#, kde-format
-msgid "Allows observing NetworkManager settings"
-msgstr "允許觀察 NetworkManager 設定值"
-
-#: src/snapbackend.cpp:278
-#, kde-format
-msgid "Read access to network settings"
-msgstr "讀取網路設定值的存取"
-
-#: src/snapbackend.cpp:279
-#, kde-format
-msgid "Change network settings"
-msgstr "變更網路設定值"
-
-#: src/snapbackend.cpp:280
-#, kde-format
-msgid "Read network settings"
-msgstr "讀取網路設定值"
-
-#: src/snapbackend.cpp:281
-#, kde-format
-msgid "Access the NetworkStatus service"
-msgstr "存取 NetworkStatus 服務"
-
-#: src/snapbackend.cpp:282
-#, kde-format
-msgid ""
-"Access the ofono service to read and change network settings for mobile "
-"telephony"
-msgstr "存取 ofono 服務來讀取或變更行動通訊的網路設定"
-
-#: src/snapbackend.cpp:283
-#, kde-format
-msgid "Control Open vSwitch hardware"
-msgstr "控制 Open vSwitch 硬體"
-
-#: src/snapbackend.cpp:284
-#, kde-format
-msgid "Read from CD/DVD"
-msgstr "讀取 CD/DVD"
-
-#: src/snapbackend.cpp:285
-#, kde-format
-msgid "Read, add, change, or remove saved passwords"
-msgstr "讀取、加入、變更或移除已儲存的密碼"
-
-#: src/snapbackend.cpp:286
-#, kde-format
-msgid "Control the PackageKit service"
-msgstr "控制 PackageKit 服務"
-
-#: src/snapbackend.cpp:287
-#, kde-format
-msgid "Permits communication with PCSD smart card daemon"
-msgstr "允許與 PCSD 智慧卡伺服程式溝通"
-
-#: src/snapbackend.cpp:288
-#, kde-format
-msgid ""
-"Access pppd and ppp devices for configuring Point-to-Point Protocol "
-"connections"
-msgstr "存取 pppd 與 ppp 裝置來設定 PPP（點對點協定）的連線"
-
-#: src/snapbackend.cpp:289
-#, kde-format
-msgid "Pause or end any process on the system"
-msgstr "暫停或結束系統上的任何行程"
-
-#: src/snapbackend.cpp:291
-#, kde-format
-msgid "Access USB hardware directly"
-msgstr "直接存取 USB 硬體"
-
-#: src/snapbackend.cpp:292
-#, kde-format
-msgid "Read/write files on removable storage devices"
-msgstr "讀取或寫入可移除儲存裝置上的檔案"
-
-#: src/snapbackend.cpp:293
-#, kde-format
-msgid "Prevent screen sleep/lock"
-msgstr "防止螢幕睡眠/鎖定"
-
-#: src/snapbackend.cpp:294
-#, kde-format
-msgid "Access serial port hardware"
-msgstr "存取序列埠硬體"
-
-#: src/snapbackend.cpp:295
-#, kde-format
-msgid "Enables two snaps to access the same shared memory"
-msgstr "允許兩個 snap 存取同樣的共享記憶體"
-
-#: src/snapbackend.cpp:296
-#, kde-format
-msgid "Restart or power off the device"
-msgstr "讓裝置重新啟動或關機"
-
-#: src/snapbackend.cpp:297
-#, kde-format
-msgid "Install, remove and configure software (snaps)"
-msgstr "安裝、移除或設定軟體 (snap)"
-
-#: src/snapbackend.cpp:298
-#, kde-format
-msgid "Access SSH private and public keys"
-msgstr "存取 SSH 私鑰與公鑰"
-
-#: src/snapbackend.cpp:299
-#, kde-format
-msgid "Access SSH public keys"
-msgstr "存取 SSH 公鑰"
-
-#: src/snapbackend.cpp:300
-#, kde-format
-msgid "Access Storage Framework service"
-msgstr "存取「儲存框架」(Storage Framework) 服務"
-
-#: src/snapbackend.cpp:301
-#, kde-format
-msgid "Read process and system information"
-msgstr "讀取行程與系統資訊"
-
-#: src/snapbackend.cpp:302
-#, kde-format
-msgid "Access system documentation in /usr/share/doc"
-msgstr "存取位於 /usr/share/doc 的系統說明文件"
-
-#: src/snapbackend.cpp:303
-#, kde-format
-msgid "Monitor and control any running program"
-msgstr "監控或控制任何執行中的程式"
-
-#: src/snapbackend.cpp:304
-#, kde-format
-msgid "Change the date and time"
-msgstr "變更日期與時間"
-
-#: src/snapbackend.cpp:305
-#, kde-format
-msgid "Change time server settings"
-msgstr "變更時間伺服器設定值"
-
-#: src/snapbackend.cpp:306
-#, kde-format
-msgid "Change the time zone"
-msgstr "變更時區"
-
-#: src/snapbackend.cpp:307
-#, kde-format
-msgid "Access the UDisks2 service for configuring disks and removable media"
-msgstr "存取 UDisks2 服務來設定磁碟與可移除裝置"
-
-#: src/snapbackend.cpp:308
-#, kde-format
-msgid "Access energy usage data"
-msgstr "存取能源消耗資料"
-
-#: src/snapbackend.cpp:309
-#, kde-format
-msgid "Read/write access to U2F devices exposed"
-msgstr "對於已曝光的 U2F 裝置的讀寫存取"
 
 #: src/ui/main.qml:26
 #, kde-format
@@ -387,22 +27,246 @@ msgstr "Snap 應用程式"
 msgid "Install snaps to change the permissions"
 msgstr "安裝 snap 軟體包之後再來變更它們的權限"
 
-#: src/ui/main.qml:80
+#: src/ui/main.qml:79
 #, kde-format
 msgid "Launch"
 msgstr "啟動"
 
-#: src/ui/main.qml:95
+#: src/ui/main.qml:94
 #, kde-format
 msgid "Permissions for %1"
 msgstr "%1 的權限"
 
-#: src/ui/main.qml:166
-#, kde-format
+#: src/ui/main.qml:157
+#, fuzzy, kde-format
+#| msgid "Error"
+msgctxt "error"
 msgid "Error"
 msgstr "錯誤"
 
-#: src/ui/main.qml:173
-#, kde-format
+#: src/ui/main.qml:164
+#, fuzzy, kde-format
+#| msgid "snapd error: %1"
+msgctxt "snap error"
 msgid "snapd error: %1"
 msgstr "snapd 錯誤：%1"
+
+#~ msgid "Add user accounts and change passwords"
+#~ msgstr "新增使用者帳號或變更密碼"
+
+#~ msgid ""
+#~ "Allows communication with the accounts service, such as GNOME Online "
+#~ "Accounts"
+#~ msgstr "允許與《GNOME 線上帳號》等提供帳號存取的服務溝通"
+
+#~ msgid "Play and record sound"
+#~ msgstr "播放或錄製聲音"
+
+#~ msgid "Allows access to AppStream metadata"
+#~ msgstr "允許存取 AppStream 中繼資料"
+
+#~ msgid "Play audio"
+#~ msgstr "播放音訊"
+
+#~ msgid "Record audio"
+#~ msgstr "錄製音訊"
+
+#~ msgid "Advertise services over the local network"
+#~ msgstr "在本地網路上廣播服務"
+
+#~ msgid "Detect network devices using mDNS/DNS-SD (Bonjour/zeroconf)"
+#~ msgstr "使用 mDNS/DNS-SD (Bonjour/zeroconf) 來偵測網路裝置"
+
+#~ msgid "Access bluetooth hardware directly"
+#~ msgstr "直接存取藍牙硬體"
+
+#~ msgid "Use bluetooth devices"
+#~ msgstr "使用藍牙裝置"
+
+#~ msgid "Use functions essential for Web browsers"
+#~ msgstr "使用網頁瀏覽器所需的各種功能"
+
+#~ msgid "Use your camera"
+#~ msgstr "使用您的相機"
+
+#~ msgid "Access to the CUPS socket for printing"
+#~ msgstr "存取 CUPS socket 以便進行列印"
+
+#~ msgid "Print documents"
+#~ msgstr "列印文件"
+
+#~ msgid "Use any connected joystick"
+#~ msgstr "使用任何已連接的控制桿"
+
+#~ msgid "Identify and launch desktop apps from other snaps"
+#~ msgstr "識別並啟動其他 snap 當中的桌面應用程式"
+
+#~ msgid "Allow connecting to the Docker service"
+#~ msgstr "允許連線到 Docker 服務"
+
+#~ msgid "Configure network firewall"
+#~ msgstr "設定網路防火牆"
+
+#~ msgid "Setup and use privileged FUSE filesystems"
+#~ msgstr "設定並使用有權力的 FUSE 檔案系統"
+
+#~ msgid "Update firmware on this device"
+#~ msgstr "更新此裝置的韌體"
+
+#~ msgid "Provides access to any GSettings item for current user"
+#~ msgstr "提供目前使用者任何 GSettings 項目的存取"
+
+#~ msgid "Access hardware information"
+#~ msgstr "存取硬體資訊"
+
+#~ msgid "Provide entropy to hardware random number generator"
+#~ msgstr "提供 entropy 給硬體的隨機亂數產生器"
+
+#~ msgid "Use hardware-generated random numbers"
+#~ msgstr "使用硬體產生的隨機亂數"
+
+#~ msgid "Access files in your home folder"
+#~ msgstr "存取您的家目錄當中的檔案"
+
+#~ msgid "Access libvirt service"
+#~ msgstr "存取 libvirt 服務"
+
+#~ msgid "Change system language and region settings"
+#~ msgstr "變更系統語言與地區設定值"
+
+#~ msgid "Change location settings and providers"
+#~ msgstr "變更地理位置設定值與提供者"
+
+#~ msgid "Access your location"
+#~ msgstr "存取您的地理位置"
+
+#~ msgid "Read system and application logs"
+#~ msgstr "讀取系統與應用程式的日誌"
+
+#~ msgid "Access LXD service"
+#~ msgstr "存取 LXD 服務"
+
+#~ msgid "Allows operating as the LXD service"
+#~ msgstr "允許作為 LXD 服務運行"
+
+#~ msgid "Use and configure modems"
+#~ msgstr "使用或設定數據機"
+
+#~ msgid "Read system mount information and disk quotas"
+#~ msgstr "讀取系統的掛載資訊與磁碟配額"
+
+#~ msgid "Control music and video players"
+#~ msgstr "控制音樂與影片播放器"
+
+#~ msgid "Access the internet"
+#~ msgstr "存取網際網路"
+
+#~ msgid "Allows operating as a network service, enabling snap to run a server"
+#~ msgstr "允許作為網路服務運行，讓 snap 能夠執行伺服器"
+
+#~ msgid "Change low-level network settings"
+#~ msgstr "變更底層的網路設定"
+
+#~ msgid ""
+#~ "Access the NetworkManager service to read and change network settings"
+#~ msgstr "存取 NetworkManager 服務來讀取或變更網路設定"
+
+#~ msgid "Allows observing NetworkManager settings"
+#~ msgstr "允許觀察 NetworkManager 設定值"
+
+#~ msgid "Read access to network settings"
+#~ msgstr "讀取網路設定值的存取"
+
+#~ msgid "Change network settings"
+#~ msgstr "變更網路設定值"
+
+#~ msgid "Read network settings"
+#~ msgstr "讀取網路設定值"
+
+#~ msgid "Access the NetworkStatus service"
+#~ msgstr "存取 NetworkStatus 服務"
+
+#~ msgid ""
+#~ "Access the ofono service to read and change network settings for mobile "
+#~ "telephony"
+#~ msgstr "存取 ofono 服務來讀取或變更行動通訊的網路設定"
+
+#~ msgid "Control Open vSwitch hardware"
+#~ msgstr "控制 Open vSwitch 硬體"
+
+#~ msgid "Read from CD/DVD"
+#~ msgstr "讀取 CD/DVD"
+
+#~ msgid "Read, add, change, or remove saved passwords"
+#~ msgstr "讀取、加入、變更或移除已儲存的密碼"
+
+#~ msgid "Control the PackageKit service"
+#~ msgstr "控制 PackageKit 服務"
+
+#~ msgid "Permits communication with PCSD smart card daemon"
+#~ msgstr "允許與 PCSD 智慧卡伺服程式溝通"
+
+#~ msgid ""
+#~ "Access pppd and ppp devices for configuring Point-to-Point Protocol "
+#~ "connections"
+#~ msgstr "存取 pppd 與 ppp 裝置來設定 PPP（點對點協定）的連線"
+
+#~ msgid "Pause or end any process on the system"
+#~ msgstr "暫停或結束系統上的任何行程"
+
+#~ msgid "Access USB hardware directly"
+#~ msgstr "直接存取 USB 硬體"
+
+#~ msgid "Read/write files on removable storage devices"
+#~ msgstr "讀取或寫入可移除儲存裝置上的檔案"
+
+#~ msgid "Prevent screen sleep/lock"
+#~ msgstr "防止螢幕睡眠/鎖定"
+
+#~ msgid "Access serial port hardware"
+#~ msgstr "存取序列埠硬體"
+
+#~ msgid "Enables two snaps to access the same shared memory"
+#~ msgstr "允許兩個 snap 存取同樣的共享記憶體"
+
+#~ msgid "Restart or power off the device"
+#~ msgstr "讓裝置重新啟動或關機"
+
+#~ msgid "Install, remove and configure software (snaps)"
+#~ msgstr "安裝、移除或設定軟體 (snap)"
+
+#~ msgid "Access SSH private and public keys"
+#~ msgstr "存取 SSH 私鑰與公鑰"
+
+#~ msgid "Access SSH public keys"
+#~ msgstr "存取 SSH 公鑰"
+
+#~ msgid "Access Storage Framework service"
+#~ msgstr "存取「儲存框架」(Storage Framework) 服務"
+
+#~ msgid "Read process and system information"
+#~ msgstr "讀取行程與系統資訊"
+
+#~ msgid "Access system documentation in /usr/share/doc"
+#~ msgstr "存取位於 /usr/share/doc 的系統說明文件"
+
+#~ msgid "Monitor and control any running program"
+#~ msgstr "監控或控制任何執行中的程式"
+
+#~ msgid "Change the date and time"
+#~ msgstr "變更日期與時間"
+
+#~ msgid "Change time server settings"
+#~ msgstr "變更時間伺服器設定值"
+
+#~ msgid "Change the time zone"
+#~ msgstr "變更時區"
+
+#~ msgid "Access the UDisks2 service for configuring disks and removable media"
+#~ msgstr "存取 UDisks2 服務來設定磁碟與可移除裝置"
+
+#~ msgid "Access energy usage data"
+#~ msgstr "存取能源消耗資料"
+
+#~ msgid "Read/write access to U2F devices exposed"
+#~ msgstr "對於已曝光的 U2F 裝置的讀寫存取"
