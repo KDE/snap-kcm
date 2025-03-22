@@ -22,14 +22,13 @@ KCMUtils.ScrollViewKCM {
     SnapBackend {
         id: backendInstance
     }
-    property SnapBackend perm: backendInstance
-    property string output: ""
+
     property string searchQuery: ""
 
     title: i18n("Snap Applications")
     framedView: false
 
-    function changeSnap(snap) {
+    function changeSnap(snap: KCMSnap) {
         kcm.columnWidth = Kirigami.Units.gridUnit * 15;
         kcm.push("permissions.qml", {
             snap
@@ -47,10 +46,10 @@ KCMUtils.ScrollViewKCM {
     }
 
     Kirigami.PlaceholderMessage {
-        text: i18n("Install snaps to change the permissions")
+        text: i18nc("install snaps", "Install snaps to change the permissions")
         width: parent.width - (Kirigami.Units.largeSpacing * 4)
         anchors.centerIn: parent
-        visible: perm === null
+        visible: backendInstance === null
     }
 
     Kirigami.Separator {
@@ -59,12 +58,12 @@ KCMUtils.ScrollViewKCM {
     }
 
     Component.onCompleted: {
-        changeSnap();
+        changeSnap(null);
     }
 
     view: ListView {
         id: view
-        model: root.perm.snaps(root.searchQuery)
+        model: backendInstance.snaps(root.searchQuery)
         currentIndex: -1
         delegate: SnapDelegate {
             id: snapdelegate
