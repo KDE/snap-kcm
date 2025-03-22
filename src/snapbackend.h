@@ -26,6 +26,7 @@ public:
     Q_INVOKABLE const QStringList getSlotSnap(const QString &interface) const;
     Q_INVOKABLE const QString getPlugLabel(const QString &interface);
     static bool comparebyName(QSnapdSnap *, QSnapdSnap *);
+    static QString readableError(QSnapdRequest *request);
 
 Q_SIGNALS:
     void snapsChanged();

@@ -6,8 +6,6 @@
 #pragma once
 #include <Snapd/Plug>
 #include <Snapd/Slot>
-#include <Snapd/plug.h>
-#include <qtmetamacros.h>
 
 class KCMPlug : public QObject
 {
@@ -33,14 +31,17 @@ public:
     QString connectedSlotSnap() const;
     QStringList slotSnaps() const;
     QString title() const;
-    Q_INVOKABLE QString changePermission(bool connect, QString slotSnap);
+    Q_INVOKABLE void changePermission(bool connect, QString slotSnap);
+
     void setconnectedSlotSnap(const QString &slotSnap);
 
 Q_SIGNALS:
     void connectedSlotSnapChanged(const QString &slotSnap);
+    void errorLogChanged(const QString &message);
 
 private:
     QString m_connectedSlotSnap;
+    QString m_errorLog;
     QSnapdPlug *m_plug;
     QString m_plugLabel;
     QString m_plugIcon;

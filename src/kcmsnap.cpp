@@ -60,6 +60,11 @@ QString KCMSnap::description() const
     return m_snap->summary();
 }
 
+QString KCMSnap::version() const
+{
+    return m_snap->version();
+}
+
 QVariant KCMSnap::icon() const
 {
     if (invokable()) {

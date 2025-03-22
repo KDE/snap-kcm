@@ -32,7 +32,9 @@ SnapBackend::SnapBackend()
         Q_EMIT snapsChanged();
     }
     // Fetch connections
-    QStringList hiddenPlugs = {u"x11"_s, u"content"_s, u"desktop"_s, u"desktop-legacy"_s, u"mir"_s, u"wayland"_s, u"unity7"_s, u"opengl"_s};
+    // This list is created based on the hidden plugs list of Gnome Settings
+    // https://gitlab.gnome.org/GNOME/gnome-control-center/-/blob/main/panels/applications/cc-applications-panel.c#L770-776
+    QStringList hiddenPlugs = {u"x11"_s, u"content"_s, u"cups-host"_s, u"desktop"_s, u"desktop-legacy"_s, u"mir"_s, u"wayland"_s, u"unity7"_s, u"opengl"_s};
 
     if (reqGetConnections) {
         reqGetConnections->runSync();
@@ -110,7 +112,7 @@ QString SnapBackend::connectPlug(const QString &plug_snap, const QString &plug_n
     QSnapdConnectInterfaceRequest *req = client.connectInterface(plug_snap, plug_name, slot_snap, slot_name);
     req->runSync();
     if (req->error() != QSnapdRequest::NoError) {
-        return req->errorString();
+        return readableError(req);
     }
     return QString();
 }
@@ -131,7 +133,7 @@ QString SnapBackend::disconnectPlug(const QString &plug_snap, const QString &plu
     QSnapdDisconnectInterfaceRequest *req = client.disconnectInterface(plug_snap, plug_name, slot_snap, slot_name);
     req->runSync();
     if (req->error() != QSnapdRequest::NoError) {
-        return req->errorString();
+        return readableError(req);
     }
     return QString();
 }
@@ -274,6 +276,136 @@ const QString SnapBackend::plugIcon(const QString &plugName)
                                                      {u"u2f-devices"_s, u"security-high"_s}};
 
     return plugIcons.value(plugName, u"dialog-question"_s);
+}
+
+QString SnapBackend::readableError(QSnapdRequest *request)
+{
+    QString error;
+
+    switch (request->error()) {
+    case QSnapdRequest::NoError:
+        error = u"No error"_s;
+        break;
+    case QSnapdRequest::UnknownError:
+        error = u"Unknown error occurred"_s;
+        break;
+    case QSnapdRequest::ConnectionFailed:
+        error = u"Not able to connect to snapd"_s;
+        break;
+    case QSnapdRequest::WriteFailed:
+        error = u"An error occurred while writing to snapd"_s;
+        break;
+    case QSnapdRequest::ReadFailed:
+        error = u"An error occurred while reading from snapd"_s;
+        break;
+    case QSnapdRequest::BadRequest:
+        error = u"Snapd did not understand the request that was sent"_s;
+        break;
+    case QSnapdRequest::BadResponse:
+        error = u"The response received from snapd was not understood"_s;
+        break;
+    case QSnapdRequest::AuthDataRequired:
+        error = u"The requested operation requires super user password"_s;
+        break;
+    case QSnapdRequest::AuthDataInvalid:
+        error = u"The provided super user password is invalid"_s;
+        break;
+    case QSnapdRequest::TwoFactorRequired:
+        error = u"Login requires a two-factor code"_s;
+        break;
+    case QSnapdRequest::TwoFactorInvalid:
+        error = u"The two-factor code provided at login is invalid"_s;
+        break;
+    case QSnapdRequest::PermissionDenied:
+        error = u"This user account is not permitted to perform the requested operation"_s;
+        break;
+    case QSnapdRequest::Failed:
+        error = u"An unspecified error occurred while communicating with snapd"_s;
+        break;
+    case QSnapdRequest::TermsNotAccepted:
+        error = u"This user has not accepted the store’s terms of service"_s;
+        break;
+    case QSnapdRequest::PaymentNotSetup:
+        error = u"This user has not configured a payment method"_s;
+        break;
+    case QSnapdRequest::PaymentDeclined:
+        error = u"This user has had their payment method declined by the payment provider"_s;
+        break;
+    case QSnapdRequest::AlreadyInstalled:
+        error = u"The requested snap is already installed"_s;
+        break;
+    case QSnapdRequest::NotInstalled:
+        error = u"The requested snap is not installed"_s;
+        break;
+    case QSnapdRequest::NoUpdateAvailable:
+        error = u"No update is available for this snap"_s;
+        break;
+    case QSnapdRequest::PasswordPolicyError:
+        error = u"Provided password is not valid"_s;
+        break;
+    case QSnapdRequest::NeedsDevmode:
+        error = u"This snap needs to be installed using devmode"_s;
+        break;
+    case QSnapdRequest::NeedsClassic:
+        error = u"This snap needs to be installed using classic mode"_s;
+        break;
+    case QSnapdRequest::NeedsClassicSystem:
+        error = u"A classic system is required to install this snap"_s;
+        break;
+    case QSnapdRequest::Cancelled:
+        error = u"Operation was cancelled"_s;
+        break;
+    case QSnapdRequest::BadQuery:
+        error = u"A bad query was provided"_s;
+        break;
+    case QSnapdRequest::NetworkTimeout:
+        error = u"A timeout occurred during the request"_s;
+        break;
+    case QSnapdRequest::NotFound:
+        error = u"The requested snap couldn’t be found"_s;
+        break;
+    case QSnapdRequest::NotInStore:
+        error = u"The requested snap is not in the store"_s;
+        break;
+    case QSnapdRequest::AuthCancelled:
+        error = u"Authentication was cancelled by the user"_s;
+        break;
+    case QSnapdRequest::NotClassic:
+        error = u"Snap not compatible with classic mode"_s;
+        break;
+    case QSnapdRequest::RevisionNotAvailable:
+        error = u"Requested snap revision not available"_s;
+        break;
+    case QSnapdRequest::ChannelNotAvailable:
+        error = u"Requested snap channel not available"_s;
+        break;
+    case QSnapdRequest::NotASnap:
+        error = u"The given snap or directory does not look like a snap"_s;
+        break;
+    case QSnapdRequest::DNSFailure:
+        error = u"A hostname failed to resolve during the request"_s;
+        break;
+    case QSnapdRequest::OptionNotFound:
+        error = u"A requested configuration option is not set"_s;
+        break;
+    case QSnapdRequest::AppNotFound:
+        error = u"The requested app couldn't be found"_s;
+        break;
+    case QSnapdRequest::ArchitectureNotAvailable:
+        error = u"No snap revision on specified architecture"_s;
+        break;
+    case QSnapdRequest::ChangeConflict:
+        error = u"The requested operation would conflict with currently ongoing change"_s;
+        break;
+    case QSnapdRequest::InterfacesUnchanged:
+        error = u"The requested interface has not changed"_s;
+        break;
+    default:
+        error = u"Unknown error code"_s;
+        break;
+    }
+
+    return error;
 }
 
 /**

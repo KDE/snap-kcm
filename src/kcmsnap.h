@@ -19,6 +19,7 @@ class KCMSnap : public QObject
     Q_PROPERTY(QString name READ name CONSTANT)
     Q_PROPERTY(QList<KCMPlug *> plugs READ plugs CONSTANT)
     Q_PROPERTY(QString title READ title CONSTANT)
+    Q_PROPERTY(QString version READ version CONSTANT)
 
 public:
     KCMSnap(QSnapdSnap *snap, const QList<KCMPlug *> plugs);
@@ -29,6 +30,7 @@ public:
     QString name() const;
     const QList<KCMPlug *> plugs() const;
     QString title() const;
+    QString version() const;
 
 private:
     QSnapdSnap *m_snap;
