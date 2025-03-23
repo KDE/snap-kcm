@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the snap-kcm package.
 #
-# SPDX-FileCopyrightText: 2024 Yaron Shahrabani <sh.yaron@gmail.com>
+# SPDX-FileCopyrightText: 2024, 2025 Yaron Shahrabani <sh.yaron@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: snap-kcm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-22 00:43+0000\n"
-"PO-Revision-Date: 2024-12-10 18:41+0200\n"
+"PO-Revision-Date: 2025-03-22 19:19+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 24.08.3\n"
+"X-Generator: Lokalize 24.12.2\n"
 
 #: src/ui/main.qml:26
 #, kde-format
@@ -39,15 +39,13 @@ msgid "Permissions for %1"
 msgstr "הרשאות עבור %1"
 
 #: src/ui/main.qml:157
-#, fuzzy, kde-format
-#| msgid "Error"
+#, kde-format
 msgctxt "error"
 msgid "Error"
 msgstr "שגיאה"
 
 #: src/ui/main.qml:164
-#, fuzzy, kde-format
-#| msgid "snapd error: %1"
+#, kde-format
 msgctxt "snap error"
 msgid "snapd error: %1"
 msgstr "שגיאת snapd:‏ %1"
