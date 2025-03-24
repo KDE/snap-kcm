@@ -1,15 +1,15 @@
 # Translation of kcm_snap.po to Catalan (Valencian)
-# Copyright (C) 2024 This_file_is_part_of_KDE
+# Copyright (C) 2024-2025 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# Josep M. Ferrer <txemaq@gmail.com>, 2024.
+# Josep M. Ferrer <txemaq@gmail.com>, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: snap-kcm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-22 00:43+0000\n"
-"PO-Revision-Date: 2024-12-09 11:13+0100\n"
+"PO-Revision-Date: 2025-03-22 22:28+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -40,249 +40,13 @@ msgid "Permissions for %1"
 msgstr "Permisos de %1"
 
 #: src/ui/main.qml:157
-#, fuzzy, kde-format
-#| msgid "Error"
+#, kde-format
 msgctxt "error"
 msgid "Error"
 msgstr "S'ha produït un error"
 
 #: src/ui/main.qml:164
-#, fuzzy, kde-format
-#| msgid "snapd error: %1"
+#, kde-format
 msgctxt "snap error"
 msgid "snapd error: %1"
 msgstr "S'ha produït un error de l'«snapd»: %1"
-
-#~ msgid "Add user accounts and change passwords"
-#~ msgstr "Afig comptes d'usuari i canvia les contrasenyes"
-
-#~ msgid ""
-#~ "Allows communication with the accounts service, such as GNOME Online "
-#~ "Accounts"
-#~ msgstr ""
-#~ "Permet la comunicació amb el servei de comptes, com ara els comptes en "
-#~ "línia de GNOME"
-
-#~ msgid "Play and record sound"
-#~ msgstr "Reproduïx i grava so"
-
-#~ msgid "Allows access to AppStream metadata"
-#~ msgstr "Permet l'accés a les metadades d'AppStream"
-
-#~ msgid "Play audio"
-#~ msgstr "Reproduïx àudio"
-
-#~ msgid "Record audio"
-#~ msgstr "Grava àudio"
-
-#~ msgid "Advertise services over the local network"
-#~ msgstr "Publica els serveis a través de la xarxa local"
-
-#~ msgid "Detect network devices using mDNS/DNS-SD (Bonjour/zeroconf)"
-#~ msgstr ""
-#~ "Detecta dispositius de xarxa utilitzant mDNS/DNS-SD (Bonjour/zeroconf)"
-
-#~ msgid "Access bluetooth hardware directly"
-#~ msgstr "Accedix directament al maquinari Bluetooth"
-
-#~ msgid "Use bluetooth devices"
-#~ msgstr "Utilitza dispositius Bluetooth"
-
-#~ msgid "Use functions essential for Web browsers"
-#~ msgstr "Utilitza funcions essencials per als navegadors web"
-
-#~ msgid "Use your camera"
-#~ msgstr "Utilitza la càmera"
-
-#~ msgid "Access to the CUPS socket for printing"
-#~ msgstr "Accés al sòcol de CUPS per a imprimir"
-
-#~ msgid "Print documents"
-#~ msgstr "Imprimix documents"
-
-#~ msgid "Use any connected joystick"
-#~ msgstr "Utilitza qualsevol palanca de control connectada"
-
-#~ msgid "Identify and launch desktop apps from other snaps"
-#~ msgstr "Identifica i inicia aplicacions d'escriptori des d'altres «snaps»"
-
-# skip-rule: kct-docker
-#~ msgid "Allow connecting to the Docker service"
-#~ msgstr "Permet la connexió al servei Docker"
-
-#~ msgid "Configure network firewall"
-#~ msgstr "Configura el tallafoc de xarxa"
-
-#~ msgid "Setup and use privileged FUSE filesystems"
-#~ msgstr "Configura i utilitza sistemes de fitxers FUSE privilegiats"
-
-#~ msgid "Update firmware on this device"
-#~ msgstr "Actualitza microprogramari en este dispositiu"
-
-#~ msgid "Provides access to any GSettings item for current user"
-#~ msgstr ""
-#~ "Proporciona accés a qualsevol element de GSettings per a l'usuari actual"
-
-#~ msgid "Access hardware information"
-#~ msgstr "Accés a la informació del maquinari"
-
-#~ msgid "Provide entropy to hardware random number generator"
-#~ msgstr "Proporciona entropia al generador de nombres aleatoris de maquinari"
-
-#~ msgid "Use hardware-generated random numbers"
-#~ msgstr "Utilitza nombres aleatoris generats per maquinari"
-
-#~ msgid "Access files in your home folder"
-#~ msgstr "Accedix als fitxers de la carpeta d'inici"
-
-#~ msgid "Access libvirt service"
-#~ msgstr "Accedix al servei «libvirt»"
-
-#~ msgid "Change system language and region settings"
-#~ msgstr "Canvia la configuració d'idioma i regió del sistema"
-
-#~ msgid "Change location settings and providers"
-#~ msgstr "Canvia la configuració d'ubicació i els proveïdors"
-
-#~ msgid "Access your location"
-#~ msgstr "Accedix a la vostra ubicació"
-
-#~ msgid "Read system and application logs"
-#~ msgstr "Llig els registres del sistema i de les aplicacions"
-
-#~ msgid "Access LXD service"
-#~ msgstr "Accedix al servei LXD"
-
-#~ msgid "Allows operating as the LXD service"
-#~ msgstr "Permet operar com a servei LXD"
-
-#~ msgid "Use and configure modems"
-#~ msgstr "Utilitza i configura mòdems"
-
-#~ msgid "Read system mount information and disk quotas"
-#~ msgstr "Llig la informació de muntatge del sistema i quotes de disc"
-
-#~ msgid "Control music and video players"
-#~ msgstr "Controla els reproductors de música i vídeo"
-
-#~ msgid "Access the internet"
-#~ msgstr "Accés a Internet"
-
-#~ msgid "Allows operating as a network service, enabling snap to run a server"
-#~ msgstr ""
-#~ "Permet operar com a servei de xarxa, habilitant «snap» per a executar un "
-#~ "servidor"
-
-#~ msgid "Change low-level network settings"
-#~ msgstr "Canvia la configuració de la xarxa a baix nivell"
-
-#~ msgid ""
-#~ "Access the NetworkManager service to read and change network settings"
-#~ msgstr ""
-#~ "Accés al servei NetworkManager per a llegir i canviar la configuració de "
-#~ "la xarxa"
-
-#~ msgid "Allows observing NetworkManager settings"
-#~ msgstr "Permet observar la configuració de NetworkManager"
-
-#~ msgid "Read access to network settings"
-#~ msgstr "Accés de lectura a la configuració de la xarxa"
-
-#~ msgid "Change network settings"
-#~ msgstr "Canvia la configuració de la xarxa"
-
-#~ msgid "Read network settings"
-#~ msgstr "Llig la configuració de la xarxa"
-
-#~ msgid "Access the NetworkStatus service"
-#~ msgstr "Accedix al servei NetworkStatus"
-
-#~ msgid ""
-#~ "Access the ofono service to read and change network settings for mobile "
-#~ "telephony"
-#~ msgstr ""
-#~ "Accedix al servei «ofono» per a llegir i canviar la configuració de la "
-#~ "xarxa de telefonia mòbil"
-
-#~ msgid "Control Open vSwitch hardware"
-#~ msgstr "Controla el maquinari Open vSwitch"
-
-#~ msgid "Read from CD/DVD"
-#~ msgstr "Llig des de CD/DVD"
-
-#~ msgid "Read, add, change, or remove saved passwords"
-#~ msgstr "Llig, afig, canvia o elimina contrasenyes guardades"
-
-#~ msgid "Control the PackageKit service"
-#~ msgstr "Controla el servei PackageKit"
-
-#~ msgid "Permits communication with PCSD smart card daemon"
-#~ msgstr "Permet la comunicació amb el dimoni de targetes intel·ligents PCSD"
-
-#~ msgid ""
-#~ "Access pppd and ppp devices for configuring Point-to-Point Protocol "
-#~ "connections"
-#~ msgstr ""
-#~ "Accedix als dispositius «pppd» i «ppp» per a configurar connexions del "
-#~ "protocol punt a punt"
-
-#~ msgid "Pause or end any process on the system"
-#~ msgstr "Posa en pausa o finalitza qualsevol procés al sistema"
-
-#~ msgid "Access USB hardware directly"
-#~ msgstr "Accedix directament al maquinari USB"
-
-#~ msgid "Read/write files on removable storage devices"
-#~ msgstr "Llig/escriu fitxers en dispositius d'emmagatzematge extraïbles"
-
-#~ msgid "Prevent screen sleep/lock"
-#~ msgstr "Evita la suspensió/bloqueig de la pantalla"
-
-#~ msgid "Access serial port hardware"
-#~ msgstr "Accedix al maquinari del port sèrie"
-
-#~ msgid "Enables two snaps to access the same shared memory"
-#~ msgstr "Habilita dos «snaps» per a accedir a la mateixa memòria compartida"
-
-#~ msgid "Restart or power off the device"
-#~ msgstr "Reinicia o apaga el dispositiu"
-
-#~ msgid "Install, remove and configure software (snaps)"
-#~ msgstr "Instal·la, elimina i configura programari («snaps»)"
-
-#~ msgid "Access SSH private and public keys"
-#~ msgstr "Accedix a les claus SSH privades i públiques"
-
-#~ msgid "Access SSH public keys"
-#~ msgstr "Accedix a les claus SSH públiques"
-
-#~ msgid "Access Storage Framework service"
-#~ msgstr "Accedix al servei de l'entorn de treball d'emmagatzematge"
-
-#~ msgid "Read process and system information"
-#~ msgstr "Llig la informació dels processos i del sistema"
-
-#~ msgid "Access system documentation in /usr/share/doc"
-#~ msgstr "Accedix a la documentació del sistema a /usr/share/doc"
-
-#~ msgid "Monitor and control any running program"
-#~ msgstr "Seguix i controla qualsevol programa en execució"
-
-#~ msgid "Change the date and time"
-#~ msgstr "Canvia la data i l'hora"
-
-#~ msgid "Change time server settings"
-#~ msgstr "Canvia la configuració del servidor de temps"
-
-#~ msgid "Change the time zone"
-#~ msgstr "Canvia la zona horària"
-
-#~ msgid "Access the UDisks2 service for configuring disks and removable media"
-#~ msgstr ""
-#~ "Accedix al servei UDisks2 per a configurar discs i suports extraïbles"
-
-#~ msgid "Access energy usage data"
-#~ msgstr "Accedix a les dades d'ús d'energia"
-
-#~ msgid "Read/write access to U2F devices exposed"
-#~ msgstr "Accés de lectura/escriptura als dispositius U2F exposats"

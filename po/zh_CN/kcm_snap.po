@@ -41,10 +41,10 @@ msgstr "%1 的权限"
 #, kde-format
 msgctxt "error"
 msgid "Error"
-msgstr ""
+msgstr "错误"
 
 #: src/ui/main.qml:164
 #, kde-format
 msgctxt "snap error"
 msgid "snapd error: %1"
-msgstr ""
+msgstr "snapd 错误：%1"
