@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the snap-kcm package.
 #
-# SPDX-FileCopyrightText: 2024 Kisaragi Hiu <mail@kisaragi-hiu.com>
+# SPDX-FileCopyrightText: 2024, 2025 Kisaragi Hiu <mail@kisaragi-hiu.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: snap-kcm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-22 00:43+0000\n"
-"PO-Revision-Date: 2024-12-19 16:31+0900\n"
+"PO-Revision-Date: 2025-03-24 19:59+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 24.12.0\n"
+"X-Generator: Lokalize 24.12.3\n"
 
 #: src/ui/main.qml:26
 #, kde-format
@@ -38,15 +38,13 @@ msgid "Permissions for %1"
 msgstr "%1 的權限"
 
 #: src/ui/main.qml:157
-#, fuzzy, kde-format
-#| msgid "Error"
+#, kde-format
 msgctxt "error"
 msgid "Error"
 msgstr "錯誤"
 
 #: src/ui/main.qml:164
-#, fuzzy, kde-format
-#| msgid "snapd error: %1"
+#, kde-format
 msgctxt "snap error"
 msgid "snapd error: %1"
 msgstr "snapd 錯誤：%1"
