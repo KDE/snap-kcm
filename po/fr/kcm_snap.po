@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: snap-kcm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-22 00:43+0000\n"
-"PO-Revision-Date: 2025-01-08 11:59+0100\n"
+"PO-Revision-Date: 2025-03-24 09:51+0100\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: French <French <kde-francophone@kde.org>>\n"
 "Language: fr\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 24.12.0\n"
+"X-Generator: Lokalize 24.12.3\n"
 
 #: src/ui/main.qml:26
 #, kde-format
@@ -36,18 +36,16 @@ msgid "Permissions for %1"
 msgstr "Autorisations pour %1"
 
 #: src/ui/main.qml:157
-#, fuzzy, kde-format
-#| msgid "Error"
+#, kde-format
 msgctxt "error"
 msgid "Error"
 msgstr "Erreur"
 
 #: src/ui/main.qml:164
-#, fuzzy, kde-format
-#| msgid "snapd error: %1"
+#, kde-format
 msgctxt "snap error"
 msgid "snapd error: %1"
-msgstr "erreur de « snapd » : %1"
+msgstr "Erreur de « snapd » : %1"
 
 #~ msgid "Add user accounts and change passwords"
 #~ msgstr "Ajouter des comptes d'utilisateurs et modifier les mots de passe"
