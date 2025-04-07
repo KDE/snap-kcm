@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the snap-kcm package.
-# SPDX-FileCopyrightText: 2024 Shinjo Park <kde@peremen.name>
+# SPDX-FileCopyrightText: 2024, 2025 Shinjo Park <kde@peremen.name>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: snap-kcm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-22 00:43+0000\n"
-"PO-Revision-Date: 2024-12-24 23:37+0100\n"
+"PO-Revision-Date: 2025-04-07 00:36+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -38,15 +38,13 @@ msgid "Permissions for %1"
 msgstr "%1의 권한"
 
 #: src/ui/main.qml:157
-#, fuzzy, kde-format
-#| msgid "Error"
+#, kde-format
 msgctxt "error"
 msgid "Error"
 msgstr "오류"
 
 #: src/ui/main.qml:164
-#, fuzzy, kde-format
-#| msgid "snapd error: %1"
+#, kde-format
 msgctxt "snap error"
 msgid "snapd error: %1"
 msgstr "snapd 오류: %1"
