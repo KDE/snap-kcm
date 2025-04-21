@@ -284,124 +284,124 @@ QString SnapBackend::readableError(QSnapdRequest *request)
 
     switch (request->error()) {
     case QSnapdRequest::NoError:
-        error = u"No error"_s;
+        error = i18n("No error");
         break;
     case QSnapdRequest::UnknownError:
-        error = u"Unknown error occurred"_s;
+        error = i18n("Unknown error occurred");
         break;
     case QSnapdRequest::ConnectionFailed:
-        error = u"Not able to connect to snapd"_s;
+        error = i18n("Not able to connect to snapd");
         break;
     case QSnapdRequest::WriteFailed:
-        error = u"An error occurred while writing to snapd"_s;
+        error = i18n("An error occurred while writing to snapd");
         break;
     case QSnapdRequest::ReadFailed:
-        error = u"An error occurred while reading from snapd"_s;
+        error = i18n("An error occurred while reading from snapd");
         break;
     case QSnapdRequest::BadRequest:
-        error = u"Snapd did not understand the request that was sent"_s;
+        error = i18n("Snapd did not understand the request that was sent");
         break;
     case QSnapdRequest::BadResponse:
-        error = u"The response received from snapd was not understood"_s;
+        error = i18n("The response received from snapd was not understood");
         break;
     case QSnapdRequest::AuthDataRequired:
-        error = u"The requested operation requires super user password"_s;
+        error = i18n("The requested operation requires super user password");
         break;
     case QSnapdRequest::AuthDataInvalid:
-        error = u"The provided super user password is invalid"_s;
+        error = i18n("The provided super user password is invalid");
         break;
     case QSnapdRequest::TwoFactorRequired:
-        error = u"Login requires a two-factor code"_s;
+        error = i18n("Login requires a two-factor code");
         break;
     case QSnapdRequest::TwoFactorInvalid:
-        error = u"The two-factor code provided at login is invalid"_s;
+        error = i18n("The two-factor code provided at login is invalid");
         break;
     case QSnapdRequest::PermissionDenied:
-        error = u"This user account is not permitted to perform the requested operation"_s;
+        error = i18n("This user account is not permitted to perform the requested operation");
         break;
     case QSnapdRequest::Failed:
-        error = u"An unspecified error occurred while communicating with snapd"_s;
+        error = i18n("An unspecified error occurred while communicating with snapd");
         break;
     case QSnapdRequest::TermsNotAccepted:
-        error = u"This user has not accepted the store’s terms of service"_s;
+        error = i18n("This user has not accepted the store’s terms of service");
         break;
     case QSnapdRequest::PaymentNotSetup:
-        error = u"This user has not configured a payment method"_s;
+        error = i18n("This user has not configured a payment method");
         break;
     case QSnapdRequest::PaymentDeclined:
-        error = u"This user has had their payment method declined by the payment provider"_s;
+        error = i18n("This user has had their payment method declined by the payment provider");
         break;
     case QSnapdRequest::AlreadyInstalled:
-        error = u"The requested snap is already installed"_s;
+        error = i18n("The requested snap is already installed");
         break;
     case QSnapdRequest::NotInstalled:
-        error = u"The requested snap is not installed"_s;
+        error = i18n("The requested snap is not installed");
         break;
     case QSnapdRequest::NoUpdateAvailable:
-        error = u"No update is available for this snap"_s;
+        error = i18n("No update is available for this snap");
         break;
     case QSnapdRequest::PasswordPolicyError:
-        error = u"Provided password is not valid"_s;
+        error = i18n("Provided password is not valid");
         break;
     case QSnapdRequest::NeedsDevmode:
-        error = u"This snap needs to be installed using devmode"_s;
+        error = i18n("This snap needs to be installed using devmode");
         break;
     case QSnapdRequest::NeedsClassic:
-        error = u"This snap needs to be installed using classic mode"_s;
+        error = i18n("This snap needs to be installed using classic mode");
         break;
     case QSnapdRequest::NeedsClassicSystem:
-        error = u"A classic system is required to install this snap"_s;
+        error = i18n("A classic system is required to install this snap");
         break;
     case QSnapdRequest::Cancelled:
-        error = u"Operation was cancelled"_s;
+        error = i18n("Operation was cancelled");
         break;
     case QSnapdRequest::BadQuery:
-        error = u"A bad query was provided"_s;
+        error = i18n("A bad query was provided");
         break;
     case QSnapdRequest::NetworkTimeout:
-        error = u"A timeout occurred during the request"_s;
+        error = i18n("A timeout occurred during the request");
         break;
     case QSnapdRequest::NotFound:
-        error = u"The requested snap couldn’t be found"_s;
+        error = i18n("The requested snap couldn’t be found");
         break;
     case QSnapdRequest::NotInStore:
-        error = u"The requested snap is not in the store"_s;
+        error = i18n("The requested snap is not in the store");
         break;
     case QSnapdRequest::AuthCancelled:
-        error = u"Authentication was cancelled by the user"_s;
+        error = i18n("Authentication was cancelled by the user");
         break;
     case QSnapdRequest::NotClassic:
-        error = u"Snap not compatible with classic mode"_s;
+        error = i18n("Snap not compatible with classic mode");
         break;
     case QSnapdRequest::RevisionNotAvailable:
-        error = u"Requested snap revision not available"_s;
+        error = i18n("Requested snap revision not available");
         break;
     case QSnapdRequest::ChannelNotAvailable:
-        error = u"Requested snap channel not available"_s;
+        error = i18n("Requested snap channel not available");
         break;
     case QSnapdRequest::NotASnap:
-        error = u"The given snap or directory does not look like a snap"_s;
+        error = i18n("The given snap or directory does not look like a snap");
         break;
     case QSnapdRequest::DNSFailure:
-        error = u"A hostname failed to resolve during the request"_s;
+        error = i18n("A hostname failed to resolve during the request");
         break;
     case QSnapdRequest::OptionNotFound:
-        error = u"A requested configuration option is not set"_s;
+        error = i18n("A requested configuration option is not set");
         break;
     case QSnapdRequest::AppNotFound:
-        error = u"The requested app couldn't be found"_s;
+        error = i18n("The requested app couldn't be found");
         break;
     case QSnapdRequest::ArchitectureNotAvailable:
-        error = u"No snap revision on specified architecture"_s;
+        error = i18n("No snap revision on specified architecture");
         break;
     case QSnapdRequest::ChangeConflict:
-        error = u"The requested operation would conflict with currently ongoing change"_s;
+        error = i18n("The requested operation would conflict with currently ongoing change");
         break;
     case QSnapdRequest::InterfacesUnchanged:
-        error = u"The requested interface has not changed"_s;
+        error = i18n("The requested interface has not changed");
         break;
     default:
-        error = u"Unknown error code"_s;
+        error = i18n("Unknown error code");
         break;
     }
 
