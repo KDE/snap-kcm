@@ -12,14 +12,13 @@ import org.kde.kirigami as Kirigami
 
 Kirigami.Dialog {
     id: errorDialog
-    property string errorLog: ""
+    property alias errorLog: errorLabel.text
     padding: Kirigami.Units.largeSpacing
     standardButtons: Kirigami.Dialog.Ok
     title: i18n("Error")
     Kirigami.SelectableLabel {
         id: errorLabel
         Kirigami.FormData.label: ""
-        text: errorLog
         textFormat: Text.StyledText
         wrapMode: Text.Wrap
     }
