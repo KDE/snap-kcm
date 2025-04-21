@@ -13,9 +13,7 @@ import org.kde.plasma.kcm.snappermissions 1.0
 
 QQC2.ItemDelegate {
     id: smallDelegate
-    property KCMPlug plug: null
-    property string output
-    width: parent.width
+    required property KCMPlug plug
     readonly property int plugCount: plug.connectedSlotCount
     readonly property string plugIcon: plug.plugIcon
     readonly property string plugLabel: plug.plugLabel

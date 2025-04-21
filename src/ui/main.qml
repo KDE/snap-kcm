@@ -20,7 +20,7 @@ KCMUtils.ScrollViewKCM {
     implicitHeight: Kirigami.Units.gridUnit * 20
     Kirigami.ColumnView.fillWidth: false
     SnapBackend {
-        id: backendInstance
+        id: snapd
     }
 
     property string searchQuery: ""
@@ -46,10 +46,10 @@ KCMUtils.ScrollViewKCM {
     }
 
     Kirigami.PlaceholderMessage {
-        text: i18nc("install snaps", "Install snaps to change the permissions")
+        text: i18n("Install snaps to change the permissions")
         width: parent.width - (Kirigami.Units.largeSpacing * 4)
         anchors.centerIn: parent
-        visible: backendInstance === null
+        visible: snapd === null
     }
 
     Kirigami.Separator {
@@ -63,7 +63,7 @@ KCMUtils.ScrollViewKCM {
 
     view: ListView {
         id: view
-        model: backendInstance.snaps(root.searchQuery)
+        model: snapd.snaps(root.searchQuery)
         currentIndex: -1
         delegate: SnapDelegate {
             id: snapdelegate
