@@ -15,10 +15,11 @@ Kirigami.Dialog {
     property string errorLog: ""
     padding: Kirigami.Units.largeSpacing
     standardButtons: Kirigami.Dialog.Ok
-    title: i18nc("error", "Error")
+    title: i18n("Error")
     Kirigami.SelectableLabel {
+        id: errorLabel
         Kirigami.FormData.label: ""
-        text: i18nd("snap error", "%1", errorLog)
+        text: errorLog
         textFormat: Text.StyledText
         wrapMode: Text.Wrap
     }

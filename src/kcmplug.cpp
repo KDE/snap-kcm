@@ -76,9 +76,12 @@ void KCMPlug::changePermission(bool connect, QString slotSnap)
     QString errorString;
     if (connect) {
         errorString = SnapBackend::connectPlug(plugSnap(), name(), slotSnap, plugInterface());
-        errorString.isEmpty() ? setconnectedSlotSnap(slotSnap) : Q_EMIT errorLogChanged(errorString);
     } else {
         errorString = SnapBackend::disconnectPlug(plugSnap(), name(), slotSnap, plugInterface());
-        errorString.isEmpty() ? setconnectedSlotSnap(QString()) : Q_EMIT errorLogChanged(errorString);
+    }
+    if (errorString.isEmpty()) {
+        setconnectedSlotSnap(connect ? slotSnap : QString());
+    } else {
+        Q_EMIT errorLogChanged(errorString);
     }
 }
