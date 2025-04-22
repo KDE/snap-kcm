@@ -6,7 +6,8 @@ base: core22
 version: '0.1'
 summary: KDE Configuration Module to manage permissions of snap packages
 description: |
-  KDE Configuration Module to manage permissions of snap packages build on the snapd-glib api. Snapped to be used as a standalone app, but KCMs are not meant to be used that way, please use with caution
+  KDE Configuration Module to manage permissions of snap packages build on the snapd-glib api.
+  Snapped to be used as a standalone app, but KCMs are not meant to be used that way, please use with caution
 license: GPL-2.0-OR-LATER
 source-code: https://invent.kde.org/soumyadghosh/snap-kcm
 issues: https://invent.kde.org/soumyadghosh/snap-kcm/issues
@@ -45,7 +46,7 @@ parts:
   #     - libglib2.0-dev
   #     - libsoup-3.0-dev
   #     - qtchooser
-  
+
   snap-kcm:
     source: https://invent.kde.org/soumyadghosh/snap-kcm.git
     source-depth: 1
@@ -62,7 +63,6 @@ parts:
     build-packages:
       - libsnapd-glib-dev
       - libsnapd-qt-dev
-  
   deps:
     plugin: nil
     stage-packages:
