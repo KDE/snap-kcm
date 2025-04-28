@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: snap-kcm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-27 00:44+0000\n"
-"PO-Revision-Date: 2025-03-22 15:26+0100\n"
+"PO-Revision-Date: 2025-04-27 15:38+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -15,214 +15,220 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.12.3\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 #: src/snapbackend.cpp:287
-#, fuzzy, kde-format
-#| msgctxt "error"
-#| msgid "Error"
+#, kde-format
 msgid "No error"
-msgstr "Fout"
+msgstr "Geen fout"
 
 #: src/snapbackend.cpp:290
 #, kde-format
 msgid "Unknown error occurred"
-msgstr ""
+msgstr "Er is een onbekende fout opgetreden"
 
 #: src/snapbackend.cpp:293
 #, kde-format
 msgid "Not able to connect to snapd"
-msgstr ""
+msgstr "Verbinden met snapd lukt niet"
 
 #: src/snapbackend.cpp:296
 #, kde-format
 msgid "An error occurred while writing to snapd"
-msgstr ""
+msgstr "Er deed zich een fout voor bij schrijven naar snapd"
 
 #: src/snapbackend.cpp:299
 #, kde-format
 msgid "An error occurred while reading from snapd"
-msgstr ""
+msgstr "Er is een fout opgetreden bij het lezen uit snapd"
 
 #: src/snapbackend.cpp:302
 #, kde-format
 msgid "Snapd did not understand the request that was sent"
-msgstr ""
+msgstr "Snapd begreep het verzonden verzoek niet"
 
 #: src/snapbackend.cpp:305
 #, kde-format
 msgid "The response received from snapd was not understood"
-msgstr ""
+msgstr "Het ontvangen antwoord van snapd werd niet begrepen"
 
 #: src/snapbackend.cpp:308
 #, kde-format
 msgid "The requested operation requires super user password"
 msgstr ""
+"De gevraagde bewerking vereist het gebruikerswachtwoord van de "
+"systeembeheerder"
 
 #: src/snapbackend.cpp:311
 #, kde-format
 msgid "The provided super user password is invalid"
-msgstr ""
+msgstr "Het geleverde wachtwoord van de systeembeheerder is ongeldig"
 
 #: src/snapbackend.cpp:314
 #, kde-format
 msgid "Login requires a two-factor code"
-msgstr ""
+msgstr "Aanmelden vereist een twee-factorcode"
 
 #: src/snapbackend.cpp:317
 #, kde-format
 msgid "The two-factor code provided at login is invalid"
-msgstr ""
+msgstr "De twee-factorcode geleverd bij aanmelden is ongeldig"
 
 #: src/snapbackend.cpp:320
 #, kde-format
 msgid "This user account is not permitted to perform the requested operation"
 msgstr ""
+"Dit gebruikersaccount is niet toegestaan de gevraagde bewerking uit te voeren"
 
 #: src/snapbackend.cpp:323
 #, kde-format
 msgid "An unspecified error occurred while communicating with snapd"
 msgstr ""
+"Er is een niet gespecificeerde fout opgetreden bij communiceren met snapd"
 
 #: src/snapbackend.cpp:326
 #, kde-format
 msgid "This user has not accepted the store’s terms of service"
 msgstr ""
+"Deze gebruiker heeft de gebruiksvoorwaarden van de winkel niet geaccepteerd"
 
 #: src/snapbackend.cpp:329
 #, kde-format
 msgid "This user has not configured a payment method"
-msgstr ""
+msgstr "De gebruiker heeft de betalingsmethode niet geconfigureerd"
 
 #: src/snapbackend.cpp:332
 #, kde-format
 msgid "This user has had their payment method declined by the payment provider"
 msgstr ""
+"Van deze gebruiker is de betalingsmethode van zijn/haar betaling niet "
+"geaccepteerd door de leverancier van betaling"
 
 #: src/snapbackend.cpp:335
 #, kde-format
 msgid "The requested snap is already installed"
-msgstr ""
+msgstr "De gevraagd snap is al geïnstalleerd"
 
 #: src/snapbackend.cpp:338
 #, kde-format
 msgid "The requested snap is not installed"
-msgstr ""
+msgstr "De gevraagd snap is niet geïnstalleerd"
 
 #: src/snapbackend.cpp:341
 #, kde-format
 msgid "No update is available for this snap"
-msgstr ""
+msgstr "Geen item voor bijwerken beschikbaar voor deze snap"
 
 #: src/snapbackend.cpp:344
 #, kde-format
 msgid "Provided password is not valid"
-msgstr ""
+msgstr "Geleverd wachtwoord is ongeldig"
 
 #: src/snapbackend.cpp:347
 #, kde-format
 msgid "This snap needs to be installed using devmode"
 msgstr ""
+"Deze snap heeft het nodig geïnstalleerd te worden met gebruik van devmode"
 
 #: src/snapbackend.cpp:350
 #, kde-format
 msgid "This snap needs to be installed using classic mode"
 msgstr ""
+"Deze snap heeft het nodig geïnstalleerd te worden met gebruik van de "
+"klassieke modus"
 
 #: src/snapbackend.cpp:353
 #, kde-format
 msgid "A classic system is required to install this snap"
-msgstr ""
+msgstr "Een klassiek systeem is vereist om deze snap te installeren"
 
 #: src/snapbackend.cpp:356
 #, kde-format
 msgid "Operation was cancelled"
-msgstr ""
+msgstr "Bewerking was geannuleerd"
 
 #: src/snapbackend.cpp:359
 #, kde-format
 msgid "A bad query was provided"
-msgstr ""
+msgstr "Een slechte zoekopdracht was geleverd"
 
 #: src/snapbackend.cpp:362
 #, kde-format
 msgid "A timeout occurred during the request"
-msgstr ""
+msgstr "Er was een timeout tijdens het verzoek"
 
 #: src/snapbackend.cpp:365
 #, kde-format
 msgid "The requested snap couldn’t be found"
-msgstr ""
+msgstr "De gevraagde snap kon niet gevonden worden"
 
 #: src/snapbackend.cpp:368
 #, kde-format
 msgid "The requested snap is not in the store"
-msgstr ""
+msgstr "De gevraagd snap is niet in de winkel"
 
 #: src/snapbackend.cpp:371
 #, kde-format
 msgid "Authentication was cancelled by the user"
-msgstr ""
+msgstr "Authenticatie was geannuleerd door de gebruiker"
 
 #: src/snapbackend.cpp:374
 #, kde-format
 msgid "Snap not compatible with classic mode"
-msgstr ""
+msgstr "Snap is niet compatibel met de klassieke modus"
 
 #: src/snapbackend.cpp:377
 #, kde-format
 msgid "Requested snap revision not available"
-msgstr ""
+msgstr "Gevraagde snap-revisie is niet beschikbaar"
 
 #: src/snapbackend.cpp:380
 #, kde-format
 msgid "Requested snap channel not available"
-msgstr ""
+msgstr "Gevraagde snap-kanaal is niet beschikbaar"
 
 #: src/snapbackend.cpp:383
 #, kde-format
 msgid "The given snap or directory does not look like a snap"
-msgstr ""
+msgstr "De gegeven snap of map zie er niet uit als een snap"
 
 #: src/snapbackend.cpp:386
 #, kde-format
 msgid "A hostname failed to resolve during the request"
-msgstr ""
+msgstr "Oplossen van een hostnaam is mislukt tijdens het verzoek"
 
 #: src/snapbackend.cpp:389
 #, kde-format
 msgid "A requested configuration option is not set"
-msgstr ""
+msgstr "De gevraagde configuratie-optie is niet gezet"
 
 #: src/snapbackend.cpp:392
 #, kde-format
 msgid "The requested app couldn't be found"
-msgstr ""
+msgstr "De gevraagde toepassing kon niet gevonden worden"
 
 #: src/snapbackend.cpp:395
 #, kde-format
 msgid "No snap revision on specified architecture"
-msgstr ""
+msgstr "Geen snap-revisie op de gespecificeerde architectuur"
 
 #: src/snapbackend.cpp:398
 #, kde-format
 msgid "The requested operation would conflict with currently ongoing change"
-msgstr ""
+msgstr "De gevraagde bewerking zou in conflict zijn met de nu gaande wijziging"
 
 #: src/snapbackend.cpp:401
 #, kde-format
 msgid "The requested interface has not changed"
-msgstr ""
+msgstr "Het gevraagde interface is niet gewijzigd"
 
 #: src/snapbackend.cpp:404
 #, kde-format
 msgid "Unknown error code"
-msgstr ""
+msgstr "Onbekende foutcode"
 
 #: src/ui/ErrorDialog.qml:18
-#, fuzzy, kde-format
-#| msgctxt "error"
-#| msgid "Error"
+#, kde-format
 msgid "Error"
 msgstr "Fout"
 
@@ -237,10 +243,9 @@ msgid "Install snaps to change the permissions"
 msgstr "Installeer snaps om de rechten te wijzigen"
 
 #: src/ui/permissions.qml:20
-#, fuzzy, kde-format
-#| msgid "Permissions for %1"
+#, kde-format
 msgid "Permissions"
-msgstr "Toegangsrechten voor %1"
+msgstr "Toegangsrechten"
 
 #: src/ui/permissions.qml:20
 #, kde-format
@@ -251,6 +256,8 @@ msgstr "Toegangsrechten voor %1"
 #, kde-format
 msgid "Select an application from the list to view its permissions here"
 msgstr ""
+"Een toepassing uit de lijst selecteren om hier zijn toegangsrechten te "
+"bekijken"
 
 #~ msgid "Launch"
 #~ msgstr "Starten"

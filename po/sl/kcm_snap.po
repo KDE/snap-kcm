@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-27 00:44+0000\n"
-"PO-Revision-Date: 2025-03-22 11:04+0100\n"
+"PO-Revision-Date: 2025-04-27 09:14+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -13,214 +13,211 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.6\n"
 
 #: src/snapbackend.cpp:287
-#, fuzzy, kde-format
-#| msgctxt "error"
-#| msgid "Error"
+#, kde-format
 msgid "No error"
-msgstr "Napaka"
+msgstr "Ni napake"
 
 #: src/snapbackend.cpp:290
 #, kde-format
 msgid "Unknown error occurred"
-msgstr ""
+msgstr "Prišlo je do neznane napake"
 
 #: src/snapbackend.cpp:293
 #, kde-format
 msgid "Not able to connect to snapd"
-msgstr ""
+msgstr "Ni mogoče vzpostaviti povezave s snapd"
 
 #: src/snapbackend.cpp:296
 #, kde-format
 msgid "An error occurred while writing to snapd"
-msgstr ""
+msgstr "Med pisanjem v snapd je prišlo do napake"
 
 #: src/snapbackend.cpp:299
 #, kde-format
 msgid "An error occurred while reading from snapd"
-msgstr ""
+msgstr "Pri branju iz datoteke snapd je prišlo do napake."
 
 #: src/snapbackend.cpp:302
 #, kde-format
 msgid "Snapd did not understand the request that was sent"
-msgstr ""
+msgstr "Snapd ni razumel poslane zahteve"
 
 #: src/snapbackend.cpp:305
 #, kde-format
 msgid "The response received from snapd was not understood"
-msgstr ""
+msgstr "Odgovor, prejet od snapda, ni bil razumljen."
 
 #: src/snapbackend.cpp:308
 #, kde-format
 msgid "The requested operation requires super user password"
-msgstr ""
+msgstr "Zahtevana operacija zahteva geslo super uporabnika"
 
 #: src/snapbackend.cpp:311
 #, kde-format
 msgid "The provided super user password is invalid"
-msgstr ""
+msgstr "Vneseno geslo super uporabnika je neveljavno"
 
 #: src/snapbackend.cpp:314
 #, kde-format
 msgid "Login requires a two-factor code"
-msgstr ""
+msgstr "Prijava zahteva dvofaktorsko kodo"
 
 #: src/snapbackend.cpp:317
 #, kde-format
 msgid "The two-factor code provided at login is invalid"
-msgstr ""
+msgstr "Dvofaktorska koda, vnesena ob prijavi, je neveljavna"
 
 #: src/snapbackend.cpp:320
 #, kde-format
 msgid "This user account is not permitted to perform the requested operation"
-msgstr ""
+msgstr "Ta uporabniški račun nima dovoljenja za izvedbo zahtevane operacije."
 
 #: src/snapbackend.cpp:323
 #, kde-format
 msgid "An unspecified error occurred while communicating with snapd"
-msgstr ""
+msgstr "Med komunikacijo s snapd je prišlo do nedoločene napake"
 
 #: src/snapbackend.cpp:326
 #, kde-format
 msgid "This user has not accepted the store’s terms of service"
-msgstr ""
+msgstr "Ta uporabnik ni sprejel pogojev storitve."
 
 #: src/snapbackend.cpp:329
 #, kde-format
 msgid "This user has not configured a payment method"
-msgstr ""
+msgstr "Ta uporabnik ni konfiguriral načina plačila"
 
 #: src/snapbackend.cpp:332
 #, kde-format
 msgid "This user has had their payment method declined by the payment provider"
-msgstr ""
+msgstr "Ponudnik plačilnih storitev je zavrnil način plačila tega uporabnika"
 
 #: src/snapbackend.cpp:335
 #, kde-format
 msgid "The requested snap is already installed"
-msgstr ""
+msgstr "Zahtevani snap je že nameščen"
 
 #: src/snapbackend.cpp:338
 #, kde-format
 msgid "The requested snap is not installed"
-msgstr ""
+msgstr "Zahtevani snap ni nameščen"
 
 #: src/snapbackend.cpp:341
 #, kde-format
 msgid "No update is available for this snap"
-msgstr ""
+msgstr "Ni na voljo posodobitve za ta snap"
 
 #: src/snapbackend.cpp:344
 #, kde-format
 msgid "Provided password is not valid"
-msgstr ""
+msgstr "Vneseno geslo ni veljavno"
 
 #: src/snapbackend.cpp:347
 #, kde-format
 msgid "This snap needs to be installed using devmode"
-msgstr ""
+msgstr "Ta snap mora biti nameščen z uporabo razvojnega načina"
 
 #: src/snapbackend.cpp:350
 #, kde-format
 msgid "This snap needs to be installed using classic mode"
-msgstr ""
+msgstr "Ta snap je treba namestiti v klasičnem načinu"
 
 #: src/snapbackend.cpp:353
 #, kde-format
 msgid "A classic system is required to install this snap"
-msgstr ""
+msgstr "Klasični način je zahtevan za namestitev tega snapa"
 
 #: src/snapbackend.cpp:356
 #, kde-format
 msgid "Operation was cancelled"
-msgstr ""
+msgstr "Operacija je bila preklicana"
 
 #: src/snapbackend.cpp:359
 #, kde-format
 msgid "A bad query was provided"
-msgstr ""
+msgstr "Vnesena je bila napačna poizvedba"
 
 #: src/snapbackend.cpp:362
 #, kde-format
 msgid "A timeout occurred during the request"
-msgstr ""
+msgstr "Med zahtevo je prišlo do časovne omejitve"
 
 #: src/snapbackend.cpp:365
 #, kde-format
 msgid "The requested snap couldn’t be found"
-msgstr ""
+msgstr "Zahtevanega snapa ni bilo mogoče najti"
 
 #: src/snapbackend.cpp:368
 #, kde-format
 msgid "The requested snap is not in the store"
-msgstr ""
+msgstr "Zahtevanega snapa ni v skladišču"
 
 #: src/snapbackend.cpp:371
 #, kde-format
 msgid "Authentication was cancelled by the user"
-msgstr ""
+msgstr "Avtentikacijo je preklical uporabnik"
 
 #: src/snapbackend.cpp:374
 #, kde-format
 msgid "Snap not compatible with classic mode"
-msgstr ""
+msgstr "Snap ni združljiv s klasičnim načinom"
 
 #: src/snapbackend.cpp:377
 #, kde-format
 msgid "Requested snap revision not available"
-msgstr ""
+msgstr "Zahtevana revizija snapa ni na voljo"
 
 #: src/snapbackend.cpp:380
 #, kde-format
 msgid "Requested snap channel not available"
-msgstr ""
+msgstr "Zahtevani kanal snapa ni na voljo"
 
 #: src/snapbackend.cpp:383
 #, kde-format
 msgid "The given snap or directory does not look like a snap"
-msgstr ""
+msgstr "Dani snap ali imenik ni videti kot snap"
 
 #: src/snapbackend.cpp:386
 #, kde-format
 msgid "A hostname failed to resolve during the request"
-msgstr ""
+msgstr "Imena gostitelja med zahtevo ni bilo mogoče razrešiti"
 
 #: src/snapbackend.cpp:389
 #, kde-format
 msgid "A requested configuration option is not set"
-msgstr ""
+msgstr "Zahtevana možnost konfiguracije ni nastavljena"
 
 #: src/snapbackend.cpp:392
 #, kde-format
 msgid "The requested app couldn't be found"
-msgstr ""
+msgstr "Zahtevane aplikacije ni bilo mogoče najti"
 
 #: src/snapbackend.cpp:395
 #, kde-format
 msgid "No snap revision on specified architecture"
-msgstr ""
+msgstr "Ni revizije snapa na zahtevani arhitekturi"
 
 #: src/snapbackend.cpp:398
 #, kde-format
 msgid "The requested operation would conflict with currently ongoing change"
 msgstr ""
+"Zahtevana operacija bi bila v nasprotju s trenutno potekajočo spremembo"
 
 #: src/snapbackend.cpp:401
 #, kde-format
 msgid "The requested interface has not changed"
-msgstr ""
+msgstr "Zahtevani vmesnik se ni spremenil"
 
 #: src/snapbackend.cpp:404
 #, kde-format
 msgid "Unknown error code"
-msgstr ""
+msgstr "Neznana koda napake"
 
 #: src/ui/ErrorDialog.qml:18
-#, fuzzy, kde-format
-#| msgctxt "error"
-#| msgid "Error"
+#, kde-format
 msgid "Error"
 msgstr "Napaka"
 
@@ -235,10 +232,9 @@ msgid "Install snaps to change the permissions"
 msgstr "Namesti snape, za spremembo dovoljenj"
 
 #: src/ui/permissions.qml:20
-#, fuzzy, kde-format
-#| msgid "Permissions for %1"
+#, kde-format
 msgid "Permissions"
-msgstr "Dovoljenja za %1"
+msgstr "Dovoljenja"
 
 #: src/ui/permissions.qml:20
 #, kde-format
@@ -248,7 +244,7 @@ msgstr "Dovoljenja za %1"
 #: src/ui/permissions.qml:24
 #, kde-format
 msgid "Select an application from the list to view its permissions here"
-msgstr ""
+msgstr "Izberite aplikacijo s seznama, da si ogledate njena dovoljenja tukaj"
 
 #~ msgid "Launch"
 #~ msgstr "Zaženi"
