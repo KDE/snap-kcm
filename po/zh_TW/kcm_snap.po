@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: snap-kcm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-27 00:44+0000\n"
-"PO-Revision-Date: 2025-03-24 19:59+0900\n"
+"PO-Revision-Date: 2025-05-01 17:50+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -15,214 +15,210 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 24.12.3\n"
+"X-Generator: Lokalize 25.07.70\n"
 
 #: src/snapbackend.cpp:287
-#, fuzzy, kde-format
-#| msgctxt "error"
-#| msgid "Error"
+#, kde-format
 msgid "No error"
-msgstr "錯誤"
+msgstr "沒有錯誤"
 
 #: src/snapbackend.cpp:290
 #, kde-format
 msgid "Unknown error occurred"
-msgstr ""
+msgstr "發生未知的錯誤"
 
 #: src/snapbackend.cpp:293
 #, kde-format
 msgid "Not able to connect to snapd"
-msgstr ""
+msgstr "無法連線到 snapd"
 
 #: src/snapbackend.cpp:296
 #, kde-format
 msgid "An error occurred while writing to snapd"
-msgstr ""
+msgstr "寫入 snapd 時發生錯誤"
 
 #: src/snapbackend.cpp:299
 #, kde-format
 msgid "An error occurred while reading from snapd"
-msgstr ""
+msgstr "從 snapd 讀取時發生錯誤"
 
 #: src/snapbackend.cpp:302
 #, kde-format
 msgid "Snapd did not understand the request that was sent"
-msgstr ""
+msgstr "Snapd 不瞭解已傳送的請求"
 
 #: src/snapbackend.cpp:305
 #, kde-format
 msgid "The response received from snapd was not understood"
-msgstr ""
+msgstr "不瞭解從 snapd 收到的回應"
 
 #: src/snapbackend.cpp:308
 #, kde-format
 msgid "The requested operation requires super user password"
-msgstr ""
+msgstr "要求的操作需要超級使用者密碼"
 
 #: src/snapbackend.cpp:311
 #, kde-format
 msgid "The provided super user password is invalid"
-msgstr ""
+msgstr "提供的超級使用者密碼是無效的"
 
 #: src/snapbackend.cpp:314
 #, kde-format
 msgid "Login requires a two-factor code"
-msgstr ""
+msgstr "登入需要兩步驟驗證碼"
 
 #: src/snapbackend.cpp:317
 #, kde-format
 msgid "The two-factor code provided at login is invalid"
-msgstr ""
+msgstr "登入時提供的兩步驟驗證碼是無效的"
 
 #: src/snapbackend.cpp:320
 #, kde-format
 msgid "This user account is not permitted to perform the requested operation"
-msgstr ""
+msgstr "這個使用者帳號不被允許進行要求的操作"
 
 #: src/snapbackend.cpp:323
 #, kde-format
 msgid "An unspecified error occurred while communicating with snapd"
-msgstr ""
+msgstr "與 snapd 聯繫時發生未指定的錯誤。"
 
 #: src/snapbackend.cpp:326
 #, kde-format
 msgid "This user has not accepted the store’s terms of service"
-msgstr ""
+msgstr "這個使用者未接受商店的服務條款"
 
 #: src/snapbackend.cpp:329
 #, kde-format
 msgid "This user has not configured a payment method"
-msgstr ""
+msgstr "這個使用者未設定付款方法"
 
 #: src/snapbackend.cpp:332
 #, kde-format
 msgid "This user has had their payment method declined by the payment provider"
-msgstr ""
+msgstr "這個使用者的付款方法被付款提供者拒絕了"
 
 #: src/snapbackend.cpp:335
 #, kde-format
 msgid "The requested snap is already installed"
-msgstr ""
+msgstr "要求的 snap 已安裝"
 
 #: src/snapbackend.cpp:338
 #, kde-format
 msgid "The requested snap is not installed"
-msgstr ""
+msgstr "要求的 snap 未安裝"
 
 #: src/snapbackend.cpp:341
 #, kde-format
 msgid "No update is available for this snap"
-msgstr ""
+msgstr "這個 snap 沒有可用的更新"
 
 #: src/snapbackend.cpp:344
 #, kde-format
 msgid "Provided password is not valid"
-msgstr ""
+msgstr "提供的密碼是無效的"
 
 #: src/snapbackend.cpp:347
 #, kde-format
 msgid "This snap needs to be installed using devmode"
-msgstr ""
+msgstr "這個 snap 需要用開發模式安裝"
 
 #: src/snapbackend.cpp:350
 #, kde-format
 msgid "This snap needs to be installed using classic mode"
-msgstr ""
+msgstr "這個 snap 需要用經典模式安裝"
 
 #: src/snapbackend.cpp:353
 #, kde-format
 msgid "A classic system is required to install this snap"
-msgstr ""
+msgstr "需要經典系統才能安裝這個 snap"
 
 #: src/snapbackend.cpp:356
 #, kde-format
 msgid "Operation was cancelled"
-msgstr ""
+msgstr "操作已被取消"
 
 #: src/snapbackend.cpp:359
 #, kde-format
 msgid "A bad query was provided"
-msgstr ""
+msgstr "提供了不正確的查詢"
 
 #: src/snapbackend.cpp:362
 #, kde-format
 msgid "A timeout occurred during the request"
-msgstr ""
+msgstr "請求時發生逾時"
 
 #: src/snapbackend.cpp:365
 #, kde-format
 msgid "The requested snap couldn’t be found"
-msgstr ""
+msgstr "請求的 snap 找不到"
 
 #: src/snapbackend.cpp:368
 #, kde-format
 msgid "The requested snap is not in the store"
-msgstr ""
+msgstr "請求的 snap 不在商店內"
 
 #: src/snapbackend.cpp:371
 #, kde-format
 msgid "Authentication was cancelled by the user"
-msgstr ""
+msgstr "認證已被使用者取消"
 
 #: src/snapbackend.cpp:374
 #, kde-format
 msgid "Snap not compatible with classic mode"
-msgstr ""
+msgstr "Snap 與經典模式不相容"
 
 #: src/snapbackend.cpp:377
 #, kde-format
 msgid "Requested snap revision not available"
-msgstr ""
+msgstr "請求的 snap 修訂版不可用"
 
 #: src/snapbackend.cpp:380
 #, kde-format
 msgid "Requested snap channel not available"
-msgstr ""
+msgstr "請求的 snap 頻道不可用"
 
 #: src/snapbackend.cpp:383
 #, kde-format
 msgid "The given snap or directory does not look like a snap"
-msgstr ""
+msgstr "提供的 snap 或目錄看起來不是一個 snap"
 
 #: src/snapbackend.cpp:386
 #, kde-format
 msgid "A hostname failed to resolve during the request"
-msgstr ""
+msgstr "請求時有主機名稱解析失敗"
 
 #: src/snapbackend.cpp:389
 #, kde-format
 msgid "A requested configuration option is not set"
-msgstr ""
+msgstr "未設定一個要求的設定選項"
 
 #: src/snapbackend.cpp:392
 #, kde-format
 msgid "The requested app couldn't be found"
-msgstr ""
+msgstr "請求的應用程式找不到"
 
 #: src/snapbackend.cpp:395
 #, kde-format
 msgid "No snap revision on specified architecture"
-msgstr ""
+msgstr "指定的架構上沒有 snap 的修訂版"
 
 #: src/snapbackend.cpp:398
 #, kde-format
 msgid "The requested operation would conflict with currently ongoing change"
-msgstr ""
+msgstr "要求的操作會與目前進行中的變更相衝突"
 
 #: src/snapbackend.cpp:401
 #, kde-format
 msgid "The requested interface has not changed"
-msgstr ""
+msgstr "要求的介面並未變更"
 
 #: src/snapbackend.cpp:404
 #, kde-format
 msgid "Unknown error code"
-msgstr ""
+msgstr "未知"
 
 #: src/ui/ErrorDialog.qml:18
-#, fuzzy, kde-format
-#| msgctxt "error"
-#| msgid "Error"
+#, kde-format
 msgid "Error"
 msgstr "錯誤"
 
@@ -237,10 +233,9 @@ msgid "Install snaps to change the permissions"
 msgstr "安裝 snap 軟體包之後再來變更它們的權限"
 
 #: src/ui/permissions.qml:20
-#, fuzzy, kde-format
-#| msgid "Permissions for %1"
+#, kde-format
 msgid "Permissions"
-msgstr "%1 的權限"
+msgstr "權限"
 
 #: src/ui/permissions.qml:20
 #, kde-format
@@ -250,7 +245,7 @@ msgstr "%1 的權限"
 #: src/ui/permissions.qml:24
 #, kde-format
 msgid "Select an application from the list to view its permissions here"
-msgstr ""
+msgstr "從列表選取應用程式以在此檢視它的權限"
 
 #~ msgid "Launch"
 #~ msgstr "啟動"
