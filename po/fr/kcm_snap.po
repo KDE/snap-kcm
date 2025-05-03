@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: snap-kcm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-27 00:44+0000\n"
-"PO-Revision-Date: 2025-03-24 09:51+0100\n"
+"PO-Revision-Date: 2025-05-01 17:42+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: French <French <kde-francophone@kde.org>>\n"
 "Language: fr\n"
@@ -15,211 +15,216 @@ msgstr ""
 "X-Generator: Lokalize 24.12.3\n"
 
 #: src/snapbackend.cpp:287
-#, fuzzy, kde-format
-#| msgctxt "error"
-#| msgid "Error"
+#, kde-format
 msgid "No error"
-msgstr "Erreur"
+msgstr "Aucune erreur"
 
 #: src/snapbackend.cpp:290
 #, kde-format
 msgid "Unknown error occurred"
-msgstr ""
+msgstr "Une erreur inconnue s'est produite."
 
 #: src/snapbackend.cpp:293
 #, kde-format
 msgid "Not able to connect to snapd"
-msgstr ""
+msgstr "Impossible de se connecter au processus « snapd »"
 
 #: src/snapbackend.cpp:296
 #, kde-format
 msgid "An error occurred while writing to snapd"
-msgstr ""
+msgstr "Une erreur est survenue lors de l'écriture avec le module « snapd »."
 
 #: src/snapbackend.cpp:299
 #, kde-format
 msgid "An error occurred while reading from snapd"
 msgstr ""
+"Une erreur s'est produite lors de la lecture à partir du processus « snapd »."
 
 #: src/snapbackend.cpp:302
 #, kde-format
 msgid "Snapd did not understand the request that was sent"
-msgstr ""
+msgstr "Le processus « snapd » n'a pas compris la demande envoyée."
 
 #: src/snapbackend.cpp:305
 #, kde-format
 msgid "The response received from snapd was not understood"
-msgstr ""
+msgstr "La réponse reçue du processus « snapd » n'a pas été comprise."
 
 #: src/snapbackend.cpp:308
 #, kde-format
 msgid "The requested operation requires super user password"
-msgstr ""
+msgstr "L'opération demandée nécessite un mot de passe administrateur."
 
 #: src/snapbackend.cpp:311
 #, kde-format
 msgid "The provided super user password is invalid"
-msgstr ""
+msgstr "Le mot de passe administrateur fourni est non valable."
 
 #: src/snapbackend.cpp:314
 #, kde-format
 msgid "Login requires a two-factor code"
-msgstr ""
+msgstr "La connexion nécessite un code à deux facteurs."
 
 #: src/snapbackend.cpp:317
 #, kde-format
 msgid "The two-factor code provided at login is invalid"
-msgstr ""
+msgstr "Le code à deux facteurs fourni lors de la connexion est non valable."
 
 #: src/snapbackend.cpp:320
 #, kde-format
 msgid "This user account is not permitted to perform the requested operation"
 msgstr ""
+"Ce compte utilisateur n'est pas autorisé à effectuer l'opération demandée."
 
 #: src/snapbackend.cpp:323
 #, kde-format
 msgid "An unspecified error occurred while communicating with snapd"
 msgstr ""
+"Une erreur non spécifiée s'est produite lors de la communication avec le "
+"processus « snapd »."
 
 #: src/snapbackend.cpp:326
 #, kde-format
 msgid "This user has not accepted the store’s terms of service"
 msgstr ""
+"Cet utilisateur n'a pas accepté les conditions d'utilisation de la boutique."
 
 #: src/snapbackend.cpp:329
 #, kde-format
 msgid "This user has not configured a payment method"
-msgstr ""
+msgstr "Cet utilisateur n'a configuré aucun mode de paiement."
 
 #: src/snapbackend.cpp:332
 #, kde-format
 msgid "This user has had their payment method declined by the payment provider"
 msgstr ""
+"Le mode de paiement de cet utilisateur a été refusé par le fournisseur de "
+"paiements."
 
 #: src/snapbackend.cpp:335
 #, kde-format
 msgid "The requested snap is already installed"
-msgstr ""
+msgstr "Le module « snap » demandé est déjà installé."
 
 #: src/snapbackend.cpp:338
 #, kde-format
 msgid "The requested snap is not installed"
-msgstr ""
+msgstr "Le fichier « snap » demandé n'est pas installé."
 
 #: src/snapbackend.cpp:341
 #, kde-format
 msgid "No update is available for this snap"
-msgstr ""
+msgstr "Aucune mise à jour n'est disponible pour ce module « snap »."
 
 #: src/snapbackend.cpp:344
 #, kde-format
 msgid "Provided password is not valid"
-msgstr ""
+msgstr "Le mot de passe fourni est non valable."
 
 #: src/snapbackend.cpp:347
 #, kde-format
 msgid "This snap needs to be installed using devmode"
-msgstr ""
+msgstr "Ce module « snap » doit être installé en utilisant « devmode »."
 
 #: src/snapbackend.cpp:350
 #, kde-format
 msgid "This snap needs to be installed using classic mode"
-msgstr ""
+msgstr "Ce module « snap » doit être installé en mode classique."
 
 #: src/snapbackend.cpp:353
 #, kde-format
 msgid "A classic system is required to install this snap"
-msgstr ""
+msgstr "Un système classique est nécessaire pour installer ce module « snap »."
 
 #: src/snapbackend.cpp:356
 #, kde-format
 msgid "Operation was cancelled"
-msgstr ""
+msgstr "L’opération a été annulée."
 
 #: src/snapbackend.cpp:359
 #, kde-format
 msgid "A bad query was provided"
-msgstr ""
+msgstr "Une mauvaise requête a été fournie."
 
 #: src/snapbackend.cpp:362
 #, kde-format
 msgid "A timeout occurred during the request"
-msgstr ""
+msgstr "La requêteS n'a pu être effectuée dans le temps imparti."
 
 #: src/snapbackend.cpp:365
 #, kde-format
 msgid "The requested snap couldn’t be found"
-msgstr ""
+msgstr "Il a été impossible de trouver le module « snap » demandé."
 
 #: src/snapbackend.cpp:368
 #, kde-format
 msgid "The requested snap is not in the store"
-msgstr ""
+msgstr "Le module « snap » demandé est absent de la boutique."
 
 #: src/snapbackend.cpp:371
 #, kde-format
 msgid "Authentication was cancelled by the user"
-msgstr ""
+msgstr "L'authentification a été annulée par l'utilisateur."
 
 #: src/snapbackend.cpp:374
 #, kde-format
 msgid "Snap not compatible with classic mode"
-msgstr ""
+msgstr "Le module « snap » est incompatible avec le mode classique."
 
 #: src/snapbackend.cpp:377
 #, kde-format
 msgid "Requested snap revision not available"
-msgstr ""
+msgstr "La révision du module « snap » demandé est indisponible."
 
 #: src/snapbackend.cpp:380
 #, kde-format
 msgid "Requested snap channel not available"
-msgstr ""
+msgstr "Le canal « snap » demandé est indisponible."
 
 #: src/snapbackend.cpp:383
 #, kde-format
 msgid "The given snap or directory does not look like a snap"
 msgstr ""
+"Le module « snap » ou le dossier fourni ne semble pas un élément de type "
+"« snap »."
 
 #: src/snapbackend.cpp:386
 #, kde-format
 msgid "A hostname failed to resolve during the request"
-msgstr ""
+msgstr "Un nom d'hôte n'a pas pu être résolu lors de la demande."
 
 #: src/snapbackend.cpp:389
 #, kde-format
 msgid "A requested configuration option is not set"
-msgstr ""
+msgstr "Une option demandée de configuration est non définie."
 
 #: src/snapbackend.cpp:392
 #, kde-format
 msgid "The requested app couldn't be found"
-msgstr ""
+msgstr "Il a été impossible de trouver l'application demandée."
 
 #: src/snapbackend.cpp:395
 #, kde-format
 msgid "No snap revision on specified architecture"
-msgstr ""
+msgstr "Aucune révision de module « snap » sur l'architecture spécifiée."
 
 #: src/snapbackend.cpp:398
 #, kde-format
 msgid "The requested operation would conflict with currently ongoing change"
-msgstr ""
+msgstr "L'opération demandée entrerait en conflit avec le changement en cours."
 
 #: src/snapbackend.cpp:401
 #, kde-format
 msgid "The requested interface has not changed"
-msgstr ""
+msgstr "L'interface demandée n'a pas été modifiée."
 
 #: src/snapbackend.cpp:404
 #, kde-format
 msgid "Unknown error code"
-msgstr ""
+msgstr "Code d'erreur inconnu"
 
 #: src/ui/ErrorDialog.qml:18
-#, fuzzy, kde-format
-#| msgctxt "error"
-#| msgid "Error"
+#, kde-format
 msgid "Error"
 msgstr "Erreur"
 
@@ -234,10 +239,9 @@ msgid "Install snaps to change the permissions"
 msgstr "Installer des éléments « snap » pour modifier les autorisations"
 
 #: src/ui/permissions.qml:20
-#, fuzzy, kde-format
-#| msgid "Permissions for %1"
+#, kde-format
 msgid "Permissions"
-msgstr "Autorisations pour %1"
+msgstr "Droits d'accès"
 
 #: src/ui/permissions.qml:20
 #, kde-format
@@ -248,6 +252,8 @@ msgstr "Autorisations pour %1"
 #, kde-format
 msgid "Select an application from the list to view its permissions here"
 msgstr ""
+"Sélectionnez une application dans la liste pour afficher ses autorisations "
+"ici."
 
 #~ msgid "Launch"
 #~ msgstr "Lancer"
