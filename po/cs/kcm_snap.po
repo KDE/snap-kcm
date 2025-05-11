@@ -18,10 +18,9 @@ msgstr ""
 "X-Generator: Lokalize 24.12.2\n"
 
 #: src/snapbackend.cpp:287
-#, fuzzy, kde-format
-#| msgid "Error"
+#, kde-format
 msgid "No error"
-msgstr "Chyba"
+msgstr "Žádná chyba"
 
 #: src/snapbackend.cpp:290
 #, kde-format
@@ -216,11 +215,10 @@ msgstr ""
 #: src/snapbackend.cpp:404
 #, kde-format
 msgid "Unknown error code"
-msgstr ""
+msgstr "Neznámý kód chyby"
 
 #: src/ui/ErrorDialog.qml:18
-#, fuzzy, kde-format
-#| msgid "Error"
+#, kde-format
 msgid "Error"
 msgstr "Chyba"
 
@@ -235,10 +233,9 @@ msgid "Install snaps to change the permissions"
 msgstr ""
 
 #: src/ui/permissions.qml:20
-#, fuzzy, kde-format
-#| msgid "Permissions for %1"
+#, kde-format
 msgid "Permissions"
-msgstr "Oprávnění pro %1"
+msgstr "Oprávnění"
 
 #: src/ui/permissions.qml:20
 #, kde-format

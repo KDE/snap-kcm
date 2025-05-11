@@ -220,8 +220,7 @@ msgid "Unknown error code"
 msgstr ""
 
 #: src/ui/ErrorDialog.qml:18
-#, fuzzy, kde-format
-#| msgid "Error"
+#, kde-format
 msgid "Error"
 msgstr "Błąd"
 
