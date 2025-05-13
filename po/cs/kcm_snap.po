@@ -246,12 +246,3 @@ msgstr "Oprávnění pro %1"
 #, kde-format
 msgid "Select an application from the list to view its permissions here"
 msgstr ""
-
-#~ msgid "Launch"
-#~ msgstr "Spustit"
-
-#~ msgid "Record audio"
-#~ msgstr "Nahrávat zvuk"
-
-#~ msgid "Access the internet"
-#~ msgstr "Přístup k internetu"

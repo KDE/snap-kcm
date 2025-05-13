@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: snap-kcm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-27 00:44+0000\n"
-"PO-Revision-Date: 2025-03-25 12:37+0100\n"
+"PO-Revision-Date: 2025-05-12 16:51+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -16,14 +16,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 21.12.1\n"
 
 #: src/snapbackend.cpp:287
-#, fuzzy, kde-format
-#| msgctxt "error"
-#| msgid "Error"
+#, kde-format
 msgid "No error"
-msgstr "Error"
+msgstr "Nulle error"
 
 #: src/snapbackend.cpp:290
 #, kde-format
@@ -221,9 +219,7 @@ msgid "Unknown error code"
 msgstr ""
 
 #: src/ui/ErrorDialog.qml:18
-#, fuzzy, kde-format
-#| msgctxt "error"
-#| msgid "Error"
+#, kde-format
 msgid "Error"
 msgstr "Error"
 
@@ -238,10 +234,9 @@ msgid "Install snaps to change the permissions"
 msgstr "Installasnaps per cambiar lepermissiones"
 
 #: src/ui/permissions.qml:20
-#, fuzzy, kde-format
-#| msgid "Permissions for %1"
+#, kde-format
 msgid "Permissions"
-msgstr "Permissiones per %1"
+msgstr "Permissiones"
 
 #: src/ui/permissions.qml:20
 #, kde-format
@@ -251,7 +246,7 @@ msgstr "Permissiones per %1"
 #: src/ui/permissions.qml:24
 #, kde-format
 msgid "Select an application from the list to view its permissions here"
-msgstr ""
+msgstr "Selige un application ex le lista per vider su permissiones hic"
 
 #~ msgid "Launch"
 #~ msgstr "Lancea"
