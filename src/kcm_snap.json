@@ -1,7 +1,7 @@
 {
     "KPlugin": {
         "Description": "Configure Snap Permissions",
-        "Description[ar]": "اضبط تصاريح سناب",
+        "Description[ar]": "اضبط أذونات سناب",
         "Description[ca@valencia]": "Configura els permisos de Snap",
         "Description[ca]": "Configura els permisos de l'Snap",
         "Description[cs]": "Nastavit oprávnění pro Snap",
@@ -37,7 +37,7 @@
         ],
         "Icon": "folder-snap-symbolic",
         "Name": "Snap Permissions",
-        "Name[ar]": "التّصاريح سناب",
+        "Name[ar]": "الأذونات سناب",
         "Name[ca@valencia]": "Permisos de Snap",
         "Name[ca]": "Permisos de l'Snap",
         "Name[cs]": "Oprávnění pro Snap",
