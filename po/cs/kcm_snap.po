@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: snap-kcm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-27 00:44+0000\n"
-"PO-Revision-Date: 2025-05-16 14:55+0200\n"
+"PO-Revision-Date: 2025-10-02 09:21+0200\n"
 "Last-Translator: Vit Pelcak <vpelcak@suse.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 25.04.1\n"
+"X-Generator: Lokalize 25.08.1\n"
 
 #: src/snapbackend.cpp:287
 #, kde-format
@@ -55,17 +55,17 @@ msgstr "Odpověď přijatá ze snapd byla nesrozumitelná"
 #: src/snapbackend.cpp:308
 #, kde-format
 msgid "The requested operation requires super user password"
-msgstr ""
+msgstr "Požadovaná operace vyžaduje heslo superuživatele"
 
 #: src/snapbackend.cpp:311
 #, kde-format
 msgid "The provided super user password is invalid"
-msgstr ""
+msgstr "Poskytnuté heslo superuživatele je neplatné"
 
 #: src/snapbackend.cpp:314
 #, kde-format
 msgid "Login requires a two-factor code"
-msgstr ""
+msgstr "Přihlášení vyžaduje dvou-faktorový kód"
 
 #: src/snapbackend.cpp:317
 #, kde-format
