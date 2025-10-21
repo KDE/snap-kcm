@@ -2,6 +2,7 @@
     "KPlugin": {
         "Description": "Configure Snap Permissions",
         "Description[ar]": "اضبط أذونات سناب",
+        "Description[bg]": "Настройване на разрешения за Snap",
         "Description[ca@valencia]": "Configura els permisos de Snap",
         "Description[ca]": "Configura els permisos de l'Snap",
         "Description[cs]": "Nastavit oprávnění pro Snap",
@@ -39,6 +40,7 @@
         "Icon": "folder-snap-symbolic",
         "Name": "Snap Permissions",
         "Name[ar]": "الأذونات سناب",
+        "Name[bg]": "Разрешения за Snap",
         "Name[ca@valencia]": "Permisos de Snap",
         "Name[ca]": "Permisos de l'Snap",
         "Name[cs]": "Oprávnění pro Snap",
@@ -70,6 +72,7 @@
     },
     "X-KDE-Keywords": "Snap,permission,permissions,access,sandbox,sandboxed,filesystem,file,files,folder,folders,network,networks,networking,bluetooth,print,printer,printing,audio,sound,login,remote login,ssh,smart card",
     "X-KDE-Keywords[ar]": "سناب,إذن,أذونات,وصول,معزل,عازل,نظام ملفات,ملف,ملفات,مجلد,مجلدات,شبكة,شبكات,شبكات,بلوتوث,طباعة,طابعة,طباعة,صوت,صوت,تسجيل الدخول,تسجيل الدخول عن بعد,ssh,بطاقة ذكية",
+    "X-KDE-Keywords[bg]": "Snap, разрешение, разрешения, достъп, sandbox, sandboxed, файлова система, файл, файлове,папка, папки, мрежа, мрежи, мрежови връзки, Bluetooth, печат, печатане, принтер, принтиране, аудио, звук, вход, отдалечен вход, ssh, смарт карта",
     "X-KDE-Keywords[ca@valencia]": "Snap,permís,permisos,accés,espai aïllat,entorn controlat,sistema de fitxers,fitxer,fitxers,carpeta,carpetes,xarxa,xarxes,en xarxa,bluetooth,impressió,impressora,àudio,so,inici sessió,inici sessió remot,ssh,targeta intel·ligent",
     "X-KDE-Keywords[ca]": "Snap,permís,permisos,accés,espai aïllat,entorn controlat,sistema de fitxers,fitxer,fitxers,carpeta,carpetes,xarxa,xarxes,en xarxa,bluetooth,impressió,impressora,àudio,so,inici sessió,inici sessió remot,ssh,targeta intel·ligent",
     "X-KDE-Keywords[de]": "Snap,Berechtigung,Berechtigungen,Zugang,Zugriff,Sandkasten,Sandbox,in der Sandbox,Dateisystem,Datei,Dateien,Ordner,Netzwerk,Netzwerke,Vernetzung,Bluetooth,drucken,Drucker,Drucken,Audio,Klang,Anmeldung,anmelden,Fernanmeldung,SSH,Smartcard",
