@@ -37,12 +37,12 @@ msgstr "No s'ha pogut connectar amb snapd"
 #: src/snapbackend.cpp:296
 #, kde-format
 msgid "An error occurred while writing to snapd"
-msgstr "S'ha produït un error en escriure a snapd"
+msgstr "S'ha produït un error mentre s'escrivia a snapd"
 
 #: src/snapbackend.cpp:299
 #, kde-format
 msgid "An error occurred while reading from snapd"
-msgstr "S'ha produït un error en llegir des de snapd"
+msgstr "S'ha produït un error mentre es llegia des de snapd"
 
 #: src/snapbackend.cpp:302
 #, kde-format
@@ -189,7 +189,7 @@ msgstr "snap o el directori indicat no pareixen un snap"
 #: src/snapbackend.cpp:386
 #, kde-format
 msgid "A hostname failed to resolve during the request"
-msgstr "No s'ha pogut resoldre un nom d'amfitrió durant la sol·licitud"
+msgstr "No s'ha pogut resoldre el nom de l'amfitrió durant la sol·licitud"
 
 #: src/snapbackend.cpp:389
 #, kde-format
