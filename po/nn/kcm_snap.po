@@ -1,6 +1,5 @@
 # Translation of kcm_snap to Norwegian Nynorsk
 #
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: snap-kcm\n"
