@@ -482,9 +482,6 @@ msgstr ""
 #~ msgid "Change time server settings"
 #~ msgstr "Canvia la configuració del servidor de temps"
 
-#~ msgid "Change the time zone"
-#~ msgstr "Canvia la zona horària"
-
 #~ msgid "Access the UDisks2 service for configuring disks and removable media"
 #~ msgstr ""
 #~ "Accedeix al servei UDisks2 per a configurar discs i suports extraïbles"
