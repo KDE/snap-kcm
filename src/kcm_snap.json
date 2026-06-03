@@ -30,6 +30,7 @@
         "Description[sl]": "Konfguriraj dovoljenja snap",
         "Description[sv]": "Anpassa Snap rättigheter",
         "Description[tr]": "Snap İzinlerini Yapılandır",
+        "Description[ug]": "Snap ئىجازىتىنى سەپلەيدۇ",
         "Description[uk]": "Налаштовування прав доступу Snap",
         "Description[zh_CN]": "配置 Snap 权限",
         "Description[zh_TW]": "設定 Snap 權限",
@@ -70,6 +71,7 @@
         "Name[sl]": "Dovoljenja snap",
         "Name[sv]": "Snap rättigheter",
         "Name[tr]": "Snap İzinleri",
+        "Name[ug]": "Snap ئىجازىتى",
         "Name[uk]": "Права доступу Snap",
         "Name[zh_CN]": "Snap 权限",
         "Name[zh_TW]": "Snap 權限"
