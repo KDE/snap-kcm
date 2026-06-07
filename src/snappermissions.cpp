@@ -7,6 +7,8 @@
 #include "kcmplug.h"
 #include "kcmsnap.h"
 
+#include <qqml.h>
+
 K_PLUGIN_CLASS_WITH_JSON(SnapPermissions, "kcm_snap.json")
 
 SnapPermissions::SnapPermissions(QObject *parent, const KPluginMetaData &data)
