@@ -1,5 +1,6 @@
 {
     "KPlugin": {
+        "BugReportUrl": "https://bugs.kde.org/enter_bug.cgi?product=systemsettings&component=kcm_snap",
         "Description": "Configure Snap Permissions",
         "Description[ar]": "اضبط أذونات سناب",
         "Description[bg]": "Настройване на разрешения за Snap",
