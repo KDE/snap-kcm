@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: snap-kcm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:54+0000\n"
-"PO-Revision-Date: 2026-06-24 20:05+0200\n"
+"PO-Revision-Date: 2026-06-27 11:05+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@nuug.no>\n"
 "Language: nn\n"
@@ -101,137 +101,139 @@ msgstr "Betalingsmåten til brukaren vart avvist av betalingsleverandøren"
 #: src/snapbackend.cpp:335
 #, kde-format
 msgid "The requested snap is already installed"
-msgstr ""
+msgstr "Snap-pakken er alt installert"
 
 #: src/snapbackend.cpp:338
 #, kde-format
 msgid "The requested snap is not installed"
-msgstr ""
+msgstr "Snap-pakken er ikkje installert"
 
 #: src/snapbackend.cpp:341
 #, kde-format
 msgid "No update is available for this snap"
-msgstr ""
+msgstr "Det finst ingen oppdateringar for Snap-pakken"
 
 #: src/snapbackend.cpp:344
 #, kde-format
 msgid "Provided password is not valid"
-msgstr ""
+msgstr "Det oppgjeve passorder er ugyldig"
 
 #: src/snapbackend.cpp:347
 #, kde-format
 msgid "This snap needs to be installed using devmode"
-msgstr ""
+msgstr "Snap-pakken må installerast via utviklingsmodus («devmode»)"
 
 #: src/snapbackend.cpp:350
 #, kde-format
 msgid "This snap needs to be installed using classic mode"
-msgstr ""
+msgstr "Snap-pakken må installerast via klassisk modus"
 
 #: src/snapbackend.cpp:353
 #, kde-format
 msgid "A classic system is required to install this snap"
-msgstr ""
+msgstr "Det trengst eit klassisk system for å installera Snap-pakken"
 
 #: src/snapbackend.cpp:356
 #, kde-format
 msgid "Operation was cancelled"
-msgstr ""
+msgstr "Operasjonen vart avbroten"
 
 #: src/snapbackend.cpp:359
 #, kde-format
 msgid "A bad query was provided"
-msgstr ""
+msgstr "Ugyldig førespurnad"
 
 #: src/snapbackend.cpp:362
 #, kde-format
 msgid "A timeout occurred during the request"
-msgstr ""
+msgstr "Tidsavbrot for førespurnaden"
 
 #: src/snapbackend.cpp:365
 #, kde-format
 msgid "The requested snap couldn’t be found"
-msgstr ""
+msgstr "Fann ikkje vald Snap-pakke"
 
 #: src/snapbackend.cpp:368
 #, kde-format
 msgid "The requested snap is not in the store"
-msgstr ""
+msgstr "Den valde Snap-pakken finst ikkje i butikken"
 
 #: src/snapbackend.cpp:371
 #, kde-format
 msgid "Authentication was cancelled by the user"
-msgstr ""
+msgstr "Autentisering vart avbroten av brukaren"
 
 #: src/snapbackend.cpp:374
 #, kde-format
 msgid "Snap not compatible with classic mode"
-msgstr ""
+msgstr "Snap-pakken er ikkje kompatibel med klassisk modus"
 
 #: src/snapbackend.cpp:377
 #, kde-format
 msgid "Requested snap revision not available"
-msgstr ""
+msgstr "Den førespurde Snap-revisjonen er ikkje tilgjengeleg"
 
 #: src/snapbackend.cpp:380
 #, kde-format
 msgid "Requested snap channel not available"
-msgstr ""
+msgstr "Den førespurde Snap-kanalen er ikkje tilgjengeleg"
 
 #: src/snapbackend.cpp:383
 #, kde-format
 msgid "The given snap or directory does not look like a snap"
 msgstr ""
+"Den oppgjevne Snap-pakken eller mappa ser ikkje ut til å innhalda Snap-"
+"innhald"
 
 #: src/snapbackend.cpp:386
 #, kde-format
 msgid "A hostname failed to resolve during the request"
-msgstr ""
+msgstr "Klarte ikkje slå opp vertsnamn i førespurnaden"
 
 #: src/snapbackend.cpp:389
 #, kde-format
 msgid "A requested configuration option is not set"
-msgstr ""
+msgstr "Den oppgjevne innstillinga er ikkje definert"
 
 #: src/snapbackend.cpp:392
 #, kde-format
 msgid "The requested app couldn't be found"
-msgstr ""
+msgstr "Fann ikkje førespurd program"
 
 #: src/snapbackend.cpp:395
 #, kde-format
 msgid "No snap revision on specified architecture"
-msgstr ""
+msgstr "Det finst ikkje ein Snap-revisjon på den valde arkitekturen"
 
 #: src/snapbackend.cpp:398
 #, kde-format
 msgid "The requested operation would conflict with currently ongoing change"
-msgstr ""
+msgstr "Operasjonen er i konflikt med pågåande endringar"
 
 #: src/snapbackend.cpp:401
 #, kde-format
 msgid "The requested interface has not changed"
-msgstr ""
+msgstr "Det valde grensesnittet er ikkje endra"
 
 #: src/snapbackend.cpp:404
 #, kde-format
 msgid "Unknown error code"
-msgstr ""
+msgstr "Ukjend feilkode"
 
 #: src/ui/ErrorDialog.qml:18
 #, kde-format
 msgid "Error"
-msgstr ""
+msgstr "Feil"
 
 #: src/ui/main.qml:28
 #, kde-format
 msgid "Snap Applications"
-msgstr ""
+msgstr "Snap-program"
 
 #: src/ui/main.qml:49
 #, kde-format
 msgid "Install snaps to change the permissions"
-msgstr ""
+msgstr "Installer Snap-pakkar for å endra løyve"
 
 #: src/ui/permissions.qml:20
 #, kde-format
@@ -246,4 +248,4 @@ msgstr "Løyve for %1"
 #: src/ui/permissions.qml:24
 #, kde-format
 msgid "Select an application from the list to view its permissions here"
-msgstr ""
+msgstr "Vel eit program i lista som du vil sjå tilgangsløyve for"
