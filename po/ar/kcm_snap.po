@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the snap-kcm package.
-# SPDX-FileCopyrightText: 2024, 2025 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
+# SPDX-FileCopyrightText: 2024, 2025, 2026 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: snap-kcm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:54+0000\n"
-"PO-Revision-Date: 2025-08-20 20:48+0400\n"
+"PO-Revision-Date: 2026-08-10 17:48+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #: src/snapbackend.cpp:287
 #, kde-format
@@ -231,17 +231,17 @@ msgstr "تطبيقات سناب"
 #: src/ui/main.qml:49
 #, kde-format
 msgid "Install snaps to change the permissions"
-msgstr "ثبت تطبيقات سناب لتغير التصاريح"
+msgstr "ثبت تطبيقات سناب لتغير الأذون"
 
 #: src/ui/permissions.qml:20
 #, kde-format
 msgid "Permissions"
-msgstr "الصلاحيات"
+msgstr "الأذون"
 
 #: src/ui/permissions.qml:20
 #, kde-format
 msgid "Permissions for %1"
-msgstr "صلاحيات لـ %1"
+msgstr "الأذون لـ %1"
 
 #: src/ui/permissions.qml:24
 #, kde-format
