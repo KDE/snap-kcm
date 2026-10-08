@@ -1,0 +1,248 @@
+# Nemanja Hiršl <nemhirsl@gmail.com>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: snap-kcm\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2025-11-17 11:54+0000\n"
+"PO-Revision-Date: 2026-10-06 10:30+0200\n"
+"Last-Translator: Nemanja Hiršl <nemhirsl@gmail.com>\n"
+"Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+"X-Environment: kde\n"
+
+#: src/snapbackend.cpp:287
+#, kde-format
+msgid "No error"
+msgstr "Нема грешке"
+
+#: src/snapbackend.cpp:290
+#, kde-format
+msgid "Unknown error occurred"
+msgstr "Дошло је до непознате грешке"
+
+#: src/snapbackend.cpp:293
+#, kde-format
+msgid "Not able to connect to snapd"
+msgstr "Не могу да се повежем са snapd"
+
+#: src/snapbackend.cpp:296
+#, kde-format
+msgid "An error occurred while writing to snapd"
+msgstr "Дошло је до грешке при упису у snapd"
+
+#: src/snapbackend.cpp:299
+#, kde-format
+msgid "An error occurred while reading from snapd"
+msgstr "Дошло је до грешке при читању из snapd"
+
+#: src/snapbackend.cpp:302
+#, kde-format
+msgid "Snapd did not understand the request that was sent"
+msgstr "Snapd није разумео послати захтев"
+
+#: src/snapbackend.cpp:305
+#, kde-format
+msgid "The response received from snapd was not understood"
+msgstr "Одговор примљен од snapd није разумљив"
+
+#: src/snapbackend.cpp:308
+#, kde-format
+msgid "The requested operation requires super user password"
+msgstr "Затражени поступак захтева лозинку суперкорисника"
+
+#: src/snapbackend.cpp:311
+#, kde-format
+msgid "The provided super user password is invalid"
+msgstr "Дата лозинка суперкорисника није исправна"
+
+#: src/snapbackend.cpp:314
+#, kde-format
+msgid "Login requires a two-factor code"
+msgstr "Пријављивање захтева двофакторски код"
+
+#: src/snapbackend.cpp:317
+#, kde-format
+msgid "The two-factor code provided at login is invalid"
+msgstr "Двофакторски код дат при пријављивању није исправан"
+
+#: src/snapbackend.cpp:320
+#, kde-format
+msgid "This user account is not permitted to perform the requested operation"
+msgstr "Овом корисничком налогу није дозвољено да изврши затражени поступак"
+
+#: src/snapbackend.cpp:323
+#, kde-format
+msgid "An unspecified error occurred while communicating with snapd"
+msgstr "Дошло је до неодређене грешке при комуникацији са snapd"
+
+#: src/snapbackend.cpp:326
+#, kde-format
+msgid "This user has not accepted the store’s terms of service"
+msgstr "Овај корисник није прихватио услове сервиса продавнице"
+
+#: src/snapbackend.cpp:329
+#, kde-format
+msgid "This user has not configured a payment method"
+msgstr "Овај корисник није подесио начин плаћања"
+
+#: src/snapbackend.cpp:332
+#, kde-format
+msgid "This user has had their payment method declined by the payment provider"
+msgstr "Пружалац плаћања је одбио начин плаћања овог корисника"
+
+#: src/snapbackend.cpp:335
+#, kde-format
+msgid "The requested snap is already installed"
+msgstr "Затражени снап је већ инсталиран"
+
+#: src/snapbackend.cpp:338
+#, kde-format
+msgid "The requested snap is not installed"
+msgstr "Затражени снап није инсталиран"
+
+#: src/snapbackend.cpp:341
+#, kde-format
+msgid "No update is available for this snap"
+msgstr "Нема доступне допуне за овај снап"
+
+#: src/snapbackend.cpp:344
+#, kde-format
+msgid "Provided password is not valid"
+msgstr "Дата лозинка није исправна"
+
+#: src/snapbackend.cpp:347
+#, kde-format
+msgid "This snap needs to be installed using devmode"
+msgstr "Овај снап мора да се инсталира у режиму devmode"
+
+#: src/snapbackend.cpp:350
+#, kde-format
+msgid "This snap needs to be installed using classic mode"
+msgstr "Овај снап мора да се инсталира у класичном режиму"
+
+#: src/snapbackend.cpp:353
+#, kde-format
+msgid "A classic system is required to install this snap"
+msgstr "За инсталирање овог снапа потребан је класичан систем"
+
+#: src/snapbackend.cpp:356
+#, kde-format
+msgid "Operation was cancelled"
+msgstr "Поступак је отказан"
+
+#: src/snapbackend.cpp:359
+#, kde-format
+msgid "A bad query was provided"
+msgstr "Дат је лош упит"
+
+#: src/snapbackend.cpp:362
+#, kde-format
+msgid "A timeout occurred during the request"
+msgstr "Дошло је до прековремена током захтева"
+
+#: src/snapbackend.cpp:365
+#, kde-format
+msgid "The requested snap couldn’t be found"
+msgstr "Затражени снап није нађен"
+
+#: src/snapbackend.cpp:368
+#, kde-format
+msgid "The requested snap is not in the store"
+msgstr "Затраженог снапа нема у продавници"
+
+#: src/snapbackend.cpp:371
+#, kde-format
+msgid "Authentication was cancelled by the user"
+msgstr "Корисник је отказао аутентификацију"
+
+#: src/snapbackend.cpp:374
+#, kde-format
+msgid "Snap not compatible with classic mode"
+msgstr "Снап није сагласан са класичним режимом"
+
+#: src/snapbackend.cpp:377
+#, kde-format
+msgid "Requested snap revision not available"
+msgstr "Затражена ревизија снапа није доступна"
+
+#: src/snapbackend.cpp:380
+#, kde-format
+msgid "Requested snap channel not available"
+msgstr "Затражени канал снапа није доступан"
+
+#: src/snapbackend.cpp:383
+#, kde-format
+msgid "The given snap or directory does not look like a snap"
+msgstr "Дати снап или фасцикла не личи на снап"
+
+#: src/snapbackend.cpp:386
+#, kde-format
+msgid "A hostname failed to resolve during the request"
+msgstr "Име домаћина није разрешено током захтева"
+
+#: src/snapbackend.cpp:389
+#, kde-format
+msgid "A requested configuration option is not set"
+msgstr "Затражена опција поставе није постављена"
+
+#: src/snapbackend.cpp:392
+#, kde-format
+msgid "The requested app couldn't be found"
+msgstr "Затражени програм није нађен"
+
+#: src/snapbackend.cpp:395
+#, kde-format
+msgid "No snap revision on specified architecture"
+msgstr "Нема ревизије снапа за задату архитектуру"
+
+#: src/snapbackend.cpp:398
+#, kde-format
+msgid "The requested operation would conflict with currently ongoing change"
+msgstr "Затражени поступак би се сукобио са изменом која је у току"
+
+#: src/snapbackend.cpp:401
+#, kde-format
+msgid "The requested interface has not changed"
+msgstr "Затражено сучеље се није променило"
+
+#: src/snapbackend.cpp:404
+#, kde-format
+msgid "Unknown error code"
+msgstr "Непознат код грешке"
+
+#: src/ui/ErrorDialog.qml:18
+#, kde-format
+msgid "Error"
+msgstr "Грешка"
+
+#: src/ui/main.qml:28
+#, kde-format
+msgid "Snap Applications"
+msgstr "Снап програми"
+
+#: src/ui/main.qml:49
+#, kde-format
+msgid "Install snaps to change the permissions"
+msgstr "Инсталирајте снапове да бисте мењали дозволе"
+
+#: src/ui/permissions.qml:20
+#, kde-format
+msgid "Permissions"
+msgstr "Дозволе"
+
+#: src/ui/permissions.qml:20
+#, kde-format
+msgid "Permissions for %1"
+msgstr "Дозволе за %1"
+
+#: src/ui/permissions.qml:24
+#, kde-format
+msgid "Select an application from the list to view its permissions here"
+msgstr "Изаберите програм са списка да бисте овде видели његове дозволе"
