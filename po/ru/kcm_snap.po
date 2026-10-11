@@ -1,0 +1,251 @@
+# Translation of kcm_snap into Russian.
+# This file is distributed under the same license as the snap-kcm package.
+# Alexander Yavorsky <kekcuha@gmail.com>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kcm_snap\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2025-11-17 11:54+0000\n"
+"PO-Revision-Date: 2026-10-10 10:10+0200\n"
+"Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: src/snapbackend.cpp:287
+#, kde-format
+msgid "No error"
+msgstr "Ошибок нет"
+
+#: src/snapbackend.cpp:290
+#, kde-format
+msgid "Unknown error occurred"
+msgstr "Произошла неизвестная ошибка"
+
+#: src/snapbackend.cpp:293
+#, kde-format
+msgid "Not able to connect to snapd"
+msgstr "Не удалось подключиться к snapd"
+
+#: src/snapbackend.cpp:296
+#, kde-format
+msgid "An error occurred while writing to snapd"
+msgstr "Ошибка при отправке данных в snapd"
+
+#: src/snapbackend.cpp:299
+#, kde-format
+msgid "An error occurred while reading from snapd"
+msgstr "Ошибка при получении данных от snapd"
+
+#: src/snapbackend.cpp:302
+#, kde-format
+msgid "Snapd did not understand the request that was sent"
+msgstr "snapd не смог разобрать отправленный запрос"
+
+#: src/snapbackend.cpp:305
+#, kde-format
+msgid "The response received from snapd was not understood"
+msgstr "Не удалось разобрать ответ, полученный от snapd"
+
+#: src/snapbackend.cpp:308
+#, kde-format
+msgid "The requested operation requires super user password"
+msgstr "Для выполнения запрошенной операции требуется пароль суперпользователя"
+
+#: src/snapbackend.cpp:311
+#, kde-format
+msgid "The provided super user password is invalid"
+msgstr "Указан неверный пароль суперпользователя"
+
+#: src/snapbackend.cpp:314
+#, kde-format
+msgid "Login requires a two-factor code"
+msgstr "Для входа требуется код двухфакторной аутентификации"
+
+#: src/snapbackend.cpp:317
+#, kde-format
+msgid "The two-factor code provided at login is invalid"
+msgstr "Указан неверный код двухфакторной аутентификации"
+
+#: src/snapbackend.cpp:320
+#, kde-format
+msgid "This user account is not permitted to perform the requested operation"
+msgstr "Этой учётной записи не разрешено выполнять запрошенную операцию"
+
+#: src/snapbackend.cpp:323
+#, kde-format
+msgid "An unspecified error occurred while communicating with snapd"
+msgstr "При обмене данными с snapd произошла неопределённая ошибка"
+
+#: src/snapbackend.cpp:326
+#, kde-format
+msgid "This user has not accepted the store’s terms of service"
+msgstr "Пользователь не принял условия использования магазина"
+
+#: src/snapbackend.cpp:329
+#, kde-format
+msgid "This user has not configured a payment method"
+msgstr "Пользователь не указал способ оплаты"
+
+#: src/snapbackend.cpp:332
+#, kde-format
+msgid "This user has had their payment method declined by the payment provider"
+msgstr "Платёжная система отклонила способ оплаты пользователя"
+
+#: src/snapbackend.cpp:335
+#, kde-format
+msgid "The requested snap is already installed"
+msgstr "Запрошенный пакет Snap уже установлен"
+
+#: src/snapbackend.cpp:338
+#, kde-format
+msgid "The requested snap is not installed"
+msgstr "Запрошенный пакет Snap не установлен"
+
+#: src/snapbackend.cpp:341
+#, kde-format
+msgid "No update is available for this snap"
+msgstr "Для этого пакета Snap нет обновлений"
+
+#: src/snapbackend.cpp:344
+#, kde-format
+msgid "Provided password is not valid"
+msgstr "Указан неверный пароль"
+
+#: src/snapbackend.cpp:347
+#, kde-format
+msgid "This snap needs to be installed using devmode"
+msgstr ""
+"Этот пакет Snap необходимо устанавливать в режиме разработчика (devmode)"
+
+#: src/snapbackend.cpp:350
+#, kde-format
+msgid "This snap needs to be installed using classic mode"
+msgstr ""
+"Этот пакет Snap необходимо устанавливать в классическом режиме (classic)"
+
+#: src/snapbackend.cpp:353
+#, kde-format
+msgid "A classic system is required to install this snap"
+msgstr "Для установки этого пакета Snap требуется классическая система"
+
+#: src/snapbackend.cpp:356
+#, kde-format
+msgid "Operation was cancelled"
+msgstr "Операция отменена"
+
+#: src/snapbackend.cpp:359
+#, kde-format
+msgid "A bad query was provided"
+msgstr "Указан неверный запрос"
+
+#: src/snapbackend.cpp:362
+#, kde-format
+msgid "A timeout occurred during the request"
+msgstr "Истекло время ожидания запроса"
+
+#: src/snapbackend.cpp:365
+#, kde-format
+msgid "The requested snap couldn’t be found"
+msgstr "Запрошенный пакет Snap не найден"
+
+#: src/snapbackend.cpp:368
+#, kde-format
+msgid "The requested snap is not in the store"
+msgstr "Запрошенного пакета Snap нет в магазине"
+
+#: src/snapbackend.cpp:371
+#, kde-format
+msgid "Authentication was cancelled by the user"
+msgstr "Аутентификация отменена пользователем"
+
+#: src/snapbackend.cpp:374
+#, kde-format
+msgid "Snap not compatible with classic mode"
+msgstr "Пакет Snap несовместим с классическим режимом"
+
+#: src/snapbackend.cpp:377
+#, kde-format
+msgid "Requested snap revision not available"
+msgstr "Запрошенная ревизия пакета Snap недоступна"
+
+#: src/snapbackend.cpp:380
+#, kde-format
+msgid "Requested snap channel not available"
+msgstr "Запрошенный канал пакета Snap недоступен"
+
+#: src/snapbackend.cpp:383
+#, kde-format
+msgid "The given snap or directory does not look like a snap"
+msgstr "Указанный файл или папка не являются пакетом Snap"
+
+#: src/snapbackend.cpp:386
+#, kde-format
+msgid "A hostname failed to resolve during the request"
+msgstr "Во время запроса не удалось разрешить имя узла"
+
+#: src/snapbackend.cpp:389
+#, kde-format
+msgid "A requested configuration option is not set"
+msgstr "Запрошенный параметр конфигурации не задан"
+
+#: src/snapbackend.cpp:392
+#, kde-format
+msgid "The requested app couldn't be found"
+msgstr "Запрошенное приложение не найдено"
+
+#: src/snapbackend.cpp:395
+#, kde-format
+msgid "No snap revision on specified architecture"
+msgstr "Для указанной архитектуры нет ревизии пакета Snap"
+
+#: src/snapbackend.cpp:398
+#, kde-format
+msgid "The requested operation would conflict with currently ongoing change"
+msgstr "Запрошенная операция конфликтует с выполняемым сейчас изменением"
+
+#: src/snapbackend.cpp:401
+#, kde-format
+msgid "The requested interface has not changed"
+msgstr "Запрошенный интерфейс не изменился"
+
+#: src/snapbackend.cpp:404
+#, kde-format
+msgid "Unknown error code"
+msgstr "Неизвестный код ошибки"
+
+#: src/ui/ErrorDialog.qml:18
+#, kde-format
+msgid "Error"
+msgstr "Ошибка"
+
+#: src/ui/main.qml:28
+#, kde-format
+msgid "Snap Applications"
+msgstr "Приложения в формате Snap"
+
+#: src/ui/main.qml:49
+#, kde-format
+msgid "Install snaps to change the permissions"
+msgstr "Установите пакеты Snap, чтобы изменять их права доступа"
+
+#: src/ui/permissions.qml:20
+#, kde-format
+msgid "Permissions"
+msgstr "Права доступа"
+
+#: src/ui/permissions.qml:20
+#, kde-format
+msgid "Permissions for %1"
+msgstr "Права доступа для «%1»"
+
+#: src/ui/permissions.qml:24
+#, kde-format
+msgid "Select an application from the list to view its permissions here"
+msgstr ""
+"Выберите приложение из списка для просмотра предоставленных ему разрешений"
